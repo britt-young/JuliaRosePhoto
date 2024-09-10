@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { AiOutlineMenuFold } from "react-icons/ai";
 
-
 const Nav = () => {
   const [click, setClick] = useState(false);
 
@@ -11,23 +10,40 @@ const Nav = () => {
     setClick(!click);
   };
 
+  // Handle the menu link click
+  const handleLinkClick = () => {
+    if (click) {
+      setClick(false);
+    }
+  };
+
   // Define the menu content
   const menuItems = (
     <ul className="list-none p-0 m-0 flex flex-col lg:flex-row lg:gap-8">
-      <li className="hover:text-black transition">
-        <Link to="/">Home</Link>
+      <li className="hover:text-black transition mb-4 lg:mb-0">
+        <Link to="/" onClick={handleLinkClick}>
+          Home
+        </Link>
       </li>
-      <li className="hover:text-black transition">
-        <Link to="/about">About</Link>
+      <li className="hover:text-black transition mb-4 lg:mb-0">
+        <Link to="/about" onClick={handleLinkClick}>
+          About
+        </Link>
       </li>
-      <li className="hover:text-black transition">
-        <Link to="/services">Services</Link>
+      <li className="hover:text-black transition mb-4 lg:mb-0">
+        <Link to="/services" onClick={handleLinkClick}>
+          Services
+        </Link>
       </li>
-      <li className="hover:text-black transition">
-        <Link to="/gallery">Gallery</Link>
+      <li className="hover:text-black transition mb-4 lg:mb-0">
+        <Link to="/gallery" onClick={handleLinkClick}>
+          Gallery
+        </Link>
       </li>
-      <li className="hover:text-black transition">
-        <Link to="/contact">Contact</Link>
+      <li className="hover:text-black transition mb-4 lg:mb-0">
+        <Link to="/contact" onClick={handleLinkClick}>
+          Contact
+        </Link>
       </li>
     </ul>
   );
@@ -62,18 +78,16 @@ const Nav = () => {
             click ? "translate-x-0" : "translate-x-full"
           } lg:hidden z-50`}
         >
-            
-            {/* Mobile Menu Close Button */}
-        <button
-          className="block lg:hidden p-2 transition"
-          onClick={handleClick}
-          aria-label="Toggle Menu"
-        >
-          {click ? <FaTimes size={24} /> : <AiOutlineMenuFold size={24} />}
-        </button>
+          {/* Mobile Menu Close Button */}
+          <button
+            className="absolute top-4 right-4 p-2 transition"
+            onClick={handleClick}
+            aria-label="Toggle Menu"
+          >
+            {click ? <FaTimes size={24} /> : <AiOutlineMenuFold size={24} />}
+          </button>
 
-        {menuItems}
-          
+          {menuItems}
         </div>
       </div>
     </nav>
