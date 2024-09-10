@@ -1,7 +1,8 @@
 import { React, useState } from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { AiOutlineMenuFold } from "react-icons/ai";
+
 
 const Nav = () => {
   const [click, setClick] = useState(false);
@@ -14,19 +15,19 @@ const Nav = () => {
   const menuItems = (
     <ul className="list-none p-0 m-0 flex flex-col lg:flex-row lg:gap-8">
       <li className="hover:text-black transition">
-        <Link to="Home">Home</Link>
+        <Link to="/">Home</Link>
       </li>
       <li className="hover:text-black transition">
-        <Link to="About">About</Link>
+        <Link to="/about">About</Link>
       </li>
       <li className="hover:text-black transition">
-        <Link to="Services">Services</Link>
+        <Link to="/services">Services</Link>
       </li>
       <li className="hover:text-black transition">
-        <Link to="Gallery">Gallery</Link>
+        <Link to="/gallery">Gallery</Link>
       </li>
       <li className="hover:text-black transition">
-        <Link to="Contact">Contact</Link>
+        <Link to="/contact">Contact</Link>
       </li>
     </ul>
   );
