@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { AiOutlineMenuFold } from "react-icons/ai";
+import Logo from "../assets/name-logo.svg";
 
 const Nav = () => {
   const [click, setClick] = useState(false);
@@ -54,7 +55,7 @@ const Nav = () => {
         {/* Logo Section */}
         <div className="flex items-center flex-1">
           <span>
-            <img src="logo.png" alt="logo img" />
+            <img src={Logo} alt="Logo" className="h-auto" />
           </span>
         </div>
 
