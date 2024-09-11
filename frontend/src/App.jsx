@@ -9,11 +9,11 @@ const App = () => {
     <>
       <BrowserRouter>
         {/* div below contains container tailwindcss */}
-        <div className="bg-olive p-4">
+        <div className="bg-flamingo p-4">
           <Nav />
         </div>
         <Router />
-        <div className="bg-olive p-0">
+        <div className="bg-flamingo p-0">
           <Footer />
         </div>
       </BrowserRouter>
