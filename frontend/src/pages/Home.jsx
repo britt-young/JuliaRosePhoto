@@ -14,12 +14,12 @@ const Home = () => {
 {/* portfolio cards */}
       <div className="sm:flex sm:justify-center p-4">
         {/* first card */}
-        <div className="flex flex-col text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 sm:rounded-e-none">
+        <div className="flex flex-col text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-black sm:shrink-0 sm:grow sm:basis-0 sm:rounded-e-none">
           <a href="#!">
             <img
               className="p-1"
-              src="./assets/senior-girl.jpg"
-              alt="Hollywood Sign on The Hill"
+              src="https://cindyswansonphotography.com/wp-content/uploads/2019/01/10-8374-post/senior_portraits_in_dallas_for_guys_3.jpg"
+              alt="senior photo"
             />
           </a>
           <div className="p-6">
@@ -37,11 +37,11 @@ const Home = () => {
           </div>
         </div>
 {/* second card */}
-        <div className="flex flex-col text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 sm:rounded-none">
+        <div className="flex flex-col text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-black sm:shrink-0 sm:grow sm:basis-0 sm:rounded-none">
           <a href="#!">
             <img
               className="p-1"
-              src="https://tecdn.b-cdn.net/img/new/standard/city/042.webp"
+              src="https://i.pinimg.com/originals/af/9f/ca/af9fca1ddca00c48e2b2856d79d830f5.jpg"
               alt="Palm Springs Road"
             />
           </a>
@@ -59,11 +59,11 @@ const Home = () => {
           </div>
         </div>
 {/* third card */}
-        <div className="flex flex-col text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0 sm:rounded-s-none">
+        <div className="flex flex-col text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-black sm:shrink-0 sm:grow sm:basis-0 sm:rounded-s-none">
           <a href="#!">
             <img
               className="p-1"
-              src="https://tecdn.b-cdn.net/img/new/standard/city/043.webp"
+              src="https://www.tumblestonphotography.com/wp-content/uploads/2018/05/high-school-senior-picture-session.jpg"
               alt="Los Angeles Skyscrapers"
             />
           </a>
