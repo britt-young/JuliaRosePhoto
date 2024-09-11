@@ -51,11 +51,11 @@ const Nav = () => {
 
   return (
     <nav>
-      <div className="h-10vh flex justify-between items-center z-50 text-white lg:py-5 px-20 py-4">
+      <div className="h-10vh flex justify-between items-center z-50 text-white lg:py-1 px-20 py-4">
         {/* Logo Section */}
         <div className="flex items-center flex-1">
           <span>
-            <img src={Logo} alt="Logo" className="h-auto" />
+            <img src="" alt="Logo" className="h-auto" />
           </span>
         </div>
 

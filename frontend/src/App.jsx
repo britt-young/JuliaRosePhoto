@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./Components/Nav";
 import Router from "./pages/Router";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -12,6 +13,9 @@ const App = () => {
           <Nav />
         </div>
         <Router />
+        <div className="bg-olive p-0">
+          <Footer />
+        </div>
       </BrowserRouter>
     </>
   );
