@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="bg-white gap-8 md:columns-2 sm:columns-1 flex">
+    <div className="bg-white gap-6 md:columns-2 sm:columns-1 flex">
       <div className="flex-col items-center py-20 px-20">
         {/* <img className="w-50 h-50" src="https://i.imgur.com/1zv3Z9I.jpg" alt="camera" /> */}
         <h1 className="font-extrabold text-2xl pb-5">Riley Addison Photography</h1>

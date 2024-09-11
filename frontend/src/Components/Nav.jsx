@@ -50,8 +50,8 @@ const Nav = () => {
   );
 
   return (
-    <nav>
-      <div className="h-10vh flex justify-between items-center z-50 text-white lg:py-1 px-20 py-4">
+    <nav className="w-auto">
+      <div className="h-10h w-full flex justify-between items-center z-50 text-white lg:py-1 px-20 py-4">
         {/* Logo Section */}
         <div className="flex items-center flex-1">
           <span>
@@ -83,7 +83,7 @@ const Nav = () => {
           <button
             className="absolute top-4 right-4 p-2 transition"
             onClick={handleClick}
-            aria-label="Toggle Menu"
+            aria-label="Close Menu"
           >
             {click ? <FaTimes size={24} /> : <AiOutlineMenuFold size={24} />}
           </button>

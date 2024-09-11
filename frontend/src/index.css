@@ -1,3 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+/* @import '@tailwindcss/postcss7-compat'; */
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Base styles for mobile devices
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styles for tablets and larger devices */
+  /* @media (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+  } */
+  
+  /* Styles for desktops and larger devices */
+  /* @media (min-width: 1024px) {
+    body {
+      font-size: 20px;
+    }
+  }   */
