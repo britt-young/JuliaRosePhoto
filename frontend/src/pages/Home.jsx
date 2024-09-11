@@ -3,15 +3,16 @@ import React from "react";
 const Home = () => {
   return (
     <div className="bg-white gap-8 md:columns-2 sm:columns-1 flex">
-      <div className="py-20 px-40">
-        <img src="" alt="welcome_logo" />
+      <div className="flex-col items-center py-20 px-20">
+        {/* <img className="w-50 h-50" src="https://i.imgur.com/1zv3Z9I.jpg" alt="camera" /> */}
+        <h1 className="font-extrabold text-2xl pb-5">Riley Addison Photography</h1>
         <p className="inline-flex">Capturing every special moment</p>
-        <p className="inline-block">I love photography</p>
-        <button className="inline-block rounded bg-poppy px-6 pb-2 pt-2.5 text-xs font-medium leading-normal text-white">
+        <p className="inline-flex pb-4">I love photography</p>
+        <button type="button"className="bg-bblue p-1 px-3 text-s font-medium text-white transition duration-150 ease-in-out focus:outline-none focus:ring-0">
           see my portfolio
         </button>
       </div>
-{/* portfolio cards */}
+      {/* portfolio cards */}
       <div className="sm:flex sm:justify-center p-4">
         {/* first card */}
         <div className="flex flex-col text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-black sm:shrink-0 sm:grow sm:basis-0 sm:rounded-e-none">
@@ -32,11 +33,13 @@ const Home = () => {
               longer.
             </p>
             <p className="mb-4 text-base text-surface/75 dark:text-neutral-300">
-              <small>Last updated 3 mins ago</small>
+            <button type="button"className="bg-bblue p-1 px-3 text-s font-medium text-white transition duration-150 ease-in-out focus:outline-none focus:ring-0">
+          see more
+        </button>
             </p>
           </div>
         </div>
-{/* second card */}
+        {/* second card */}
         <div className="flex flex-col text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-black sm:shrink-0 sm:grow sm:basis-0 sm:rounded-none">
           <a href="#!">
             <img
@@ -54,11 +57,13 @@ const Home = () => {
               additional content.
             </p>
             <p className="mb-4 text-base text-surface/75 dark:text-neutral-300">
-              <small>Last updated 3 mins ago</small>
+            <button type="button"className="bg-bblue p-1 px-3 text-s font-medium text-white transition duration-150 ease-in-out focus:outline-none focus:ring-0">
+          see more
+        </button>
             </p>
           </div>
         </div>
-{/* third card */}
+        {/* third card */}
         <div className="flex flex-col text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-black sm:shrink-0 sm:grow sm:basis-0 sm:rounded-s-none">
           <a href="#!">
             <img
@@ -77,7 +82,9 @@ const Home = () => {
               than the first to show that equal height action.
             </p>
             <p className="mb-4 text-base text-surface/75 dark:text-neutral-300">
-              <small>Last updated 3 mins ago</small>
+            <button type="button"className="bg-bblue p-1 px-3 text-s font-medium text-white transition duration-150 ease-in-out focus:outline-none focus:ring-0">
+          see more
+        </button>
             </p>
           </div>
         </div>
