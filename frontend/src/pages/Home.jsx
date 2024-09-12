@@ -26,62 +26,93 @@ const Home = () => {
           see my portfolio
         </button>
       </div>
+
       {/* portfolio cards */}
-      <div className="w-full sm:flex sm:justify-center p-4">
-        {/* first card */}
-        <div className="flex flex-col text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-black sm:shrink-0 sm:grow sm:basis-0 sm:rounded-e-none">
-          <a href="#!">
-            <img
-              className="p-1"
-              src="https://cindyswansonphotography.com/wp-content/uploads/2019/01/10-8374-post/senior_portraits_in_dallas_for_guys_3.jpg"
-              alt="senior photo"
-            />
-          </a>
-          <div className="pt-1 pl-4">
-            <h5 className="mb-0 text-xl font-medium leading-tight">
-              James Carter
-            </h5>
-            <p className="mb-4 text-base">Senior Portraits</p>
-            <p className="mb-4 text-base text-surface/75 dark:text-neutral-300">
+      <div className="flex min-h-[140px] w-full p-4">
+        {/* First card */}
+        <figure className="relative w-1/3 h-full flex-shrink-0 p-1">
+          <img
+            className="object-cover object-center w-full h-full"
+            src="https://th.bing.com/th/id/OIP.3PoJIO5ehp5U0gPz_HnWWwHaLG?rs=1&pid=ImgDetMain"
+            alt="senior portrait"
+          />
+          <figcaption className="absolute bottom-4 inset-x-0 mx-4 flex flex-col md:flex-row justify-between items-center rounded-xl border border-white bg-white/75 p-4 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
+            <div className="text-center md:text-left">
+              <h5 className="font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900">
+                Senior Portrait
+              </h5>
+              <p className="mt-1 font-sans text-base font-normal leading-relaxed text-gray-700">
+                Senior Portrait
+              </p>
+            </div>
+            <button
+              onClick={handleClick}
+              type="button"
+              className="bg-poppy p-2 px-4 text-base font-medium text-white rounded"
+            >
+              see more
+            </button>
+          </figcaption>
+        </figure>
+
+        {/* Second card */}
+        <figure className="relative w-1/3 h-full flex-shrink-0 p-1">
+          <img
+            className="object-cover object-center w-full h-full"
+            src="https://th.bing.com/th/id/OIP.3PoJIO5ehp5U0gPz_HnWWwHaLG?rs=1&pid=ImgDetMain"
+            alt="senior portrait"
+          />
+          <figcaption className="absolute bottom-4 inset-x-0 mx-4 flex flex-col md:flex-row justify-between items-center rounded-xl border border-white bg-white/75 p-4 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
+            <div className="text-center md:text-left">
+              <h5 className="font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900">
+                Senior Portrait
+              </h5>
+              <p className="mt-1 font-sans text-base font-normal leading-relaxed text-gray-700">
+                Senior Portrait
+              </p>
+            </div>
+            <p className="flex items-center mt-2 md:mt-0">
               <button
                 onClick={handleClick}
                 type="button"
-                className="bg-bblue p-1 px-3 text-s font-medium text-white"
+                className="bg-poppy p-2 px-4 text-base font-medium text-white rounded"
               >
                 see more
               </button>
             </p>
-          </div>
-        </div>
-        {/* second card */}
-        <div className="flex flex-col text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-black sm:shrink-0 sm:grow sm:basis-0 sm:rounded-none">
-          <a href="#!">
-            <img
-              className="p-1"
-              src="https://i.pinimg.com/originals/af/9f/ca/af9fca1ddca00c48e2b2856d79d830f5.jpg"
-              alt="Palm Springs Road"
-            />
-          </a>
-          <div className="pt-1 pl-4">
-            <h5 className="mb-0 text-xl font-medium leading-tight">
-              Johnson Family{" "}
-            </h5>
-            <p className="mb-4 text-base">
-              Family Portraits
-            </p>
-            <p className="mb-4 text-base text-surface/75 dark:text-neutral-300">
+          </figcaption>
+        </figure>
+
+        {/* Third card */}
+        <figure className="relative w-1/3 h-full flex-shrink-0 p-1">
+          <img
+            className="object-cover object-center w-full h-full"
+            src="https://th.bing.com/th/id/OIP.3PoJIO5ehp5U0gPz_HnWWwHaLG?rs=1&pid=ImgDetMain"
+            alt="senior portrait"
+          />
+          <figcaption className="absolute bottom-4 inset-x-0 mx-4 flex flex-col md:flex-row justify-between items-center rounded-xl border border-white bg-white/75 p-4 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
+            <div className="text-center md:text-left">
+              <h5 className="font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900">
+                Senior Portrait
+              </h5>
+              <p className="mt-1 font-sans text-base font-normal leading-relaxed text-gray-700">
+                Senior Portrait
+              </p>
+            </div>
+            <p className="flex items-center mt-2 md:mt-0">
               <button
                 onClick={handleClick}
                 type="button"
-                className="bg-bblue p-1 px-3 text-s font-medium text-white"
+                className="bg-poppy p-2 px-4 text-base font-medium text-white rounded"
               >
                 see more
               </button>
             </p>
-          </div>
-        </div>
-        {/* third card */}
-        <div className="flex flex-col text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-black sm:shrink-0 sm:grow sm:basis-0 sm:rounded-s-none">
+          </figcaption>
+        </figure>
+      </div>
+
+      {/*  <div className="w-full h-full flex flex-col text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-black sm:shrink-0 sm:grow sm:basis-0 sm:rounded-s-none">
           <a href="#!">
             <img
               className="p-1"
@@ -106,16 +137,9 @@ const Home = () => {
               </button>
             </p>
           </div>
-        </div>
-      </div>
+        </div> */}
     </div>
   );
 };
 
 export default Home;
-
-/* type="button"
-          data-twe-ripple-init
-          data-twe-ripple-color="light" */
-
-// shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-white-600 active:shadow-black-2 motion-reduce:transition-none dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong

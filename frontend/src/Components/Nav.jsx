@@ -76,7 +76,7 @@ const Nav = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 left-0 w-full h-full bg-bblue text-white flex flex-col items-center justify-center transition-transform transform ${
+          className={`fixed top-0 left-0 w-full h-full bg-flamingo text-white flex flex-col items-center justify-center transition-transform transform ${
             click ? "translate-x-0" : "translate-x-full"
           } lg:hidden z-50`}
         >
