@@ -33,7 +33,7 @@ const Home = () => {
         <figure className="relative w-1/3 h-full flex-shrink-0 p-1">
           <img
             className="object-cover object-center w-full h-full"
-            src="https://th.bing.com/th/id/OIP.3PoJIO5ehp5U0gPz_HnWWwHaLG?rs=1&pid=ImgDetMain"
+            src="https://cindyswansonphotography.com/wp-content/uploads/2019/01/10-8374-post/senior_portraits_in_dallas_for_guys_3.jpg"
             alt="senior portrait"
           />
           <figcaption className="absolute bottom-4 inset-x-0 mx-4 flex flex-col md:flex-row justify-between items-center rounded-xl border border-white bg-white/75 p-4 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
@@ -42,7 +42,7 @@ const Home = () => {
                 Senior Portrait
               </h5>
               <p className="mt-1 font-sans text-base font-normal leading-relaxed text-gray-700">
-                Senior Portrait
+                James Craig
               </p>
             </div>
             <button
@@ -59,16 +59,16 @@ const Home = () => {
         <figure className="relative w-1/3 h-full flex-shrink-0 p-1">
           <img
             className="object-cover object-center w-full h-full"
-            src="https://th.bing.com/th/id/OIP.3PoJIO5ehp5U0gPz_HnWWwHaLG?rs=1&pid=ImgDetMain"
-            alt="senior portrait"
+            src="https://www.mintarrow.com/wp-content/uploads/2021/12/RESIZED-Family-04278-1097x1536.jpg"
+            alt="family portrait"
           />
           <figcaption className="absolute bottom-4 inset-x-0 mx-4 flex flex-col md:flex-row justify-between items-center rounded-xl border border-white bg-white/75 p-4 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
             <div className="text-center md:text-left">
               <h5 className="font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900">
-                Senior Portrait
+                Family Portrait
               </h5>
               <p className="mt-1 font-sans text-base font-normal leading-relaxed text-gray-700">
-                Senior Portrait
+                Johnson Family
               </p>
             </div>
             <p className="flex items-center mt-2 md:mt-0">
@@ -87,7 +87,7 @@ const Home = () => {
         <figure className="relative w-1/3 h-full flex-shrink-0 p-1">
           <img
             className="object-cover object-center w-full h-full"
-            src="https://th.bing.com/th/id/OIP.3PoJIO5ehp5U0gPz_HnWWwHaLG?rs=1&pid=ImgDetMain"
+            src="https://th.bing.com/th/id/R.b3a33c7d7b01415e22e1ac1a010009eb?rik=dRK0X0qJaNfiBQ&pid=ImgRaw&r=0"
             alt="senior portrait"
           />
           <figcaption className="absolute bottom-4 inset-x-0 mx-4 flex flex-col md:flex-row justify-between items-center rounded-xl border border-white bg-white/75 p-4 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
@@ -96,7 +96,7 @@ const Home = () => {
                 Senior Portrait
               </h5>
               <p className="mt-1 font-sans text-base font-normal leading-relaxed text-gray-700">
-                Senior Portrait
+                Alex Bush
               </p>
             </div>
             <p className="flex items-center mt-2 md:mt-0">
