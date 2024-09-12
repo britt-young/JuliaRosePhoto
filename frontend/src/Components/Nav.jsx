@@ -50,8 +50,9 @@ const Nav = () => {
   );
 
   return (
-    <nav className="w-auto">
-      <div className="h-10h w-full flex justify-between items-center z-50 text-white lg:py-1 px-20 py-4">
+    <nav className="">
+      <div className="h-10h flex justify-between items-center z-50 text-white lg:py-1 px-20">
+
         {/* Logo Section */}
         <div className="flex items-center flex-1">
           <span>
@@ -75,7 +76,7 @@ const Nav = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 left-0 w-full h-full bg-olive text-white flex flex-col items-center justify-center transition-transform transform ${
+          className={`fixed top-0 left-0 w-full h-full bg-bblue text-white flex flex-col items-center justify-center transition-transform transform ${
             click ? "translate-x-0" : "translate-x-full"
           } lg:hidden z-50`}
         >
