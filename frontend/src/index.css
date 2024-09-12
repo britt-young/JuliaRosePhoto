@@ -3,15 +3,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@layer base {
-  @font-face {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    /* font-display: swap; */
-    src: url(/fonts/Roboto.woff2) format('woff2');
-  }
-}
 
 /*Base styles for mobile devices
 @media (max-width: 425px) {
