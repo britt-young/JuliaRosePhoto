@@ -15,6 +15,9 @@ export default {
       black: "#000000",
     },
     extend: {},
+    fontFamily: {
+      'display': ['"Roboto"'],
+    }
   },
   plugins: [],
 }

@@ -5,7 +5,7 @@ const Home = () => {
     <div className=" bg-white gap-6 md:columns-2 sm:columns-1 flex">
       <div className="flex-col items-center py-20 px-10">
         {/* <img className="w-50 h-50" src="https://i.imgur.com/1zv3Z9I.jpg" alt="camera" /> */}
-        <h1 className="font-extrabold text-2xl pb-5">Riley Addison Photography</h1>
+        <h1 className="font-display text-3xl pb-5">Riley Addison Photography</h1>
         <p className="inline-flex">Capturing every special moment</p>
         <p className="inline-flex pb-4">I love photography</p>
         <button type="button"className="block bg-bblue p-1 px-3 text-s font-medium text-white transition duration-150 ease-in-out focus:outline-none focus:ring-0">
