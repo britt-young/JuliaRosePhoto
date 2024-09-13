@@ -23,7 +23,7 @@ const Home = () => {
         <button
           onClick={handleClick}
           type="button"
-          className="text-1xl block bg-bblue p-1 px-3 font-medium text-white "
+          className="text-1xl block bg-bblue rounded-lg px-2 py-1 shadow-md mt-4 text-black"
         >
           see my portfolio
         </button>
@@ -34,7 +34,7 @@ const Home = () => {
         {/* First card */}
         <figure className="relative w-1/3 h-full flex p-1">
           <img
-            className="object-cover object-center w-full h-full flex-shrink"
+            className="object-cover object-center .max-w-full .h-auto flex-shrink"
             src="https://cindyswansonphotography.com/wp-content/uploads/2019/01/10-8374-post/senior_portraits_in_dallas_for_guys_3.jpg"
             alt="senior portrait"
           />
@@ -60,7 +60,7 @@ const Home = () => {
         {/* Second card */}
         <figure className="relative w-1/3 h-full flex p-1">
           <img
-            className="object-cover object-center w-full h-full flex-shrink"
+            className="object-cover object-center .max-w-full .h-auto flex-shrink"
             src="https://www.mintarrow.com/wp-content/uploads/2021/12/RESIZED-Family-04278-1097x1536.jpg"
             alt="family portrait"
           />
@@ -86,7 +86,7 @@ const Home = () => {
         {/* Third card */}
         <figure className="relative w-1/3 h-full flex p-1">
           <img
-            className="object-cover object-center w-full h-full flex-shrink"
+            className="object-cover object-center .max-w-full .h-auto flex-shrink"
             src="https://th.bing.com/th/id/R.b3a33c7d7b01415e22e1ac1a010009eb?rik=dRK0X0qJaNfiBQ&pid=ImgRaw&r=0"
             alt="senior portrait"
           />
