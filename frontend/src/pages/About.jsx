@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="flex">
-      <div className="flex-col-2 w-1/2 p-20">
+    <div className="">
+      <div className="max-w mx-auto grid md:grid-cols-2">
         <h1>a little about me,</h1>
         <h2>I'm Riley</h2>
         <p>
@@ -21,8 +21,8 @@ const About = () => {
       </div>
       <figure>
         <img
-          src="https://th.bing.com/th/id/R.0350b03b943792ab903d5784f72e165a?rik=snn4MpMRfubOxQ&riu=http%3a%2f%2fthispix.com%2fwp-content%2fuploads%2f2015%2f06%2fCopy-of-Edit-1798-1.jpg&ehk=23l8%2fpxrSUrkJ253xntAyozTzmtcMYBtQvc5KHnLk8s%3d&risl=&pid=ImgRaw&r=0"
-          className="mb-4 h-auto max-w-full rounded-lg align-middle leading-none shadow-lg"
+          src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/618d3a38120487.575690887ab46.jpg"
+          className="h-50 w-60 mb-4 rounded-lg shadow-lg"
           alt="..."
         />
       </figure>

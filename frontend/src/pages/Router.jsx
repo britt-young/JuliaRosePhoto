@@ -8,7 +8,7 @@ import Contact from "./Contact";
 
 const Router = () => {
   return (
-    <div>
+    <div className="mb-auto">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
