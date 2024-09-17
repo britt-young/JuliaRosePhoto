@@ -2,11 +2,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="">
-      <div className="max-w mx-auto grid md:grid-cols-2">
+    <div className="max-w mx-auto grid md:grid-cols-2">
+      <div className="p-5">
         <h1>a little about me,</h1>
-        <h2>I'm Riley</h2>
-        <p>
+        <h2 className="p-10 font-bold">I'm Riley</h2>
+        <p className="">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -19,14 +19,16 @@ const About = () => {
           check out my work
         </button>
       </div>
-      <figure>
-        <img
-          src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/618d3a38120487.575690887ab46.jpg"
-          className="h-50 w-60 mb-4 rounded-lg shadow-lg"
-          alt="..."
-        />
-      </figure>
+
       <div className="">
+        <figure>
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/618d3a38120487.575690887ab46.jpg"
+            className="h-50 w-60 mb-4 rounded-lg shadow-lg"
+            alt="..."
+          />
+        </figure>
+
         <div className="flex flex-cols-1 md:flex-cols-2 lg:flex-cols-4">
           <div className="relative mb-12 px-3 lg:mb-0">
             <div className="mb-2 flex justify-center">
@@ -41,8 +43,8 @@ const About = () => {
                 </svg>
               </span>
             </div>
-            <h5 className="mb-6 font-bold text-primary">100+</h5>
-            <h6 className="mb-0 font-normal dark:text-neutral-50">
+            <h5 className="mb-6 font-bold text-primary text-center">100+</h5>
+            <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">
               Senior Sessions
             </h6>
             <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
@@ -62,8 +64,8 @@ const About = () => {
                 </svg>
               </span>
             </div>
-            <h5 className="mb-6 font-bold text-primary">1 week</h5>
-            <h6 className="mb-0 font-normal dark:text-neutral-50">
+            <h5 className="mb-6 font-bold text-primary text-center">1 week</h5>
+            <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">
               Editing Timeline
             </h6>
             <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
@@ -85,8 +87,8 @@ const About = () => {
                 </svg>
               </span>
             </div>
-            <h5 className="mb-6 font-bold text-primary">100+</h5>
-            <h6 className="mb-0 font-normal dark:text-neutral-50">Fact #3</h6>
+            <h5 className="mb-6 font-bold text-primary text-center">100+</h5>
+            <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">Fact #3</h6>
             <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
           </div>
           <div className="relative mb-12 px-3 lg:mb-0">
@@ -106,8 +108,8 @@ const About = () => {
                 </svg>
               </span>
             </div>
-            <h5 className="mb-6 font-bold text-primary">28</h5>
-            <h6 className="mb-0 font-normal dark:text-neutral-50">Fact #4</h6>
+            <h5 className="mb-6 font-bold text-primary text-center">28</h5>
+            <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">Fact #4</h6>
           </div>
         </div>
       </div>

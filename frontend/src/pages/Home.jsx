@@ -10,8 +10,8 @@ const Home = () => {
   };
 
   return (
-    <div className=" bg-white h-screen w-full gap-2 grid grid-cols-1 lg:grid-cols-4">
-      <div className="py-5 px-10">
+    <div className="mt-10 bg-white h-auto w-full gap-2 grid grid-cols-1 lg:grid-cols-4">
+      <div className="my-auto mx-auto">
         <h1 className="text-3xl sm:text-4xl pb-5">
           Riley Addison Photography
         </h1>
