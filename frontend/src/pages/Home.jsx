@@ -1,4 +1,5 @@
 import React from "react";
+import PortfolioCards from "../Components/PortfolioCards";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -10,11 +11,9 @@ const Home = () => {
   };
 
   return (
-    <div className="mt-10 bg-white h-auto w-full gap-2 grid grid-cols-1 lg:grid-cols-4">
+    <div>
       <div className="my-auto mx-10">
-        <h1 className="text-3xl sm:text-4xl pb-5">
-          Riley Addison Photography
-        </h1>
+        <h1 className="text-3xl sm:text-4xl pb-5">Riley Addison Photography</h1>
         <p className="md:text-2xl text-md">Capturing every special moment</p>
         <p className="text-md pb-4">I love photography</p>
         <button
@@ -25,85 +24,9 @@ const Home = () => {
           see my portfolio
         </button>
       </div>
-
-      {/* portfolio cards */}
-      {/* First card */}
-      <figure className="relative w-full h-full flex p-1">
-        <img
-          className="object-cover object-center .max-w-full .h-auto flex-shrink"
-          src="https://cindyswansonphotography.com/wp-content/uploads/2019/01/10-8374-post/senior_portraits_in_dallas_for_guys_3.jpg"
-          alt="senior portrait"
-        />
-        <figcaption className="absolute bottom-4 inset-x-0 mx-4 flex-col lg:flex-row justify-between items-center rounded-xl border border-white bg-white/75 p-3 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm flex">
-          <div className="text-center md:text-left">
-            <h5 className="font-sans lg:text-xl text-base font-semibold leading-snug tracking-normal text-blue-gray-900 hidden sm:flex">
-              Senior Portrait
-            </h5>
-            <p className="mt-0 font-sans md:text-base text-sm font-normal leading-relaxed text-gray-700 hidden sm:flex">
-              Alex Bush
-            </p>
-            <button
-              onClick={handleClick}
-              type="button"
-              className="bg-white mt-1 py-1 px-3 md:text-base text-sm font-medium text-black rounded"
-            >
-              see more
-            </button>
-          </div>
-        </figcaption>
-      </figure>
-
-      {/* Second card */}
-      <figure className="relative w-full h-full flex p-1">
-        <img
-          className="object-cover object-center .max-w-full .h-auto flex-shrink"
-          src="https://www.mintarrow.com/wp-content/uploads/2021/12/RESIZED-Family-04278-1097x1536.jpg"
-          alt="family portrait"
-        />
-        <figcaption className="absolute bottom-4 inset-x-0 mx-4 flex-col lg:flex-row justify-between items-center rounded-xl border border-white bg-white/75 p-3 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm flex">
-          <div className="text-center md:text-left">
-            <h5 className="font-sans lg:text-xl text-base font-semibold leading-snug tracking-normal text-blue-gray-900 hidden sm:flex">
-              Family Portrait
-            </h5>
-            <p className="mt-0 font-sans md:text-base text-sm font-normal leading-relaxed text-gray-700 hidden sm:flex">
-              Johnson Family
-            </p>
-            <button
-              onClick={handleClick}
-              type="button"
-              className="bg-white mt-1 py-1 px-3 md:text-base text-sm font-medium text-black rounded"
-            >
-              see more
-            </button>
-          </div>
-        </figcaption>
-      </figure>
-
-      {/* Third card */}
-      <figure className="relative w-full h-full flex p-1">
-        <img
-          className="object-cover object-center .max-w-full .h-auto flex-shrink"
-          src="https://th.bing.com/th/id/R.b3a33c7d7b01415e22e1ac1a010009eb?rik=dRK0X0qJaNfiBQ&pid=ImgRaw&r=0"
-          alt="senior portrait"
-        />
-        <figcaption className="absolute bottom-4 inset-x-0 mx-4 flex-col lg:flex-row justify-between items-center rounded-xl border border-white bg-white/75 p-3 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm flex">
-          <div className="text-center md:text-left">
-            <h5 className="font-sans lg:text-xl text-base font-semibold leading-snug tracking-normal text-blue-gray-900 hidden sm:flex">
-              Senior Portrait
-            </h5>
-            <p className="mt-0 font-sans md:text-base text-sm font-normal leading-relaxed text-gray-700 hidden sm:flex">
-              Alex Bush
-            </p>
-            <button
-              onClick={handleClick}
-              type="button"
-              className="bg-white mt-1 py-1 px-3 md:text-base text-sm font-medium text-black rounded"
-            >
-              see more
-            </button>
-          </div>
-        </figcaption>
-      </figure>
+      <div>
+        <PortfolioCards/>
+      </div>
     </div>
   );
 };

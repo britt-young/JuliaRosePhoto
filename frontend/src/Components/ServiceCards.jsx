@@ -1,5 +1,9 @@
 import React from 'react'
 import { Collapse, initTWE } from "tw-elements";
+import family from "../assets/img/black-fam.jpg";
+import girl from "../assets/img/girl-senior.png";
+import boy from "../assets/img/senior-boy.png";
+import group from "../assets/img/osu-grad.png";
 
 initTWE({ Collapse });
 
@@ -11,11 +15,11 @@ const ServiceCards = () => {
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
             <img
               className="w-full"
-              src="/img/card-top.jpg"
+              src={boy}
               alt="Sunset in the mountains"
             ></img>
             <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <div className="font-bold text-xl mb-2">Senior Portraits</div>
               <p className="text-gray-700 text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus quia, nulla! Maiores et perferendis eaque,
@@ -24,13 +28,13 @@ const ServiceCards = () => {
             </div>
             <div className="px-6 pt-4 pb-2">
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #photography
+                #graduation
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #travel
+                #ALTgrads
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #winter
+                #CLASSOF2024
               </span>
             </div>
           </div>
@@ -41,11 +45,11 @@ const ServiceCards = () => {
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
             <img
               className="w-full"
-              src="/img/card-top.jpg"
+              src={family}
               alt="Sunset in the mountains"
             ></img>
             <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <div className="font-bold text-xl mb-2">Family Sessions</div>
               <p className="text-gray-700 text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus quia, nulla! Maiores et perferendis eaque,
@@ -57,10 +61,10 @@ const ServiceCards = () => {
                 #photography
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #travel
+                #family
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #winter
+                #atlantafamilysessions
               </span>
             </div>
           </div>
@@ -71,11 +75,11 @@ const ServiceCards = () => {
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
             <img
               className="w-full"
-              src="/img/card-top.jpg"
+              src={girl}
               alt="Sunset in the mountains"
             ></img>
             <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <div className="font-bold text-xl mb-2">Individual Sessions</div>
               <p className="text-gray-700 text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus quia, nulla! Maiores et perferendis eaque,
@@ -101,11 +105,11 @@ const ServiceCards = () => {
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
             <img
               className="w-full"
-              src="/img/card-top.jpg"
+              src={group}
               alt="Sunset in the mountains"
             ></img>
             <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <div className="font-bold text-xl mb-2">Couples & Group Sessions</div>
               <p className="text-gray-700 text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatibus quia, nulla! Maiores et perferendis eaque,
