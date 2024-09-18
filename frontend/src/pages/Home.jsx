@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div className="mt-10 bg-white h-auto w-full gap-2 grid grid-cols-1 lg:grid-cols-4">
-      <div className="my-auto mx-auto">
+      <div className="my-auto mx-10">
         <h1 className="text-3xl sm:text-4xl pb-5">
           Riley Addison Photography
         </h1>
