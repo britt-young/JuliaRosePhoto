@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="max-w mx-auto grid md:grid-cols-2">
+    <div className="h-100 max-w mx-auto grid md:grid-cols-2">
       <div className="p-5">
         <h1>a little about me,</h1>
         <h2 className="p-10 font-bold">I'm Riley</h2>
@@ -20,16 +20,16 @@ const About = () => {
         </button>
       </div>
 
-      <div className="">
+      <div className="mx-auto p-5">
         <figure>
           <img
             src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/618d3a38120487.575690887ab46.jpg"
-            className="h-50 w-60 mb-4 rounded-lg shadow-lg"
-            alt="..."
+            className="h-100 w-100 mb-4 shadow-lg"
+            alt="owner image"
           />
         </figure>
 
-        <div className="flex flex-cols-1 md:flex-cols-2 lg:flex-cols-4">
+        <div className="flex flex-cols-1 md:flex-cols-2 lg:flex-cols-4 justify-around divide-x divide-poppy">
           <div className="relative mb-12 px-3 lg:mb-0">
             <div className="mb-2 flex justify-center">
               <span className="text-primary">
@@ -49,6 +49,7 @@ const About = () => {
             </h6>
             <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
           </div>
+
           <div className="relative mb-12 px-3 lg:mb-0">
             <div className="mb-2 flex justify-center">
               <span className="text-primary">
