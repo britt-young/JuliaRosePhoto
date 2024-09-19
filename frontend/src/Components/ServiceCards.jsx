@@ -1,11 +1,11 @@
 import React from 'react'
-import { Collapse, initTWE } from "tw-elements";
+
 import family from "../assets/img/black-fam.jpg";
 import girl from "../assets/img/girl-senior.png";
 import boy from "../assets/img/senior-boy.png";
 import group from "../assets/img/osu-grad.png";
 
-initTWE({ Collapse });
+
 
 const ServiceCards = () => {
   return (
