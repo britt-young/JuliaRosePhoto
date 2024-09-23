@@ -12,7 +12,7 @@ const ServiceAccordion = () => {
       <Accordion>
         {/* first tab */}
         <AccordionPanel>
-          <AccordionTitle>STEP 1: Request Form</AccordionTitle>
+          <AccordionTitle>01. Request Form</AccordionTitle>
           <AccordionContent>
             <p className="text-gray-600 dark:text-gray-600">
               Go to the&nbsp;
@@ -30,7 +30,7 @@ const ServiceAccordion = () => {
 
         {/* second tab */}
         <AccordionPanel>
-          <AccordionTitle>STEP 2: Consultation</AccordionTitle>
+          <AccordionTitle>02. Consultation</AccordionTitle>
           <AccordionContent>
             <p className="mb-2 text-gray-600 dark:text-gray-600">
               I'll reach out to you to discuss your vision for the session and
@@ -57,7 +57,7 @@ const ServiceAccordion = () => {
 
         {/* third tab */}
         <AccordionPanel>
-          <AccordionTitle>STEP 3: Payment</AccordionTitle>
+          <AccordionTitle>03. Payment</AccordionTitle>
           <AccordionContent>
             <p className="mb-2 text-gray-500 dark:text-gray-400">
               Once we reserve your session date & time, I'll send you an invoice for 50% of the session fee. The remaining balance is due the day of the session.

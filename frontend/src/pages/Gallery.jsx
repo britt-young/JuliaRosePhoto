@@ -1,8 +1,11 @@
 import React from 'react'
+import GalleryMix from '../Components/GalleryMix'
 
 const Gallery = () => {
   return (
-    <div>Gallery</div>
+    <div>
+      <GalleryMix />
+    </div>
   )
 }
 
