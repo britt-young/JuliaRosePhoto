@@ -28,7 +28,7 @@ const ServiceCards = () => {
             </div>
             <div className="px-6 pt-4 pb-2">
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #graduation
+                #RamsetPark
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                 #ALTgrads
@@ -58,13 +58,13 @@ const ServiceCards = () => {
             </div>
             <div className="px-6 pt-4 pb-2">
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #photography
+                #FallsCreekPark
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #family
+                #MomentoMoments
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #atlantafamilysessions
+                #AtlantaFamilySessions
               </span>
             </div>
           </div>
@@ -88,13 +88,13 @@ const ServiceCards = () => {
             </div>
             <div className="px-6 pt-4 pb-2">
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #photography
+                #TallahasseeBotanicalGardens
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #travel
+                #SeniorSessions
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #winter
+                #SpringSessions
               </span>
             </div>
           </div>
@@ -118,13 +118,13 @@ const ServiceCards = () => {
             </div>
             <div className="px-6 pt-4 pb-2">
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #photography
+                #TheOhioState
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #travel
+                #TheShoe
               </span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #winter
+                #graduationday
               </span>
             </div>
           </div>
