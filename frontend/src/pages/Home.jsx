@@ -11,8 +11,8 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <div className="my-auto mx-10">
+    <div className="flex flex-row">
+      <div className="basis-3/5 my-auto mx-10">
         <h1 className="text-3xl sm:text-4xl pb-5">Riley Addison Photography</h1>
         <p className="md:text-2xl text-md">Capturing every special moment</p>
         <p className="text-md pb-4">I love photography</p>
