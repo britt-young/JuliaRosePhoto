@@ -1,8 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/Gallery");
+    console.log("Button clicked");
+  };
+
   return (
     <div className="h-100 max-w mx-auto grid md:grid-cols-2">
+      {/* left side */}
       <div className="p-5">
         <h1>a little about me,</h1>
         <h2 className="p-10 font-bold">I'm Riley</h2>
@@ -15,11 +24,17 @@ const About = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <button className="bg-bblue rounded-lg px-2 py-1 shadow-md mt-4">
+        <button
+          onClick={handleClick}
+          type="button"
+          className="bg-bblue rounded-lg px-2 py-1 shadow-md mt-4"
+        >
           check out my work
         </button>
       </div>
 
+{/* right side */}
+{/* profile image */}
       <div className="mx-auto p-5">
         <figure>
           <img
@@ -29,6 +44,7 @@ const About = () => {
           />
         </figure>
 
+{/* facts display */}
         <div className="flex flex-cols-1 md:flex-cols-2 lg:flex-cols-4 justify-around divide-x divide-poppy">
           <div className="relative mb-12 px-3 lg:mb-0">
             <div className="mb-2 flex justify-center">
@@ -89,7 +105,9 @@ const About = () => {
               </span>
             </div>
             <h5 className="mb-6 font-bold text-primary text-center">100+</h5>
-            <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">Fact #3</h6>
+            <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">
+              Fact #3
+            </h6>
             <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
           </div>
           <div className="relative mb-12 px-3 lg:mb-0">
@@ -110,7 +128,9 @@ const About = () => {
               </span>
             </div>
             <h5 className="mb-6 font-bold text-primary text-center">28</h5>
-            <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">Fact #4</h6>
+            <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">
+              Fact #4
+            </h6>
           </div>
         </div>
       </div>
