@@ -6,7 +6,7 @@ import HomeIntro from "../Components/HomeIntro";
 const Home = () => {
   return (
     <div className="flex items-center flex-row m-5">
-      <div>
+      <div className="flex basis-3/5">
         <HomeIntro />
       </div>
       <div>
