@@ -13,6 +13,11 @@ export default {
       white: "#ffffff",
       black: "#000000",
     },
+    fontFamily: {
+      title: ["Inter", "sans-serif"],
+      subTitle: ["Roboto", "sans-serif"],
+      body: ["Open Sans", "sans-serif"],
+    },
     extend: {},
   },
   plugins: [
