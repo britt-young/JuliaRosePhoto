@@ -50,7 +50,7 @@ const Nav = () => {
   );
 
   return (
-    <nav className="">
+    <nav className="font-body">
       <div className="h-10h flex justify-between items-center z-50 text-white lg:py-1 px-20">
 
         {/* Logo Section */}

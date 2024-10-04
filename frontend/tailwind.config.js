@@ -14,9 +14,8 @@ export default {
       black: "#000000",
     },
     fontFamily: {
-      title: ["Yeseva One", "serif"],
-      subTitle: ["Josefin Sans", "system-ui"],
-      body: ["Josefin Sans", "system-ui"],
+      title: ["Sarina", "cursive"],
+      body: ["Poppins", "sans-serif"],
     },
     extend: {},
   },
