@@ -14,9 +14,9 @@ export default {
       black: "#000000",
     },
     fontFamily: {
-      title: ["Inter", "sans-serif"],
-      subTitle: ["Roboto", "sans-serif"],
-      body: ["Open Sans", "sans-serif"],
+      title: ["Yeseva One", "serif"],
+      subTitle: ["Josefin Sans", "system-ui"],
+      body: ["Josefin Sans", "system-ui"],
     },
     extend: {},
   },

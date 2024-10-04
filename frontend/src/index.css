@@ -2,16 +2,9 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/*REPLACE WITH ACTUAL FONTS*/
-@layer base {
-  @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(/fonts/Roboto.woff2) format('woff2');
-  }
-}
+/* google font import */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&family=Yeseva+One&display=swap');
+
 
 /*Base styles for mobile devices
 @media (max-width: 425px) {
