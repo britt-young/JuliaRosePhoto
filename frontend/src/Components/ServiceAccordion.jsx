@@ -14,11 +14,11 @@ const ServiceAccordion = () => {
         <AccordionPanel>
           <AccordionTitle>01. Request Form</AccordionTitle>
           <AccordionContent>
-            <p className="text-gray-600 dark:text-gray-600">
+            <p className="text-black">
               Go to the&nbsp;
               <a
                 href="/Contact"
-                className="text-white hover:underline dark:text-cyan-500"
+                className="text-darkRose hover:underline"
               >
                 contact&nbsp;
               </a>
@@ -32,21 +32,21 @@ const ServiceAccordion = () => {
         <AccordionPanel>
           <AccordionTitle>02. Consultation</AccordionTitle>
           <AccordionContent>
-            <p className="mb-2 text-gray-600 dark:text-gray-600">
+            <p className="mb-2 text-black">
               I'll reach out to you to discuss your vision for the session and
               different location options
             </p>
-            <p className="mb-2 text-gray-500 dark:text-gray-400">
+            <p className="mb-2 text-black">
             Common questions to think about are:
             </p>
-            <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400">
+            <ul className="list-disc pl-5 text-black">
               <li>Location </li>
               <li>Session Theme</li>
               <li>
                 <a
                   href="https://tailwindui.com/"
                   rel="nofollow"
-                  className="text-cyan-600 hover:underline dark:text-cyan-500"
+                  className="text-darkRose hover:underline"
                 >
                   Link for other shiz
                 </a>
@@ -59,13 +59,13 @@ const ServiceAccordion = () => {
         <AccordionPanel>
           <AccordionTitle>03. Payment</AccordionTitle>
           <AccordionContent>
-            <p className="mb-2 text-gray-500 dark:text-gray-400">
+            <p className="mb-2 text-black">
               Once we reserve your session date & time, I'll send you an invoice for 50% of the session fee. The remaining balance is due the day of the session.
             </p>
-            <p className="mb-2 text-gray-500 dark:text-gray-400">
+            <p className="mb-2 text-black">
               I take the following forms of payments:
             </p>
-            <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400">
+            <ul className="list-disc pl-5 text-black">
               <li>Cash</li>
               <li>Venmo</li>
               <li>Zelle</li>

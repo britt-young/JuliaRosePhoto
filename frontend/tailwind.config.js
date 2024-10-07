@@ -5,17 +5,16 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", flowbite.content(),],
   theme: {
     colors: {
-      lilac: "#d9add1",
-      poppy: "#f26728",
-      flamingo: "#f69593",
-      bblue: "#cbcadc",
-      olive: "#aea434",
-      white: "#ffffff",
+      darkRose: "#664242",
+      lightRose: "#AE8381",
+      purp: "#74676F",
+      nude: "#D0BCB1",
+      pale: "#E8DCD6",
       black: "#000000",
     },
     fontFamily: {
       title: ["Sarina", "cursive"],
-      body: ["Poppins", "sans-serif"],
+      body: ["", "sans-serif"],
     },
     extend: {},
   },

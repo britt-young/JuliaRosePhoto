@@ -10,7 +10,7 @@ const PortfolioCards = () => {
   };
 
   return (
-    <div className="bg-white h-auto w-full gap-2 grid grid-cols-1 lg:grid-cols-3">
+    <div className="h-auto w-full gap-2 grid grid-cols-1 lg:grid-cols-3">
       {/* portfolio cards */}
 
       {/* First card */}

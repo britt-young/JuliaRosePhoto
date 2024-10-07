@@ -18,7 +18,7 @@ const HomeIntro = () => {
         <button
           onClick={handleClick}
           type="button"
-          className="font-body text-sm bg-bblue rounded-lg px-2 py-1 shadow-md mt-4 text-black"
+          className="font-body text-sm bg-purp rounded-lg px-2 py-1 shadow-md mt-4 text-black"
         >
           see my portfolio
         </button>

@@ -3,7 +3,7 @@ import GalleryMix from '../Components/GalleryMix'
 
 const Gallery = () => {
   return (
-    <div>
+    <div className="">
       <GalleryMix />
     </div>
   )

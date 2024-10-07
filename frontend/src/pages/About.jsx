@@ -27,7 +27,7 @@ const About = () => {
         <button
           onClick={handleClick}
           type="button"
-          className="bg-bblue rounded-lg px-2 py-1 shadow-md mt-4 font-body"
+          className="bg-purp rounded-lg px-2 py-1 shadow-md mt-4 font-body"
         >
           check out my work
         </button>
