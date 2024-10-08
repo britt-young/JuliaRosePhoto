@@ -6,7 +6,7 @@ import Footer from "./Components/Footer";
 
 const App = () => {
   return (
-    <div className="bg-red-500 flex flex-col h-screen">
+    <div className="bg-pale flex flex-col min-h-screen">
       <BrowserRouter>
         {/* div below contains container tailwindcss */}
         <div className="bg-purp p-4">

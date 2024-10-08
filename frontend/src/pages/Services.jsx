@@ -12,7 +12,7 @@ const Services = () => {
   };
 
   return (
-    <div className="w-full h-100">
+    <div className="w-full">
       <div>
         <ServiceCards />
       </div>
