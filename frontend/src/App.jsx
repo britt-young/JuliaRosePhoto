@@ -9,7 +9,7 @@ const App = () => {
     <div className="bg-pale flex flex-col min-h-screen">
       <BrowserRouter>
         {/* div below contains container tailwindcss */}
-        <div className="bg-purp p-4">
+        <div className="bg-pink-300 p-4">
           <Nav />
         </div>
         {/* main content should take up remaining space */}

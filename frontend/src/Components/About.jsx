@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import owner from "../assets/img/owner.jpg";
 
 const About = () => {
   const navigate = useNavigate();
@@ -10,42 +11,43 @@ const About = () => {
   };
 
   return (
-    <div className="h-100 max-w mx-auto grid md:grid-cols-2">
+    <div className="bg-white h-100 max-w mx-auto grid md:grid-cols-2">
       {/* left side */}
-      <div className="p-5">
-        <h1 className="font-body">ABOUT</h1>
-        <h2 className="p-10 font-bold font-title">Hi,</h2>
-        <p className="font-body">
-          I'm Riley! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <button
-          onClick={handleClick}
-          type="button"
-          className="bg-purp rounded-lg px-2 py-1 shadow-md mt-4 font-body"
-        >
-          check out my work
-        </button>
-      </div>
-
-{/* right side */}
-{/* profile image */}
+      {/* profile image */}
       <div className="mx-auto p-5">
-        <figure>
+        <figure className="m-20">
           <img
-            src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/618d3a38120487.575690887ab46.jpg"
-            className="h-100 w-100 mb-4 shadow-lg"
+            src={owner}
+            className="h-100 w-100 shadow-lg rounded-full"
             alt="owner image"
           />
         </figure>
+      </div>
 
-{/* facts display */}
-        <div className="flex flex-cols-1 md:flex-cols-2 lg:flex-cols-4 justify-around divide-x divide-poppy">
+      {/* right side */}
+      <div className="flex flex-col">
+        <div className="p-5 m-40 content-center">
+          <h2 className="font-bold text-4xl font-title">Hi, I'm Riley!</h2>
+          <p className="font-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <button
+            onClick={handleClick}
+            type="button"
+            className="bg-pink-300 text-white rounded-lg px-2 py-1 shadow-md mt-4"
+          >
+            check out my work
+          </button>
+        </div>
+
+        {/* facts display */}
+        <div className="flex flex-cols-1 md:flex-cols-2 lg:flex-cols-4 justify-evenly">
           <div className="relative mb-12 px-3 lg:mb-0">
             <div className="mb-2 flex justify-center">
               <span className="font-body">
@@ -53,7 +55,7 @@ const About = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="h-14 w-14"
+                  className="h-7 w-7"
                 >
                   <path d="M12.378 1.602a.75.75 0 00-.756 0L3 6.632l9 5.25 9-5.25-8.622-5.03zM21.75 7.93l-9 5.25v9l8.628-5.032a.75.75 0 00.372-.648V7.93zM11.25 22.18v-9l-9-5.25v8.57a.75.75 0 00.372.648l8.628 5.033z" />
                 </svg>
@@ -73,7 +75,7 @@ const About = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="h-14 w-14"
+                  className="h-7 w-7"
                 >
                   <path d="M11.644 1.59a.75.75 0 01.712 0l9.75 5.25a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.712 0l-9.75-5.25a.75.75 0 010-1.32l9.75-5.25z" />
                   <path d="M3.265 10.602l7.668 4.129a2.25 2.25 0 002.134 0l7.668-4.13 1.37.739a.75.75 0 010 1.32l-9.75 5.25a.75.75 0 01-.71 0l-9.75-5.25a.75.75 0 010-1.32l1.37-.738z" />
@@ -94,7 +96,7 @@ const About = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="h-14 w-14"
+                  className="h-7 w-7"
                 >
                   <path
                     fillRule="evenodd"
@@ -117,7 +119,7 @@ const About = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="h-14 w-14"
+                  className="h-7 w-7"
                 >
                   <path
                     fillRule="evenodd"
