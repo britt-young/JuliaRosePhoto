@@ -16,13 +16,13 @@ const Services = () => {
       <div>
         <ServiceCards />
       </div>
-      <div className="bg-pale flex flex-row h-auto">
+      <div className="bg-white flex flex-row h-auto">
         <div className="basis-2/5 flex flex-col items-center justify-center">
           <h1 className="pt-10 font-bold">BOOK A SESSION WITH ME!</h1>
           <button
             onClick={handleClick}
             type="button"
-            className="text-sm bg-darkRose rounded-lg px-2 py-1 shadow-md text-black"
+            className="text-sm bg-pink-300 rounded-lg px-2 py-1 shadow-md text-black"
           >
             schedule now
           </button>

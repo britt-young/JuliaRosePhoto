@@ -9,16 +9,21 @@ import {
 const ServiceAccordion = () => {
   return (
     <div>
+      <div>
+        <h2 className="text-md text-black font-bold ml-10">
+          HOW IT WORKS:
+        </h2>
+      </div>
       <Accordion>
         {/* first tab */}
         <AccordionPanel>
-          <AccordionTitle>01. Request Form</AccordionTitle>
+          <AccordionTitle className="bg-pink-100 text-black">01. Request Form</AccordionTitle>
           <AccordionContent>
             <p className="text-black">
               Go to the&nbsp;
               <a
                 href="/Contact"
-                className="text-darkRose hover:underline"
+                className="text-pink-300 hover:text-pink-600"
               >
                 contact&nbsp;
               </a>
@@ -30,7 +35,7 @@ const ServiceAccordion = () => {
 
         {/* second tab */}
         <AccordionPanel>
-          <AccordionTitle>02. Consultation</AccordionTitle>
+          <AccordionTitle className="bg-pink-200 text-black">02. Consultation</AccordionTitle>
           <AccordionContent>
             <p className="mb-2 text-black">
               I'll reach out to you to discuss your vision for the session and
@@ -46,7 +51,7 @@ const ServiceAccordion = () => {
                 <a
                   href="https://tailwindui.com/"
                   rel="nofollow"
-                  className="text-darkRose hover:underline"
+                  className="text-pink-300 hover:text-pink-600"
                 >
                   Link for other shiz
                 </a>
@@ -57,7 +62,7 @@ const ServiceAccordion = () => {
 
         {/* third tab */}
         <AccordionPanel>
-          <AccordionTitle>03. Payment</AccordionTitle>
+          <AccordionTitle className="bg-pink-300 text-black">03. Payment</AccordionTitle>
           <AccordionContent>
             <p className="mb-2 text-black">
               Once we reserve your session date & time, I'll send you an invoice for 50% of the session fee. The remaining balance is due the day of the session.
@@ -72,6 +77,25 @@ const ServiceAccordion = () => {
             </ul>
           </AccordionContent>
         </AccordionPanel>
+
+{/* fourth tab */}
+<AccordionPanel>
+          <AccordionTitle className="bg-pink-400 text-black">04. Sneak Peeks & Gallery Access</AccordionTitle>
+          <AccordionContent>
+            <p className="mb-2 text-black">
+              Once we reserve your session date & time, I'll send you an invoice for 50% of the session fee. The remaining balance is due the day of the session.
+            </p>
+            <p className="mb-2 text-black">
+              I take the following forms of payments:
+            </p>
+            <ul className="list-disc pl-5 text-black">
+              <li>Cash</li>
+              <li>Venmo</li>
+              <li>Zelle</li>
+            </ul>
+          </AccordionContent>
+        </AccordionPanel>
+
       </Accordion>
     </div>
   );
