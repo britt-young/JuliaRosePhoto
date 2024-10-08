@@ -6,15 +6,15 @@ import About from "../Components/About";
 const Home = () => {
   return (
     <div>
-      <div className="flex items-center flex-row flex-wrap lg:flex-nowrap mx-5 my-20">
-        <div className="flex basis-3/5">
+      <div className="flex items-center flex-col flex-wrap lg:flex-nowrap mx-5 my-10">
+        <div className="w-full">
           <HomeIntro />
         </div>
-        <div className="flex justify-center">
+        <div className="">
           <PortfolioCards />
         </div>
       </div>
-      <div>
+      <div className="m-10 shadow-lg">
         <About />
       </div>
     </div>

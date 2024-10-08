@@ -11,23 +11,23 @@ const About = () => {
   };
 
   return (
-    <div className="bg-white h-100 max-w mx-auto grid md:grid-cols-2">
+    <div className="bg-white shadow-xl shadow-pink-100 h-100 max-w mx-auto grid md:grid-cols-2">
       {/* left side */}
       {/* profile image */}
       <div className="mx-auto p-5">
         <figure className="m-20">
           <img
             src={owner}
-            className="h-100 w-100 shadow-lg rounded-full"
+            className="h-100 w-100 shadow-lg shadow-black/55 rounded-xl"
             alt="owner image"
           />
         </figure>
       </div>
 
       {/* right side */}
-      <div className="flex flex-col">
-        <div className="p-5 m-40 content-center">
-          <h2 className="font-bold text-4xl font-title">Hi, I'm Riley!</h2>
+      <div className="flex justify-around flex-col">
+        <div className="p-5 content-center">
+          <h2 className="font-bold text-4xl font-title mb-10">Hi, I'm Riley!</h2>
           <p className="font-body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -61,9 +61,9 @@ const About = () => {
                 </svg>
               </span>
             </div>
-            <h5 className="font-body mb-6 font-bold  text-center">100+</h5>
+            <h5 className="font-body mb-2 font-bold  text-center">100+</h5>
             <h6 className="font-body mb-0 font-normal dark:text-neutral-50 text-center">
-              Senior Sessions
+              sessions shot
             </h6>
             <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
           </div>
@@ -83,9 +83,9 @@ const About = () => {
                 </svg>
               </span>
             </div>
-            <h5 className="mb-6 font-bold font-body text-center">1 week</h5>
+            <h5 className="mb-2 font-bold font-body text-center">48 HR</h5>
             <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">
-              Editing Timeline
+              sneak peek turn-around
             </h6>
             <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
           </div>
@@ -106,9 +106,9 @@ const About = () => {
                 </svg>
               </span>
             </div>
-            <h5 className="mb-6 font-bold font-body text-center">100+</h5>
+            <h5 className="mb-2 font-bold font-body text-center">50+</h5>
             <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">
-              Fact #3
+              five star reviews
             </h6>
             <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
           </div>
@@ -129,9 +129,9 @@ const About = () => {
                 </svg>
               </span>
             </div>
-            <h5 className="mb-6 font-bold font-body text-center">28</h5>
+            <h5 className="mb-2 font-bold font-body text-center">editing style</h5>
             <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">
-              Fact #4
+              natural-soft
             </h6>
           </div>
         </div>
