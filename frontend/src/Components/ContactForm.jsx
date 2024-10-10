@@ -1,93 +1,232 @@
-import React from 'react'
-// Initialization for ES Users
-import { Ripple, Input, initTWE } from "tw-elements";
-
-initTWE({ Ripple, Input });
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+ // state to track which checkbox is selected
+ // default selected session (could be "seniors", "couples", or "family")
+ const [selectedSession, setSelectedSession] = useState("seniors");
+
+ // update the selected session when a checkbox is clicked
+ const handleChange = (session) => {
+   setSelectedSession(session);
+ };
+
+  const form = useRef();
+  const [formStatus, setFormStatus] = useState(null);
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+
+    // basic validation
+    const formData = new FormData(form.current);
+    if (
+      !formData.get("user_name") ||
+      !formData.get("user_email") ||
+      !formData.get("message")
+    ) {
+      setFormStatus("All fields are required.");
+      return;
+    }
+
+    // replace with owner emailjs.js infomation
+    try {
+      const response = await emailjs.sendForm(
+        "service_53ecpnp",
+        "template_lkmqk12",
+        form.current,
+        { publicKey: "G_2EUKwm4DuLTm0pd" }
+      );
+      console.log("Message sent successfully", response);
+      setFormStatus("Message Sent!");
+      // reset the form after a successful submission
+      form.current.reset();
+    } catch (error) {
+      console.error("Message sending failed", error.text);
+      setFormStatus("Message sending failed. Please try again.");
+    }
+  };
+
   return (
-    <div className="flex flex-row">
-      <div className="basis-3/5 flex justify-center my-5">
-        <div className="block max-w-md rounded-lg bg-pale bg-opacity-50 p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-          <form>
-            {/* Name input */}
-            <div className="relative mb-6" data-twe-input-wrapper-init>
-              <input
-                type="text"
-                className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
-                id="exampleInput7"
-                placeholder="Name"
-              />
-              <label
-                htmlFor="exampleInput7"
-                className="font-body pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-              >
-                Name
-              </label>
-            </div>
+    <div>
+      <h1>Ask Me Anything!</h1>
+      <div className="flex justify-center w-1/2 m-5 p-5 shadow-lg">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="flex flex-col w-full gap-4"
+        >
+          {/* <label htmlFor="user_name">Name</label> */}
+          <input
+            type="text"
+            placeholder="Name"
+            name="user_name"
+            id="user_name"
+            className="border p-2"
+          />
 
-            {/* Email input */}
-            <div className="relative mb-6" data-twe-input-wrapper-init>
-              <input
-                type="email"
-                className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
-                id="exampleInput8"
-                placeholder="Email address"
-              />
-              <label
-                htmlFor="exampleInput8"
-                className="font-body pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-              >
-                Email address
-              </label>
-            </div>
+          {/* <label htmlFor="user_email">Email</label> */}
+          <input
+            type="email"
+            placeholder="E-mail"
+            name="user_email"
+            id="user_email"
+            className="border p-2"
+          />
 
-            {/* Message textarea */}
-            <div className="relative mb-6" data-twe-input-wrapper-init>
-              <textarea
-                className="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
-                id="exampleFormControlTextarea13"
-                rows="3"
-                placeholder="Message"
-              ></textarea>
-              <label
-                htmlFor="exampleFormControlTextarea13"
-                className="font-body pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-              >
-                Message
-              </label>
-            </div>
+          {/* <label htmlFor="message">Message</label> */}
+          <textarea
+            placeholder="Type your message here"
+            name="message"
+            id="message"
+            className="border py-2"
+            rows="4"
+          />
 
-            {/* Checkbox */}
-            <div className="mb-6 flex min-h-[1.5rem] items-center justify-center ps-[1.5rem]">
-              <input
-                className="relative float-left -ms-[1.5rem] me-[6px] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ms-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-s-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ms-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-s-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
-                type="checkbox"
-                value=""
-                id="exampleCheck10"
-              />
-              <label
-                className="font-body inline-block ps-[0.15rem] hover:cursor-pointer"
-                htmlFor="exampleCheck10"
-              >
-                Send me a copy of this message
-              </label>
-            </div>
-
-            {/* Submit button */}
-            <button
-              type="submit"
-              className="font-body dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]] inline-block w-full rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-              data-twe-ripple-init
-              data-twe-ripple-color="light"
+          {/* session type selctor */}
+          <div className="inline-flex items-start">
+            <label
+              className="flex items-start cursor-pointer relative"
+              htmlFor="check-seniors"
             >
-              Send
-            </button>
-          </form>
-        </div>
+              <input
+                type="checkbox"
+                checked={selectedSession === "seniors"} // Only checked if "seniors" is selected
+                onChange={() => handleChange("seniors")} // Set to "seniors" when clicked
+                className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-pink-600 checked:border-pink-600"
+                id="check-seniors"
+              />
+              <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-3.5 w-3.5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+            </label>
+            <label
+              className="cursor-pointer ml-2 text-slate-600 text-sm"
+              htmlFor="check-seniors"
+            >
+              <div>
+                <p className="font-medium">Seniors</p>
+                <p className="text-slate-500">Single person session</p>
+              </div>
+            </label>
+          </div>
+
+          {/* Couples */}
+          <div className="inline-flex items-start">
+            <label
+              className="flex items-start cursor-pointer relative"
+              htmlFor="check-couples"
+            >
+              <input
+                type="checkbox"
+                checked={selectedSession === "couples"} // Only checked if "couples" is selected
+                onChange={() => handleChange("couples")} // Set to "couples" when clicked
+                className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-pink-600 checked:border-pink-600"
+                id="check-couples"
+              />
+              <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-3.5 w-3.5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+            </label>
+            <label
+              className="cursor-pointer ml-2 text-slate-600 text-sm"
+              htmlFor="check-couples"
+            >
+              <div>
+                <p className="font-medium">Couples</p>
+                <p className="text-slate-500">Two (2) person session</p>
+              </div>
+            </label>
+          </div>
+
+          {/* Family */}
+          <div className="inline-flex items-start">
+            <label
+              className="flex items-start cursor-pointer relative"
+              htmlFor="check-family"
+            >
+              <input
+                type="checkbox"
+                checked={selectedSession === "family"} // Only checked if "family" is selected
+                onChange={() => handleChange("family")} // Set to "family" when clicked
+                className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-pink-600 checked:border-pink-600"
+                id="check-family"
+              />
+              <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-3.5 w-3.5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+              <label
+                className="cursor-pointer ml-2 text-slate-600 text-sm"
+                htmlFor="check-family"
+              >
+                <div>
+                  <p className="font-medium">Family</p>
+                  <p className="text-slate-500">
+                    Three (3) or more person session (8 max.)
+                  </p>
+                </div>
+              </label>
+            </div>
+
+          <button type="submit" className="bg-pink-200 text-white p-2 rounded">
+            Send
+          </button>
+
+          {formStatus && (
+            <div
+              className={`mt-4 ${
+                formStatus.includes("failed") ||
+                formStatus === "All fields are required."
+                  ? "text-red-500"
+                  : "text-green-500"
+              }`}
+            >
+              {formStatus}
+            </div>
+          )}
+        </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;
