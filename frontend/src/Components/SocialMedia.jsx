@@ -8,11 +8,10 @@ const SocialMedia = () => {
         {/* facebook icon */}
         <button className="bg-blue-50 cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-indigo-200">
           <a
-            href="https://www.instagram.com/rileyaddisonphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            href="https://www.facebook.com"
             target="_blank"
           >
             <svg
-              className=""
               xmlns="http://www.w3.org/2000/svg"
               width="48"
               height="48"
@@ -86,7 +85,7 @@ const SocialMedia = () => {
         {/* twitter icon */}
         <button className="cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-indigo-200">
           <a
-            href="https://www.instagram.com/rileyaddisonphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            href="https://www.twitter.com"
             target="_blank"
           >
             <svg
@@ -114,7 +113,7 @@ const SocialMedia = () => {
         {/* tiktok icon */}
         <button className="w-12 h-12 flex items-center justify-center bg-gray-100 cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-indigo-200">
           <a
-            href="https://www.instagram.com/rileyaddisonphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            href="https://www.tiktok.com"
             target="_blank"
           >
             <svg
@@ -149,7 +148,7 @@ const SocialMedia = () => {
         {/* linkedIn icon */}
         <button className="cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-blue-200">
           <a
-            href="https://www.instagram.com/rileyaddisonphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            href="https://www.linkedIn.com"
             target="_blank"
           >
             <svg
@@ -172,43 +171,6 @@ const SocialMedia = () => {
                 clipRule="evenodd"
                 d="M24.6975 21.5618C22.6561 21.5618 21 23.1674 21 25.1456V68.0091C21 69.9875 22.6563 71.5918 24.6975 71.5918H67.3325C69.3747 71.5918 71.03 69.9873 71.03 68.0086V25.1456C71.03 23.1674 69.3747 21.5618 67.3325 21.5618H24.6975ZM36.2032 40.9068V63.4304H28.7167V40.9068H36.2032ZM36.6967 33.9411C36.6967 36.1025 35.0717 37.8321 32.4615 37.8321L32.4609 37.8319H32.4124C29.8998 37.8319 28.2754 36.1023 28.2754 33.9409C28.2754 31.7304 29.9489 30.0491 32.5111 30.0491C35.0717 30.0491 36.6478 31.7304 36.6967 33.9411ZM47.833 63.4304H40.3471L40.3469 63.4312C40.3469 63.4312 40.4452 43.0205 40.3475 40.9075H47.8336V44.0957C48.8288 42.5613 50.6098 40.3787 54.5808 40.3787C59.5062 40.3787 63.1991 43.598 63.1991 50.516V63.4304H55.7133V51.3822C55.7133 48.354 54.6293 46.2887 51.921 46.2887C49.8524 46.2887 48.6206 47.6815 48.0796 49.0271C47.8819 49.5072 47.833 50.1813 47.833 50.8535V63.4304Z"
                 fill="#006699"
-              />
-            </svg>
-          </a>
-        </button>
-
-        {/* gmail icon */}
-        <button className="w-12 h-12 flex items-center justify-center bg-gray-100 cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-blue-200">
-          <a
-            href="https://www.instagram.com/rileyaddisonphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            target="_blank"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 54 41"
-              fill="none"
-            >
-              <path
-                d="M4.00654 40.1236H12.4893V19.5227L0.371094 10.4341V36.4881C0.371094 38.4997 2.00099 40.1236 4.00654 40.1236Z"
-                fill="#4285F4"
-              />
-              <path
-                d="M41.5732 40.1236H50.056C52.0676 40.1236 53.6914 38.4937 53.6914 36.4881V10.4341L41.5732 19.5227"
-                fill="#34A853"
-              />
-              <path
-                d="M41.5732 3.7693V19.5229L53.6914 10.4343V5.58702C53.6914 1.09118 48.5594 -1.47181 44.9663 1.22448"
-                fill="#FBBC04"
-              />
-              <path
-                d="M12.4893 19.5227V3.76904L27.0311 14.6754L41.5729 3.76904V19.5227L27.0311 30.429"
-                fill="#EA4335"
-              />
-              <path
-                d="M0.371094 5.58702V10.4343L12.4893 19.5229V3.7693L9.09617 1.22448C5.49708 -1.47181 0.371094 1.09118 0.371094 5.58702Z"
-                fill="#C5221F"
               />
             </svg>
           </a>
