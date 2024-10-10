@@ -15,10 +15,10 @@ const About = () => {
       {/* left side */}
       {/* profile image */}
       <div className="mx-auto p-5">
-        <figure className="m-40">
+        <figure className="">
           <img
             src={owner}
-            className=" w-full h-full shadow-lg shadow-black/55 rounded-full"
+            className="w-auto h-auto shadow-lg shadow-black/55 rounded-full"
             alt="owner image"
           />
         </figure>
@@ -26,8 +26,10 @@ const About = () => {
 
       {/* right side */}
       <div className="flex justify-around flex-col">
-        <div className="p-5 content-center">
-          <h2 className="font-bold text-4xl font-title mb-10">Hi, I'm Riley!</h2>
+        <div className="p-5">
+          <h2 className="font-bold text-4xl font-title mb-10">
+            Hi, I'm Riley!
+          </h2>
           <p className="font-body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -37,13 +39,15 @@ const About = () => {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <button
-            onClick={handleClick}
-            type="button"
-            className="bg-pink-300 text-white rounded-lg px-2 py-1 shadow-md mt-4"
-          >
-            check out my work
-          </button>
+          <div className="flex justify-center">
+            <button
+              onClick={handleClick}
+              type="button"
+              className="bg-pink-300 text-white rounded-lg px-2 py-1 shadow-md mt-4"
+            >
+              check out my work
+            </button>
+          </div>
         </div>
 
         {/* facts display */}
@@ -129,7 +133,9 @@ const About = () => {
                 </svg>
               </span>
             </div>
-            <h5 className="mb-2 font-bold font-body text-center">editing style</h5>
+            <h5 className="mb-2 font-bold font-body text-center">
+              editing style
+            </h5>
             <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">
               natural-soft
             </h6>

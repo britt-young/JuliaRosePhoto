@@ -2,14 +2,14 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
- // state to track which checkbox is selected
- // default selected session (could be "seniors", "couples", or "family")
- const [selectedSession, setSelectedSession] = useState("seniors");
+  // state to track which checkbox is selected
+  // default selected session (could be "seniors", "couples", or "family")
+  const [selectedSession, setSelectedSession] = useState("seniors");
 
- // update the selected session when a checkbox is clicked
- const handleChange = (session) => {
-   setSelectedSession(session);
- };
+  // update the selected session when a checkbox is clicked
+  const handleChange = (session) => {
+    setSelectedSession(session);
+  };
 
   const form = useRef();
   const [formStatus, setFormStatus] = useState(null);
@@ -47,9 +47,9 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
-      <h1>Ask Me Anything!</h1>
-      <div className="flex justify-center w-1/2 m-5 p-5 shadow-lg">
+    <div className="w-1/2 m-5 p-5">
+      <h1 className="flex justify-center">Ask Me Anything!</h1>
+      <div className="m-5 p-5 shadow-lg">
         <form
           ref={form}
           onSubmit={sendEmail}
@@ -83,15 +83,17 @@ const ContactForm = () => {
           />
 
           {/* session type selctor */}
+          {/* Seniors */}
           <div className="inline-flex items-start">
             <label
               className="flex items-start cursor-pointer relative"
               htmlFor="check-seniors"
             >
+              {/* Only checked if "seniors" is selected & set to "seniors" when clicked*/}
               <input
                 type="checkbox"
-                checked={selectedSession === "seniors"} // Only checked if "seniors" is selected
-                onChange={() => handleChange("seniors")} // Set to "seniors" when clicked
+                checked={selectedSession === "seniors"}
+                onChange={() => handleChange("seniors")}
                 className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-pink-600 checked:border-pink-600"
                 id="check-seniors"
               />
@@ -129,10 +131,11 @@ const ContactForm = () => {
               className="flex items-start cursor-pointer relative"
               htmlFor="check-couples"
             >
+              {/* Only checked if "couples" is selected & set to "couples" when clicked*/}
               <input
                 type="checkbox"
-                checked={selectedSession === "couples"} // Only checked if "couples" is selected
-                onChange={() => handleChange("couples")} // Set to "couples" when clicked
+                checked={selectedSession === "couples"}
+                onChange={() => handleChange("couples")}
                 className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-pink-600 checked:border-pink-600"
                 id="check-couples"
               />
@@ -170,10 +173,11 @@ const ContactForm = () => {
               className="flex items-start cursor-pointer relative"
               htmlFor="check-family"
             >
+              {/* Only checked if "family" is selected & set to "family" when clicked*/}
               <input
                 type="checkbox"
-                checked={selectedSession === "family"} // Only checked if "family" is selected
-                onChange={() => handleChange("family")} // Set to "family" when clicked
+                checked={selectedSession === "family"}
+                onChange={() => handleChange("family")}
                 className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-pink-600 checked:border-pink-600"
                 id="check-family"
               />
@@ -190,24 +194,27 @@ const ContactForm = () => {
                     fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                     clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </span>
-              </label>
-              <label
-                className="cursor-pointer ml-2 text-slate-600 text-sm"
-                htmlFor="check-family"
-              >
-                <div>
-                  <p className="font-medium">Family</p>
-                  <p className="text-slate-500">
-                    Three (3) or more person session (8 max.)
-                  </p>
-                </div>
-              </label>
-            </div>
+                  ></path>
+                </svg>
+              </span>
+            </label>
+            <label
+              className="cursor-pointer ml-2 text-slate-600 text-sm"
+              htmlFor="check-family"
+            >
+              <div>
+                <p className="font-medium">Family</p>
+                <p className="text-slate-500">
+                  Three (3) or more person session (8 max.)
+                </p>
+              </div>
+            </label>
+          </div>
 
-          <button type="submit" className="bg-pink-200 text-white p-2 rounded">
+          <button
+            type="submit"
+            className="bg-pink-200 text-white p-2 rounded hover:bg-pink-300"
+          >
             Send
           </button>
 

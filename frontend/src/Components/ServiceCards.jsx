@@ -16,7 +16,7 @@ const ServiceCards = () => {
             <img
               className="w-full"
               src={boy}
-              alt="Sunset in the mountains"
+              alt="senior portrait"
             ></img>
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Senior Portraits</div>
@@ -45,38 +45,8 @@ const ServiceCards = () => {
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
             <img
               className="w-full"
-              src={family}
-              alt="Sunset in the mountains"
-            ></img>
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">Family Sessions</div>
-              <p className="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                exercitationem praesentium nihil.
-              </p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #FallsCreekPark
-              </span>
-              <span className="inline-block bg-pink-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #MomentoMoments
-              </span>
-              <span className="inline-block bg-pink-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                #AtlantaFamilySessions
-              </span>
-            </div>
-          </div>
-        </div>
-
-        {/* Third service card */}
-        <div className="p-5 flex justify-center">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img
-              className="w-full"
               src={girl}
-              alt="Sunset in the mountains"
+              alt="portrait"
             ></img>
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Individual Sessions</div>
@@ -100,13 +70,13 @@ const ServiceCards = () => {
           </div>
         </div>
 
-        {/* Fourth service card */}
+        {/* Third service card */}
         <div className="p-5 flex justify-center">
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
             <img
               className="w-full"
               src={group}
-              alt="Sunset in the mountains"
+              alt="group portrait"
             ></img>
             <div className="px-6 py-4">
               <div className="font-bold text-xl mb-2">Couples & Group Sessions</div>
@@ -125,6 +95,36 @@ const ServiceCards = () => {
               </span>
               <span className="inline-block bg-pink-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                 #graduationday
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Fourth service card */}
+        <div className="p-5 flex justify-center">
+          <div className="max-w-sm rounded overflow-hidden shadow-lg">
+            <img
+              className="w-full"
+              src={family}
+              alt="family portrait"
+            ></img>
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl mb-2">Family Sessions</div>
+              <p className="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-pink-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #FallsCreekPark
+              </span>
+              <span className="inline-block bg-pink-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #MomentoMoments
+              </span>
+              <span className="inline-block bg-pink-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #AtlantaFamilySessions
               </span>
             </div>
           </div>
