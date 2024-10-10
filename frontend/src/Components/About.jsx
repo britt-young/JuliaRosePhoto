@@ -15,13 +15,11 @@ const About = () => {
       {/* left side */}
       {/* profile image */}
       <div className="mx-auto p-5">
-        <figure className="">
           <img
             src={owner}
-            className="w-auto h-auto shadow-lg shadow-black/55 rounded-full"
+            className="w-100 h-100 object-fit shadow-lg shadow-black/55 rounded-full"
             alt="owner image"
           />
-        </figure>
       </div>
 
       {/* right side */}
