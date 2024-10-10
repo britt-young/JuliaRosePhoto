@@ -3,7 +3,7 @@ import React from "react";
 const SocialMedia = () => {
   return (
     <div className="w-1/2 m-5 p-5">
-        <h2 className="flex justify-center"> Connect with me on social media!</h2>
+        <h2 className="flex justify-center"> Stay connected </h2>
       <div className="bg-white w-full h-auto py-8 flex items-center justify-center gap-4 flex-wrap">
         
         {/* facebook icon */}
@@ -26,6 +26,7 @@ const SocialMedia = () => {
 
         {/* instagram icon */}
         <button className="w-12 h-12 flex items-center justify-center bg-gradient-to-tr from-red-50 to-pink-50 cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-red-200">
+        <a href="https://www.instagram.com/rileyaddisonphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="28"
@@ -66,6 +67,7 @@ const SocialMedia = () => {
               </radialGradient>
             </defs>
           </svg>
+          </a>
         </button>
 
         {/* twitter icon */}

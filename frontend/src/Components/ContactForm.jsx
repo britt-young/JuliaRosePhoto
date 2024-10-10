@@ -48,7 +48,7 @@ const ContactForm = () => {
 
   return (
     <div className="w-1/2 m-5 p-5">
-      <h1 className="flex justify-center">Ask Me Anything!</h1>
+      <h1 className="flex justify-center">Let's do this!</h1>
       <div className="m-5 p-5 shadow-lg">
         <form
           ref={form}
@@ -79,136 +79,138 @@ const ContactForm = () => {
             name="message"
             id="message"
             className="border py-2"
-            rows="4"
+            rows="10"
           />
 
           {/* session type selctor */}
-          {/* Seniors */}
-          <div className="inline-flex items-start">
-            <label
-              className="flex items-start cursor-pointer relative"
-              htmlFor="check-seniors"
-            >
-              {/* Only checked if "seniors" is selected & set to "seniors" when clicked*/}
-              <input
-                type="checkbox"
-                checked={selectedSession === "seniors"}
-                onChange={() => handleChange("seniors")}
-                className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-pink-600 checked:border-pink-600"
-                id="check-seniors"
-              />
-              <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-3.5 w-3.5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </span>
-            </label>
-            <label
-              className="cursor-pointer ml-2 text-slate-600 text-sm"
-              htmlFor="check-seniors"
-            >
-              <div>
-                <p className="font-medium">Seniors</p>
-                <p className="text-slate-500">Single person session</p>
-              </div>
-            </label>
-          </div>
+          <div className="flex flex-col gap-4 px-10">
+            {/* Seniors */}
+            <div className="inline-flex items-start">
+              <label
+                className="flex items-start cursor-pointer relative"
+                htmlFor="check-seniors"
+              >
+                {/* Only checked if "seniors" is selected & set to "seniors" when clicked*/}
+                <input
+                  type="checkbox"
+                  checked={selectedSession === "seniors"}
+                  onChange={() => handleChange("seniors")}
+                  className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-pink-600 checked:border-pink-600"
+                  id="check-seniors"
+                />
+                <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    strokeWidth="1"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+              <label
+                className="cursor-pointer ml-2 text-slate-600 text-sm"
+                htmlFor="check-seniors"
+              >
+                <div>
+                  <p className="font-medium">Seniors</p>
+                  <p className="text-slate-500">Single person session</p>
+                </div>
+              </label>
+            </div>
 
-          {/* Couples */}
-          <div className="inline-flex items-start">
-            <label
-              className="flex items-start cursor-pointer relative"
-              htmlFor="check-couples"
-            >
-              {/* Only checked if "couples" is selected & set to "couples" when clicked*/}
-              <input
-                type="checkbox"
-                checked={selectedSession === "couples"}
-                onChange={() => handleChange("couples")}
-                className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-pink-600 checked:border-pink-600"
-                id="check-couples"
-              />
-              <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-3.5 w-3.5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </span>
-            </label>
-            <label
-              className="cursor-pointer ml-2 text-slate-600 text-sm"
-              htmlFor="check-couples"
-            >
-              <div>
-                <p className="font-medium">Couples</p>
-                <p className="text-slate-500">Two (2) person session</p>
-              </div>
-            </label>
-          </div>
+            {/* Couples */}
+            <div className="inline-flex items-start">
+              <label
+                className="flex items-start cursor-pointer relative"
+                htmlFor="check-couples"
+              >
+                {/* Only checked if "couples" is selected & set to "couples" when clicked*/}
+                <input
+                  type="checkbox"
+                  checked={selectedSession === "couples"}
+                  onChange={() => handleChange("couples")}
+                  className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-pink-600 checked:border-pink-600"
+                  id="check-couples"
+                />
+                <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    strokeWidth="1"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+              <label
+                className="cursor-pointer ml-2 text-slate-600 text-sm"
+                htmlFor="check-couples"
+              >
+                <div>
+                  <p className="font-medium">Couples</p>
+                  <p className="text-slate-500">Two (2) person session</p>
+                </div>
+              </label>
+            </div>
 
-          {/* Family */}
-          <div className="inline-flex items-start">
-            <label
-              className="flex items-start cursor-pointer relative"
-              htmlFor="check-family"
-            >
-              {/* Only checked if "family" is selected & set to "family" when clicked*/}
-              <input
-                type="checkbox"
-                checked={selectedSession === "family"}
-                onChange={() => handleChange("family")}
-                className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-pink-600 checked:border-pink-600"
-                id="check-family"
-              />
-              <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-3.5 w-3.5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </span>
-            </label>
-            <label
-              className="cursor-pointer ml-2 text-slate-600 text-sm"
-              htmlFor="check-family"
-            >
-              <div>
-                <p className="font-medium">Family</p>
-                <p className="text-slate-500">
-                  Three (3) or more person session (8 max.)
-                </p>
-              </div>
-            </label>
+            {/* Family */}
+            <div className="inline-flex items-start">
+              <label
+                className="flex items-start cursor-pointer relative"
+                htmlFor="check-family"
+              >
+                {/* Only checked if "family" is selected & set to "family" when clicked*/}
+                <input
+                  type="checkbox"
+                  checked={selectedSession === "family"}
+                  onChange={() => handleChange("family")}
+                  className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-pink-600 checked:border-pink-600"
+                  id="check-family"
+                />
+                <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    strokeWidth="1"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+              </label>
+              <label
+                className="cursor-pointer ml-2 text-slate-600 text-sm"
+                htmlFor="check-family"
+              >
+                <div>
+                  <p className="font-medium">Family</p>
+                  <p className="text-slate-500">
+                    Three (3) or more person session (8 max.)
+                  </p>
+                </div>
+              </label>
+            </div>
           </div>
 
           <button
