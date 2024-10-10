@@ -12,7 +12,7 @@ const HomeIntro = () => {
   return (
     <div className="flex justify-center mb-10 max-w mx-auto">
       <div className="m-5">
-        <h1 className="font-title text-3xl sm:text-4xl pb-20">
+        <h1 className="font-title sm:text-4xl pb-20">
           Riley Addison Photography
         </h1>
         <p className="font-body md:text-2xl text-md">
