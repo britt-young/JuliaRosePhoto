@@ -46,10 +46,10 @@ const GalleryMix = () => {
             {["Seniors", "Couples", "Family"].map((tab) => (
               <li
                 key={tab}
-                className={`z-30 flex-auto text-center cursor-pointer ${
+                className={`z-30 flex-auto text-center rounded-xl mx-1 cursor-pointer ${
                   activeTab === tab
-                    ? "text-slate-700 bg-inherit"
-                    : "text-slate-500 bg-gray-200"
+                    ? "text-black font-bold bg-pink-200"
+                    : "text-black bg-pink-100"
                 }`}
                 onClick={() => handleTabClick(tab)}
               >
@@ -75,7 +75,7 @@ const GalleryMix = () => {
           >
             {images.Seniors.map((src, index) => (
               <div key={index}>
-                <img className="w-full h-auto max-w-full rounded-lg" src={src} alt="image-photo" />
+                <img className="w-full h-full max-w-full rounded-lg" src={src} alt="image-photo" />
               </div>
             ))}
           </div>
@@ -88,7 +88,7 @@ const GalleryMix = () => {
           >
             {images.Couples.map((src, index) => (
               <div key={index}>
-                <img className="w-full h-auto max-w-full rounded-lg" src={src} alt="image-photo" />
+                <img className="w-full h-full max-w-full rounded-lg" src={src} alt="image-photo" />
               </div>
             ))}
           </div>
@@ -101,7 +101,7 @@ const GalleryMix = () => {
           >
             {images.Family.map((src, index) => (
               <div key={index}>
-                <img className="w-full h-auto max-w-full rounded-lg" src={src} alt="image-photo" />
+                <img className="w-full h-full max-w-full rounded-lg" src={src} alt="image-photo" />
               </div>
             ))}
           </div>
