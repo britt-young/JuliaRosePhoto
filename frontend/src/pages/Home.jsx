@@ -2,6 +2,7 @@ import React from "react";
 import PortfolioCards from "../Components/PortfolioCards";
 import HomeIntro from "../Components/HomeIntro";
 import About from "../Components/About";
+import AboutMe from "../Components/AboutMe";
 
 const Home = () => {
   return (
@@ -14,8 +15,8 @@ const Home = () => {
           <PortfolioCards />
         </div>
       </div>
-      <div className="m-10 shadow-lg">
-        <About />
+      <div className="">
+        <AboutMe />
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const About = () => {
       <div className="mx-auto p-5">
           <img
             src={owner}
-            className="w-100 h-100 object-fit shadow-lg shadow-black/55 rounded-full"
+            className="w-100 h-100 sx={width: 45, height: 45 } object-fit shadow-lg shadow-black/55 rounded-full"
             alt="owner image"
           />
       </div>
@@ -63,9 +63,9 @@ const About = () => {
                 </svg>
               </span>
             </div>
-            <h5 className="font-body mb-2 font-bold  text-center">100+</h5>
+            <h5 className="font-body mb-2 font-bold  text-center">3+</h5>
             <h6 className="font-body mb-0 font-normal dark:text-neutral-50 text-center">
-              sessions shot
+              years of experience
             </h6>
             <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
           </div>
