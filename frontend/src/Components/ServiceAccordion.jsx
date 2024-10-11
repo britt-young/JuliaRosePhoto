@@ -83,16 +83,12 @@ const ServiceAccordion = () => {
           <AccordionTitle className="bg-pink-400 text-black">04. Sneak Peeks & Gallery Access</AccordionTitle>
           <AccordionContent>
             <p className="mb-2 text-black">
-              Once we reserve your session date & time, I'll send you an invoice for 50% of the session fee. The remaining balance is due the day of the session.
+              Sneak peeks will be delivered within 48 hours of our session via text as a Google Drive link and the full gallery will be delivered within 7 days via email with an updated link.
             </p>
-            <p className="mb-2 text-black">
-              I take the following forms of payments:
+            <p className="mb-2 text-black font-semibold">
+              Note: You DO NOT need a Google account to view the gallery.
             </p>
-            <ul className="list-disc pl-5 text-black">
-              <li>Cash</li>
-              <li>Venmo</li>
-              <li>Zelle</li>
-            </ul>
+            
           </AccordionContent>
         </AccordionPanel>
 

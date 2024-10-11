@@ -5,7 +5,7 @@ const HomeIntro = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/Contact");
+    navigate("/Gallery");
     console.log("Button clicked");
   };
 
