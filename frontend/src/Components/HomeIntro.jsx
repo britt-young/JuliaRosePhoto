@@ -10,25 +10,24 @@ const HomeIntro = () => {
   };
 
   return (
-    <div className="flex justify-center mb-10 max-w mx-auto">
-      <div className="m-5">
-        <h1 className="font-title sm:text-4xl pb-20">
-          Riley Addison Photography
-        </h1>
-        <p className="font-body md:text-2xl text-md">
-          Specializing in senior portraits and family momentos.Specializing in
-          senior portraits and family momentos.Specializing in senior portraits
-          and family momentos.Specializing in senior portraits and family
-          momentos.Specializing in senior portraits and family
-          momentos.Specializing in senior portraits and family momentos.
-        </p>
-        <p className="font-body text-md pb-4">I love photography</p>
+    <div className="mb-10 max-w mx-auto">
+      <h1 className="font-title sm:text-4xl ">
+        Riley Addison Photography
+      </h1>
+      <div className="flex flex-col items-center m-5">
+        <p className="font-body text-md pb-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum"</p>
         <button
           onClick={handleClick}
           type="button"
-          className="font-body text-sm bg-pink-300 rounded-lg px-2 py-1 shadow-md m-4 text-black"
+          className="font-body text-sm bg-pink-300 rounded-lg px-2 py-1 shadow-md m-2 text-black"
         >
-          book with me
+          check out my recent work
         </button>
       </div>
     </div>
