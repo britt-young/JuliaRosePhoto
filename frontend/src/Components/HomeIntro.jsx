@@ -10,7 +10,7 @@ const HomeIntro = () => {
   };
 
   return (
-    <div className="mb-10 max-w mx-auto">
+    <div className="mb-5 max-w mx-auto">
       <h1 className="font-title sm:text-4xl ">
         Riley Addison Photography
       </h1>

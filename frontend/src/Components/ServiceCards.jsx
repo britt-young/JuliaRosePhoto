@@ -12,7 +12,7 @@ const ServiceCards = () => {
     <div className="grid grid-cols-2 lg:grid-cols-4">
         {/* First service card */}
         <div className="p-5 flex justify-center">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg ">
+          <div className="max-w-sm rounded-lg overflow-hidden shadow-lg ">
             <img
               className="w-full"
               src={boy}
@@ -42,7 +42,7 @@ const ServiceCards = () => {
 
         {/* Second service card */}
         <div className="p-5 flex justify-center">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
+          <div className="max-w-sm rounded-lg overflow-hidden shadow-lg">
             <img
               className="w-full"
               src={girl}
@@ -72,7 +72,7 @@ const ServiceCards = () => {
 
         {/* Third service card */}
         <div className="p-5 flex justify-center">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
+          <div className="max-w-sm rounded-lg overflow-hidden shadow-lg">
             <img
               className="w-full"
               src={group}
@@ -102,7 +102,7 @@ const ServiceCards = () => {
 
         {/* Fourth service card */}
         <div className="p-5 flex justify-center">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
+          <div className="max-w-sm rounded-lg overflow-hidden shadow-lg">
             <img
               className="w-full"
               src={family}
