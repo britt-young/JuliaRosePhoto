@@ -11,7 +11,7 @@ const HomeIntro = () => {
 
   return (
     <div className="mb-5 max-w mx-auto">
-      <h1 className="font-title sm:text-4xl ">
+      <h1 className="flex flex-col items-center font-title sm:text-7xl m-10">
         Riley Addison Photography
       </h1>
       <div className="flex flex-col items-center m-5">
@@ -25,9 +25,9 @@ const HomeIntro = () => {
         <button
           onClick={handleClick}
           type="button"
-          className="font-body text-sm bg-pink-300 rounded-lg px-2 py-1 shadow-md m-2 text-black"
+          className="font-body text-sm underline px-2 py-1 m-2 text-pink-300"
         >
-          check out my recent work
+          INQUIRE NOW
         </button>
       </div>
     </div>

@@ -13,8 +13,8 @@ export default {
       black: "#000000",
     },
     fontFamily: {
-      title: ["Sarina", "cursive"],
-      body: ["", "sans-serif"],
+      title: ["Laisha", "serif"],
+      body: ["", "sans-serif"], 
     },
     extend: {},
   },
@@ -22,3 +22,4 @@ export default {
     flowbite.plugin(),
   ],
 };
+

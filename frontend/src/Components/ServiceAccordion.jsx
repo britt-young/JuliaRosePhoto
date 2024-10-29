@@ -17,7 +17,7 @@ const ServiceAccordion = () => {
       <Accordion>
         {/* first tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-pink-100 text-black">01. Request Form</AccordionTitle>
+          <AccordionTitle className="bg-pink-100 text-gray-700">01. Request Form</AccordionTitle>
           <AccordionContent>
             <p className="text-black">
               Go to the&nbsp;
@@ -35,7 +35,7 @@ const ServiceAccordion = () => {
 
         {/* second tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-pink-200 text-black">02. Consultation</AccordionTitle>
+          <AccordionTitle className="bg-pink-200 text-gray-700">02. Consultation</AccordionTitle>
           <AccordionContent>
             <p className="mb-2 text-black">
               I'll reach out to you to discuss your vision for the session and
@@ -62,7 +62,7 @@ const ServiceAccordion = () => {
 
         {/* third tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-pink-300 text-black">03. Payment</AccordionTitle>
+          <AccordionTitle className="bg-pink-300 text-gray-700">03. Payment</AccordionTitle>
           <AccordionContent>
             <p className="mb-2 text-black">
               Once we reserve your session date & time, I'll send you an invoice for 50% of the session fee. The remaining balance is due the day of the session.
@@ -80,7 +80,7 @@ const ServiceAccordion = () => {
 
 {/* fourth tab */}
 <AccordionPanel>
-          <AccordionTitle className="bg-pink-400 text-black">04. Sneak Peeks & Gallery Access</AccordionTitle>
+          <AccordionTitle className="bg-pink-400 text-gray-700">04. Sneak Peeks & Gallery Access</AccordionTitle>
           <AccordionContent>
             <p className="mb-2 text-black">
               Sneak peeks will be delivered within 48 hours of our session via text as a Google Drive link and the full gallery will be delivered within 7 days via email with an updated link.

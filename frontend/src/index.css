@@ -5,6 +5,16 @@
 /* google font import */
 @import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
 
+@font-face {
+  font-family: 'Laisha';
+  src: url('./assets/fonts/Laisha.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: '';
+  src: url('./assets/fonts/') format('truetype');
+}
+
 /*Base styles for mobile devices
 @media (max-width: 425px) {
 body {

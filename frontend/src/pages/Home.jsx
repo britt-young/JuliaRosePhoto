@@ -1,7 +1,6 @@
 import React from "react";
 import PortfolioCards from "../Components/PortfolioCards";
 import HomeIntro from "../Components/HomeIntro";
-import About from "../Components/About";
 import AboutMe from "../Components/AboutMe";
 
 const Home = () => {
