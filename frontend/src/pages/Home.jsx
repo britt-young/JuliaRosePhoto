@@ -10,12 +10,15 @@ const Home = () => {
         <div className="w-full">
           <HomeIntro />
         </div>
-        <div className="">
-          <PortfolioCards />
-        </div>
       </div>
       <div className="">
         <AboutMe />
+      </div>
+      <div className="">
+        <h2>
+          <span className="flex items-center flex-col font-title sm:text-5xl mt-10">Signature Packages</span>
+        </h2>
+        <PortfolioCards />
       </div>
     </div>
   );

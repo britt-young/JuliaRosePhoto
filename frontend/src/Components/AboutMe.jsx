@@ -8,16 +8,16 @@ const AboutMe = () => {
         className="w-full h-screen object-cover "
         src="https://images.unsplash.com/photo-1541654056076-0a252e083078?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       ></img> */}
-      <div className="w-full h-screen relative flex flex-col justify-center">
+      <div className="m-5 h-screen relative flex flex-col justify-center">
         <img
           src="https://images.unsplash.com/photo-1541654056076-0a252e083078?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           className="w-full h-full object-cover absolute"
         />
-        <div className="bg-white/50 pt-40 pb-40 p-10 rounded-lg absolute right-96 ">
-          <h1 className="font-title">Hi, I'm Riley!</h1>
-          <h2 className="font-body mb-20">
+        <div className="bg-white/50 pt-40 pb-40 p-10 rounded-lg absolute right-96">
+          <h1 className="font-title sm:text-2xl">Hi there, I'm Riley</h1>
+          <h2 className="font-body mb-20 uppercase">
             {" "}
-            Your new favorite{" "}
+            -{" "}
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
@@ -26,8 +26,6 @@ const AboutMe = () => {
                 "editor",
                 1000,
                 "stylist",
-                1000,
-                "bestie",
                 1000,
               ]}
               wrapper="span"
@@ -41,7 +39,7 @@ const AboutMe = () => {
           <div className="grid grid-cols-2 justify-evenly">
             <div className="relative mb-12 px-5 lg:mb-10">
               <div className="mb-2 flex justify-center">
-                <span className="font-body">
+                <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -52,8 +50,8 @@ const AboutMe = () => {
                   </svg>
                 </span>
               </div>
-              <h5 className="font-body mb-2 font-bold  text-center">3+</h5>
-              <h6 className="font-body mb-0 font-normal dark:text-neutral-50 text-center">
+              <h5 className="font-body mb-2 font-bold text-center">3+</h5>
+              <h6 className="font-body uppercase mb-0 font-normal dark:text-neutral-50 text-center">
                 years of experience
               </h6>
               <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
@@ -61,7 +59,7 @@ const AboutMe = () => {
 
             <div className="relative mb-12 px-5 lg:mb-10">
               <div className="mb-2 flex justify-center">
-                <span className="font-body">
+                <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -75,37 +73,26 @@ const AboutMe = () => {
                 </span>
               </div>
               <h5 className="mb-2 font-bold font-body text-center">48 HR</h5>
-              <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">
+              <h6 className="mb-0 font-body uppercase dark:text-neutral-50 text-center">
                 sneak peek turn-around
               </h6>
               <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
             </div>
             <div className="relative mb-12 px-5 lg:mb-0">
               <div className="mb-2 flex justify-center">
-                <span className="font-body">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="h-7 w-7"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                <span>
+                  <img src="" alt="star" className="h-7 w-7" />
                 </span>
               </div>
               <h5 className="mb-2 font-bold font-body text-center">50+</h5>
-              <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">
+              <h6 className="mb-0 font-body uppercase dark:text-neutral-50 text-center">
                 five star reviews
               </h6>
               <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
             </div>
             <div className="relative mb-12 px-5 lg:mb-0">
               <div className="mb-2 flex justify-center">
-                <span className="font-body">
+                <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -123,7 +110,7 @@ const AboutMe = () => {
               <h5 className="mb-2 font-bold font-body text-center">
                 editing style
               </h5>
-              <h6 className="mb-0 font-normal dark:text-neutral-50 text-center">
+              <h6 className="mb-0 font-body uppercase dark:text-neutral-50 text-center">
                 natural-soft
               </h6>
             </div>
