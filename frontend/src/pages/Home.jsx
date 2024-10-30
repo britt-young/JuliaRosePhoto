@@ -16,7 +16,7 @@ const Home = () => {
       </div>
       <div className="">
         <h2>
-          <span className="flex items-center flex-col font-title sm:text-5xl mt-10">Signature Packages</span>
+          <span className="flex items-center flex-col font-title sm:text-5xl mt-10">Session Galleries</span>
         </h2>
         <PortfolioCards />
       </div>

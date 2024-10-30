@@ -23,13 +23,13 @@ const Services = () => {
       </div>
       <div className="bg-white flex flex-row h-auto">
         <div className="basis-2/5 flex flex-col items-center justify-center">
-          <h1 className="pt-10 font-bold">BOOK A SESSION WITH ME!</h1>
+          <h1 className=""></h1>
           <button
             onClick={handleClick}
             type="button"
-            className="text-sm bg-pink-300 rounded-lg px-2 py-1 shadow-md text-black"
+            className="font-body underline uppercase px-2 py-1 text-pink-300 hover:text-black"
           >
-            schedule now
+            Inquire Now
           </button>
         </div>
         <div className="basis-3/5 p-10">
