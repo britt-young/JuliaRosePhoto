@@ -10,8 +10,8 @@ const ServiceAccordion = () => {
   return (
     <div>
       <div>
-        <h2 className="sm:text-5xl text-black font-title ml-10">
-          What's Next?
+        <h2 className="sm:text-4xl text-black font-title ml-10">
+          How it works:
         </h2>
       </div>
       <Accordion>
@@ -23,7 +23,7 @@ const ServiceAccordion = () => {
           <AccordionContent>
             <p className="text-black font-body uppercase">
               One you've decided which package you want, go to the&nbsp;
-              <a href="/Contact" className="text-pink-300 hover:text-pink-600">
+              <a href="/Contact" className="text-pink-300 hover:text-pink-400">
                 contact&nbsp;
               </a>
               page and fill out the request form
@@ -36,7 +36,7 @@ const ServiceAccordion = () => {
 
         {/* second tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-pink-100 font-title text-lg">
+          <AccordionTitle className="bg-pink-200 font-title text-lg">
             02. Consultation
           </AccordionTitle>
           <AccordionContent>
@@ -52,7 +52,7 @@ const ServiceAccordion = () => {
                 <a
                   href="https://tailwindui.com/"
                   rel="nofollow"
-                  className="text-pink-300 hover:text-pink-600"
+                  className="text-pink-300 hover:text-pink-400"
                 >
                   Link for other shiz
                 </a>
@@ -63,7 +63,7 @@ const ServiceAccordion = () => {
 
         {/* third tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-pink-100 font-title text-lg">
+          <AccordionTitle className="bg-pink-300 font-title text-lg">
             03. Payment
           </AccordionTitle>
           <AccordionContent>
@@ -85,7 +85,7 @@ const ServiceAccordion = () => {
 
         {/* fourth tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-pink-100 font-title text-lg">
+          <AccordionTitle className="bg-pink-400 font-title text-lg">
             04. Sneak Peeks & Gallery Access
           </AccordionTitle>
           <AccordionContent>

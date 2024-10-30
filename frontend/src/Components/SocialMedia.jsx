@@ -2,7 +2,7 @@ import React from "react";
 
 const SocialMedia = () => {
   return (
-    <div className="w-1/2 m-5 p-5">
+    <div className="w-1/2 m-5 p-5 flex flex-col justify-center">
       <h2 className="font-title text-5xl flex justify-center"> Stay connected </h2>
       <div className="bg-white w-full h-auto py-8 flex items-center justify-center gap-4 flex-wrap">
         {/* facebook icon */}

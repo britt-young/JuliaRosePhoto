@@ -48,12 +48,12 @@ const ContactForm = () => {
 
   return (
     <div className="w-1/2 m-5 p-5">
-      <h1 className="font-title text-5xl flex justify-center">Let's do this!</h1>
-      <div className="m-5 p-5 shadow-lg">
+      <h1 className="font-title text-5xl flex justify-center">Send me a request!</h1>
+      <div className="mx-5 p-5 shadow-lg">
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex flex-col w-full gap-4"
+          className="flex flex-col w-full gap-4 font-body"
         >
           {/* <label htmlFor="user_name">Name</label> */}
           <input
@@ -120,8 +120,8 @@ const ContactForm = () => {
                 htmlFor="check-seniors"
               >
                 <div>
-                  <p className="font-medium">Seniors</p>
-                  <p className="text-slate-500">Single person session</p>
+                  <p className="font-bold uppercase">Seniors/ Individual</p>
+                  <p className="text-slate-500">1 person session</p>
                 </div>
               </label>
             </div>
@@ -162,8 +162,8 @@ const ContactForm = () => {
                 htmlFor="check-couples"
               >
                 <div>
-                  <p className="font-medium">Couples</p>
-                  <p className="text-slate-500">Two (2) person session</p>
+                  <p className="font-bold uppercase">Couples/ Group</p>
+                  <p className="text-slate-500">2-10 person session</p>
                 </div>
               </label>
             </div>
@@ -204,9 +204,9 @@ const ContactForm = () => {
                 htmlFor="check-family"
               >
                 <div>
-                  <p className="font-medium">Family</p>
+                  <p className="font-bold uppercase">Family/ Pets</p>
                   <p className="text-slate-500">
-                    Three (3) or more person session (8 max.)
+                    3-10 person session
                   </p>
                 </div>
               </label>
