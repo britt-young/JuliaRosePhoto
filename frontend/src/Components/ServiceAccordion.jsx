@@ -10,43 +10,44 @@ const ServiceAccordion = () => {
   return (
     <div>
       <div>
-        <h2 className="text-md text-black font-bold ml-10">
-          HOW IT WORKS:
+        <h2 className="sm:text-5xl text-black font-title ml-10">
+          What's Next?
         </h2>
       </div>
       <Accordion>
         {/* first tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-pink-100 text-gray-700">01. Request Form</AccordionTitle>
+          <AccordionTitle className="bg-pink-100 font-title text-lg">
+            01. Send Me a Request
+          </AccordionTitle>
           <AccordionContent>
-            <p className="text-black">
-              Go to the&nbsp;
-              <a
-                href="/Contact"
-                className="text-pink-300 hover:text-pink-600"
-              >
+            <p className="text-black font-body uppercase">
+              One you've decided which package you want, go to the&nbsp;
+              <a href="/Contact" className="text-pink-300 hover:text-pink-600">
                 contact&nbsp;
               </a>
-              page and fill out the form with your request. I will get back to
-              you within 24 hours to schedule your session!
+              page and fill out the request form
+            </p>
+            <p className="text-black font-body uppercase mt-2">
+              I will reach out to you within 24 hours to schedule your session!
             </p>
           </AccordionContent>
         </AccordionPanel>
 
         {/* second tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-pink-200 text-gray-700">02. Consultation</AccordionTitle>
+          <AccordionTitle className="bg-pink-100 font-title text-lg">
+            02. Consultation
+          </AccordionTitle>
           <AccordionContent>
-            <p className="mb-2 text-black">
-              I'll reach out to you to discuss your vision for the session and
-              different location options
+            <p className="mb-2 text-black font-body uppercase pt-2">
+              Once we've scheduled our session, we'll have a consultation to
+              discuss the details such as
             </p>
-            <p className="mb-2 text-black">
-            Common questions to think about are:
-            </p>
-            <ul className="list-disc pl-5 text-black">
+            <ul className="list-disc pl-5 text-black font-body">
               <li>Location </li>
-              <li>Session Theme</li>
+              <li>Photo Inspiration/ Mood Board</li>
+              <li>Styling Recommendations (if requested)</li>
               <li>
                 <a
                   href="https://tailwindui.com/"
@@ -62,36 +63,42 @@ const ServiceAccordion = () => {
 
         {/* third tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-pink-300 text-gray-700">03. Payment</AccordionTitle>
+          <AccordionTitle className="bg-pink-100 font-title text-lg">
+            03. Payment
+          </AccordionTitle>
           <AccordionContent>
-            <p className="mb-2 text-black">
-              Once we reserve your session date & time, I'll send you an invoice for 50% of the session fee. The remaining balance is due the day of the session.
+            <p className="mb-2 text-black font-body uppercase">
+              At the end of our scheduling/ consultation communications, I'll
+              send you an invoice for 50% of the session fee via text or e-mail.
+              The remaining balance is due immediately following our session
             </p>
-            <p className="mb-2 text-black">
+            <p className="mb-2 text-black font-body uppercase">
               I take the following forms of payments:
             </p>
-            <ul className="list-disc pl-5 text-black">
-              <li>Cash</li>
+            <ul className="list-disc pl-5 text-black font-body">
+              <li>Cash </li>
               <li>Venmo</li>
               <li>Zelle</li>
             </ul>
           </AccordionContent>
         </AccordionPanel>
 
-{/* fourth tab */}
-<AccordionPanel>
-          <AccordionTitle className="bg-pink-400 text-gray-700">04. Sneak Peeks & Gallery Access</AccordionTitle>
+        {/* fourth tab */}
+        <AccordionPanel>
+          <AccordionTitle className="bg-pink-100 font-title text-lg">
+            04. Sneak Peeks & Gallery Access
+          </AccordionTitle>
           <AccordionContent>
-            <p className="mb-2 text-black">
-              Sneak peeks will be delivered within 48 hours of our session via text as a Google Drive link and the full gallery will be delivered within 7 days via email with an updated link.
+            <p className="mb-2 text-black font-body uppercase">
+              Sneak peeks will be delivered within 48 hours of our session via
+              text as a Google Drive link. The full gallery will be delivered
+              within 7 days of our session via email with an updated link.
             </p>
-            <p className="mb-2 text-black font-semibold">
-              Note: You DO NOT need a Google account to view the gallery.
+            <p className="mb-2 text-black font-body">
+            <span className="font-bold">Note: </span> You do <span className="font-bold">NOT</span> need a Google account to view your gallery
             </p>
-            
           </AccordionContent>
         </AccordionPanel>
-
       </Accordion>
     </div>
   );
