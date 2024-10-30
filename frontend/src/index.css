@@ -10,11 +10,6 @@
   src: url('./assets/fonts/Laisha.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: '';
-  src: url('./assets/fonts/') format('truetype');
-}
-
 /*Base styles for mobile devices
 @media (max-width: 425px) {
 body {

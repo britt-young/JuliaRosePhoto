@@ -25,7 +25,7 @@ const HomeIntro = () => {
         <button
           onClick={handleClick}
           type="button"
-          className="font-body underline uppercase px-2 py-1 m-2 text-pink-300"
+          className="font-body underline uppercase px-2 py-1 m-2 text-pink-300 hover:text-black"
         >
           Inquire Now
         </button>

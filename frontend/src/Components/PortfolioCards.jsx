@@ -27,13 +27,13 @@ const PortfolioCards = () => {
         />
         <figcaption className="absolute bottom-4 inset-x-0 mx-4 flex-col lg:flex-row justify-between items-center rounded-xl border border-white bg-white/75 p-3 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm flex">
           <div className="text-center md:text-left">
-            <p className="mt-0 font-body md:text-base text-sm font-normal leading-relaxed black hidden sm:flex">
+            <p className="mt-0 font-body uppercase md:text-base text-sm font-normal leading-relaxed black hidden sm:flex">
               Senior Portraits
             </p>
             <button
               onClick={handleClick}
               type="button"
-              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-black rounded-lg"
+              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-black hover:font-bold rounded-lg"
             >
               see more
             </button>
@@ -50,13 +50,13 @@ const PortfolioCards = () => {
         />
         <figcaption className="absolute bottom-4 inset-x-0 mx-4 flex-col lg:flex-row justify-between items-center rounded-xl border border-white bg-white/75 p-3 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm flex">
           <div className="text-center md:text-left">
-          <p className="mt-0 font-body md:text-base text-sm font-normal leading-relaxed black hidden sm:flex">
+          <p className="mt-0 font-body uppercase md:text-base text-sm font-normal leading-relaxed black hidden sm:flex">
               Family Portraits
             </p>
             <button
               onClick={handleClick}
               type="button"
-              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-black rounded-lg"
+              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-black hover:font-bold rounded-lg"
             >
               see more
             </button>
@@ -73,13 +73,13 @@ const PortfolioCards = () => {
         />
         <figcaption className="absolute bottom-4 inset-x-0 mx-4 flex-col lg:flex-row justify-between items-center rounded-xl border border-white bg-white/75 p-3 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm flex">
           <div className="text-center md:text-left">
-          <p className="mt-0 font-body md:text-base text-sm font-normal leading-relaxed black hidden sm:flex">
+          <p className="mt-0 font-body uppercase md:text-base text-sm font-normal leading-relaxed black hidden sm:flex">
               Couples Sessions
             </p>
             <button
               onClick={handleClick}
               type="button"
-              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-black rounded-lg"
+              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-black hover:font-bold rounded-lg"
             >
               see more
             </button>
@@ -96,13 +96,13 @@ const PortfolioCards = () => {
         />
         <figcaption className="absolute bottom-4 inset-x-0 mx-4 flex-col lg:flex-row justify-between items-center rounded-xl border border-white bg-white/75 p-3 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm flex">
           <div className="text-center md:text-left">
-          <p className="mt-0 font-body md:text-base text-sm font-normal leading-relaxed black hidden sm:flex">
+          <p className="mt-0 font-body uppercase md:text-base text-sm font-normal leading-relaxed black hidden sm:flex">
               Group Sessions
             </p>
             <button
               onClick={handleClick}
               type="button"
-              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-black rounded-lg"
+              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-black hover:font-bold rounded-lg"
             >
               see more
             </button>
