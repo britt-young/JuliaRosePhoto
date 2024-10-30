@@ -48,7 +48,7 @@ const ContactForm = () => {
 
   return (
     <div className="w-1/2 m-5 p-5">
-      <h1 className="flex justify-center">Let's do this!</h1>
+      <h1 className="font-title text-5xl flex justify-center">Let's do this!</h1>
       <div className="m-5 p-5 shadow-lg">
         <form
           ref={form}

@@ -42,7 +42,7 @@ const GalleryMix = () => {
       <div className="relative right-0">
         {/* Tab section */}
         <div className="w-full">
-          <ul className="relative flex flex-wrap px-1.5 py-1.5 list-none rounded-md bg-slate-100">
+          <ul className="font-body uppercase relative flex flex-wrap px-1.5 py-1.5 list-none rounded-md bg-slate-100">
             {["Seniors", "Couples", "Family"].map((tab) => (
               <li
                 key={tab}
