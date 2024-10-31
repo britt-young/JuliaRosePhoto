@@ -21,13 +21,13 @@ const Services = () => {
       <div>
         <ServiceCards />
       </div>
-      <div className="bg-white flex flex-row h-auto">
+      <div className="bg-linen flex flex-row h-auto">
         <div className="basis-2/5 flex flex-col items-center justify-center">
           <h1 className=""></h1>
           <button
             onClick={handleClick}
             type="button"
-            className="font-body underline uppercase px-2 py-1 text-pink-300 hover:text-black"
+            className="font-body underline uppercase px-2 py-1 text-deepp hover:text-black"
           >
             Inquire Now
           </button>

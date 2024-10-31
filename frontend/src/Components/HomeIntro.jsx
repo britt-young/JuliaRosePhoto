@@ -5,7 +5,7 @@ const HomeIntro = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/Gallery");
+    navigate("/Contact");
     console.log("Button clicked");
   };
 
@@ -25,7 +25,7 @@ const HomeIntro = () => {
         <button
           onClick={handleClick}
           type="button"
-          className="font-body underline uppercase px-2 py-1 m-2 text-pink-300 hover:text-black"
+          className="font-body underline uppercase px-2 py-1 m-2 text-deepp hover:text-black"
         >
           Inquire Now
         </button>

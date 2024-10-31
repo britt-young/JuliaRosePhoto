@@ -15,7 +15,7 @@ const PortfolioCards = () => {
   };
 
   return (
-    <div className="bg-white grid grid-cols-1 lg:grid-cols-4 gap-5 m-10">
+    <div className="bg-linen grid grid-cols-1 lg:grid-cols-4 gap-5 m-10">
       {/* portfolio cards */}
 
       {/* First card */}
@@ -33,9 +33,9 @@ const PortfolioCards = () => {
             <button
               onClick={handleClick}
               type="button"
-              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-black hover:font-bold rounded-lg"
+              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-deepp hover:text-black rounded-lg"
             >
-              see more
+              see gallery
             </button>
           </div>
         </figcaption>
@@ -56,9 +56,9 @@ const PortfolioCards = () => {
             <button
               onClick={handleClick}
               type="button"
-              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-black hover:font-bold rounded-lg"
+              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-deepp hover:text-black rounded-lg"
             >
-              see more
+              see gallery
             </button>
           </div>
         </figcaption>
@@ -79,9 +79,9 @@ const PortfolioCards = () => {
             <button
               onClick={handleClick}
               type="button"
-              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-black hover:font-bold rounded-lg"
+              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-deepp hover:text-black rounded-lg"
             >
-              see more
+              see gallery
             </button>
           </div>
         </figcaption>
@@ -102,9 +102,9 @@ const PortfolioCards = () => {
             <button
               onClick={handleClick}
               type="button"
-              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-black hover:font-bold rounded-lg"
+              className="bg-white mt-1 py-0 px-2 font-body md:text-base text-sm shadow-md text-deepp hover:text-black rounded-lg"
             >
-              see more
+              see gallery
             </button>
           </div>
         </figcaption>

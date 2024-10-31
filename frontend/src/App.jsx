@@ -6,10 +6,10 @@ import Footer from "./Components/Footer";
 
 const App = () => {
   return (
-    <div className="bg-white flex flex-col min-h-screen">
+    <div className="bg-linen flex flex-col min-h-screen">
       <BrowserRouter>
         {/* div below contains container tailwindcss */}
-        <div className="bg-pink-300 p-4">
+        <div className="bg-lightp p-4">
           <Nav />
         </div>
         {/* main content should take up remaining space */}

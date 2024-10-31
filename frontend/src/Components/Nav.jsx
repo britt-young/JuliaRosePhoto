@@ -46,7 +46,7 @@ const Nav = () => {
 
   return (
     <nav className="font-body">
-      <div className="h-10h flex justify-around items-center z-50 text-white lg:py-1 px-20">
+      <div className="h-10h flex justify-around items-center z-50 text-linen lg:py-1 px-20">
         {/* Logo Section */}
         {/* <div className="flex items-center flex-1">
           <span className="flex items-center">
@@ -71,7 +71,7 @@ const Nav = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 left-0 w-full h-full bg-pink-300 text-white flex flex-col items-center justify-center transition-transform transform ${
+          className={`fixed top-0 left-0 w-full h-full bg-lightp text-linen flex flex-col items-center justify-center transition-transform transform ${
             click ? "translate-x-0" : "translate-x-full"
           } lg:hidden z-50`}
         >

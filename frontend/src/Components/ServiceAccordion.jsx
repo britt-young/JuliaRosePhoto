@@ -17,13 +17,13 @@ const ServiceAccordion = () => {
       <Accordion>
         {/* first tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-pink-100 font-title text-lg">
+          <AccordionTitle className="bg-deepp font-title text-lg text-black hover:bg-linen">
             01. Send Me a Request
           </AccordionTitle>
           <AccordionContent>
             <p className="text-black font-body uppercase">
               One you've decided which package you want, go to the&nbsp;
-              <a href="/Contact" className="text-pink-300 hover:text-pink-400">
+              <a href="/Contact" className="text-lightp hover:text-deepp">
                 contact&nbsp;
               </a>
               page and fill out the request form
@@ -36,7 +36,7 @@ const ServiceAccordion = () => {
 
         {/* second tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-pink-200 font-title text-lg">
+          <AccordionTitle className="bg-lightp font-title text-lg text-black hover:bg-linen">
             02. Consultation
           </AccordionTitle>
           <AccordionContent>
@@ -52,7 +52,7 @@ const ServiceAccordion = () => {
                 <a
                   href="https://tailwindui.com/"
                   rel="nofollow"
-                  className="text-pink-300 hover:text-pink-400"
+                  className="text-lightp hover:text-deepp"
                 >
                   Link for other shiz
                 </a>
@@ -63,7 +63,7 @@ const ServiceAccordion = () => {
 
         {/* third tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-pink-300 font-title text-lg">
+          <AccordionTitle className="bg-deepp font-title text-lg text-black hover:bg-linen">
             03. Payment
           </AccordionTitle>
           <AccordionContent>
@@ -72,7 +72,7 @@ const ServiceAccordion = () => {
               send you an invoice for 50% of the session fee via text or e-mail.
               The remaining balance is due immediately following our session
             </p>
-            <p className="mb-2 text-black font-body uppercase">
+            <p className="mb-2 text-black font-body">
               I take the following forms of payments:
             </p>
             <ul className="list-disc pl-5 text-black font-body">
@@ -84,15 +84,15 @@ const ServiceAccordion = () => {
         </AccordionPanel>
 
         {/* fourth tab */}
-        <AccordionPanel>
-          <AccordionTitle className="bg-pink-400 font-title text-lg">
+        <AccordionPanel> 
+          <AccordionTitle className="bg-lightp font-title text-lg text-black hover:bg-linen">
             04. Sneak Peeks & Gallery Access
           </AccordionTitle>
           <AccordionContent>
             <p className="mb-2 text-black font-body uppercase">
-              Sneak peeks will be delivered within 48 hours of our session via
+              Sneak peeks will be delivered within <span className="font-bold">48</span> hours of our session via
               text as a Google Drive link. The full gallery will be delivered
-              within 7 days of our session via email with an updated link.
+              within <span className="font-bold">7</span> days of our session via email with an updated link.
             </p>
             <p className="mb-2 text-black font-body">
             <span className="font-bold">Note: </span> You do <span className="font-bold">NOT</span> need a Google account to view your gallery
