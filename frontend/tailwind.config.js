@@ -5,7 +5,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", flowbite.content(),],
   theme: {
     colors: {
-      linen: "#FDF3EA",
+      white: "#FDF3EA",
       lightp: "#DDAEB5",
       liver: "#644032",
       blackish: "#1F151D",

@@ -21,7 +21,7 @@ const Services = () => {
       <div>
         <ServiceCards />
       </div>
-      <div className="bg-linen flex flex-row h-auto">
+      <div className="bg-white flex flex-row h-auto">
         <div className="basis-2/5 flex flex-col items-center justify-center">
           <h1 className=""></h1>
           <button

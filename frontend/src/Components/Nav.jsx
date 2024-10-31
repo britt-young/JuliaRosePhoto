@@ -46,7 +46,7 @@ const Nav = () => {
 
   return (
     <nav className="font-body">
-      <div className="h-10h flex justify-around items-center z-50 text-linen lg:py-1 px-20">
+      <div className="h-10h flex justify-around items-center z-50 text-white lg:py-1 px-20">
         {/* Logo Section */}
         {/* <div className="flex items-center flex-1">
           <span className="flex items-center">

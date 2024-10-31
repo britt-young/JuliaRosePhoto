@@ -48,8 +48,8 @@ const GalleryMix = () => {
                 key={tab}
                 className={`z-30 flex-auto text-center rounded-xl mx-1 cursor-pointer ${
                   activeTab === tab
-                    ? "text-black font-bold bg-pink-200"
-                    : "text-black bg-pink-100"
+                    ? "text-black font-bold bg-deepp"
+                    : "text-black bg-lightp"
                 }`}
                 onClick={() => handleTabClick(tab)}
               >

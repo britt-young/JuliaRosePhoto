@@ -17,7 +17,7 @@ const ServiceAccordion = () => {
       <Accordion>
         {/* first tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-deepp font-title text-lg text-black hover:bg-linen">
+          <AccordionTitle className="bg-deepp font-title text-lg text-black hover:bg-white">
             01. Send Me a Request
           </AccordionTitle>
           <AccordionContent>
@@ -36,7 +36,7 @@ const ServiceAccordion = () => {
 
         {/* second tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-lightp font-title text-lg text-black hover:bg-linen">
+          <AccordionTitle className="bg-lightp font-title text-lg text-black hover:bg-white">
             02. Consultation
           </AccordionTitle>
           <AccordionContent>
@@ -63,7 +63,7 @@ const ServiceAccordion = () => {
 
         {/* third tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-deepp font-title text-lg text-black hover:bg-linen">
+          <AccordionTitle className="bg-deepp font-title text-lg text-black hover:bg-white">
             03. Payment
           </AccordionTitle>
           <AccordionContent>
@@ -85,7 +85,7 @@ const ServiceAccordion = () => {
 
         {/* fourth tab */}
         <AccordionPanel> 
-          <AccordionTitle className="bg-lightp font-title text-lg text-black hover:bg-linen">
+          <AccordionTitle className="bg-lightp font-title text-lg text-black hover:bg-white">
             04. Sneak Peeks & Gallery Access
           </AccordionTitle>
           <AccordionContent>
