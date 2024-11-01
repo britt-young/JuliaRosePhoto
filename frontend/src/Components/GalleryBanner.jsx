@@ -2,8 +2,8 @@ import React from "react";
 
 const GalleryBanner = () => {
   return (
-    <div className="inset-x-0 bottom-0 flex justify-end">
-    <div className="bg-dblue/80 px-4 py-3 text-white shadow-xl rounded-full">
+    <div className="sticky inset-x-0 bottom-5 flex justify-end">
+    <div className="bg-dblue/90 px-4 py-3 text-white shadow-xl rounded-full">
       <p className="text-center font-body text-md">
         Ready to book?
         <a href="/Contact" className="inline-block pl-1 hover:text-black">
