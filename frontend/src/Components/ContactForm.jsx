@@ -61,8 +61,8 @@ const ContactForm = () => {
 
   return (
     <div className="w-full lg:w-1/2 m-5 p-5">
-      <h1 className="font-title text-5xl flex justify-center">
-        Send me a message
+      <h1 className="font-title text-4xl flex justify-center">
+      We’re excited to hear from you—
       </h1>
       <div className="p-5 shadow-lg">
         <form
