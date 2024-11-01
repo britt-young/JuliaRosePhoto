@@ -12,7 +12,7 @@ const HomeIntro = () => {
 
   return (
     <div className="mb-5 max-w mx-auto">
-      <h1 className="flex flex-col items-center font-title sm:text-7xl mb-10">
+      <h1 className="flex flex-col items-center font-title sm:text-5xl lg:text-7xl mb-10">
         Riley Addison Photography
       </h1>
       {/* <h3 className="flex justify-center font-body text-black text-md uppercase">
@@ -24,7 +24,7 @@ const HomeIntro = () => {
             Atlanta based
           </h3> */}
       <div className="flex flex-col items-center m-5">
-        <p className="font-body text-md pb-4 uppercase">
+        <p className="font-body lg:text-md pb-4 uppercase">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

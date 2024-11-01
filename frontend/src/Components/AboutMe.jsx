@@ -9,16 +9,12 @@ import year from "../assets/icons/experience.png";
 const AboutMe = () => {
   return (
     <div>
-      {/* <img
-        className="w-full h-screen object-cover "
-        src="https://images.unsplash.com/photo-1541654056076-0a252e083078?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      ></img> */}
       <div className="m-5 h-screen relative">
         <img
           src="https://images.unsplash.com/photo-1541654056076-0a252e083078?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           className="w-full h-full object-cover absolute"
         />
-        <div className="bg-white/20 backdrop-blur-md drop-shadow-md p-5 rounded-lg absolute right-10 top-1/3">
+        <div className="bg-white/20 backdrop-blur-md drop-shadow-md p-5 rounded-lg absolute right-10 md:top-1/3 top-1/4">
           <h1 className="font-title sm:text-4xl text-black">
             Hi there, I'm Riley
           </h1>
@@ -43,7 +39,7 @@ const AboutMe = () => {
           </h2>
 
           {/* facts display */}
-          <div className="grid grid-cols-2 justify-evenly">
+          <div className="grid md:grid-cols-2 justify-evenly">
             <div className="relative mb-12 px-5 lg:mb-10">
               <div className="mb-2 flex justify-center">
                 <span>
