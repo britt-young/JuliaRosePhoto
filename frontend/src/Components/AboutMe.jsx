@@ -19,7 +19,7 @@ const AboutMe = () => {
         />
         <div className="bg-white/20 backdrop-blur-md drop-shadow-md p-5 rounded-lg absolute right-10 top-1/3">
           <h1 className="font-title sm:text-4xl text-black">Hi there, I'm Riley</h1>
-          <h2 className="font-body mb-10 uppercase text-dblue">
+          <h2 className="font-body mb-10 uppercase text-lilac">
             {" "}
             -{" "}
             <TypeAnimation
@@ -47,7 +47,7 @@ const AboutMe = () => {
                 <img src={year} alt="star" className="h-10 w-10" />
                 </span>
               </div>
-              <h6 className="text-black font-body uppercase mb-0 dark:text-linen text-center">
+              <h6 className="text-black font-body uppercase mb-0 dark:text-white text-center">
               3+ years of experience
               </h6>
               <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
@@ -60,7 +60,7 @@ const AboutMe = () => {
                 </span>
               </div>
               
-              <h6 className="text-black mb-0 font-body uppercase dark:text-linen text-center">
+              <h6 className="text-black mb-0 font-body uppercase dark:text-white text-center">
               48 HR sneak peek turn-around
               </h6>
               <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
@@ -72,7 +72,7 @@ const AboutMe = () => {
                 </span>
               </div>
               {/* <h5 className="mb-2 font-bold font-body text-center"></h5> */}
-              <h6 className="text-black mb-0 font-body uppercase dark:text-linen text-center">
+              <h6 className="text-black mb-0 font-body uppercase dark:text-white text-center">
                 50+ five star reviews
               </h6>
               <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
@@ -83,7 +83,7 @@ const AboutMe = () => {
                 <img src={edit} alt="star" className="h-10 w-10" />
                 </span>
               </div>
-              <h6 className="text-black mb-0 font-body uppercase dark:text-linen text-center">
+              <h6 className="text-black mb-0 font-body uppercase dark:text-white text-center">
                 natural-soft edit style
               </h6>
             </div>

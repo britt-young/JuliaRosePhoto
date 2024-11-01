@@ -25,24 +25,17 @@ const HomeIntro = () => {
           culpa qui officia deserunt mollit anim id est laborum"
         </p>
 
-        {/* <button
+        <button
+          className="group relative inline-block focus:outline-none focus:ring"
           onClick={handleClick}
-          type="button"
-          className="font-body underline uppercase px-2 py-1 m-2 text-dblue hover:text-black"
         >
-          Inquire Now
-        </button> */}
+          <span className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-dblue transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
 
-        <a
-          class="group relative inline-block focus:outline-none focus:ring"
-          href="/Contact"
-        >
-          <span class="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-dblue transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
-
-          <span class="relative inline-block border-2 border-current px-8 py-3 text-sm font-body uppercase tracking-widest text-black group-active:text-opacity-75">
+          <span className="relative inline-block border-2 border-current px-8 py-3 text-sm font-body font-semibold uppercase tracking-widest text-black group-active:text-opacity-75">
             Inquire Now
           </span>
-        </a>
+        </button>
+
       </div>
     </div>
   );
