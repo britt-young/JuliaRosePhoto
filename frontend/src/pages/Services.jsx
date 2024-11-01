@@ -14,7 +14,7 @@ const Services = () => {
   return (
     <div className="w-full">
       <h2>
-        <span className="flex items-center flex-col font-title sm:text-5xl mt-10">
+        <span className="flex items-center flex-col text-black font-title sm:text-5xl mt-10">
           Signature Packages
         </span>
       </h2>
@@ -25,11 +25,14 @@ const Services = () => {
         <div className="basis-2/5 flex flex-col items-center justify-center">
           <h1 className=""></h1>
           <button
+            className="group relative inline-block focus:outline-none focus:ring"
             onClick={handleClick}
-            type="button"
-            className="font-body underline uppercase px-2 py-1 text-deepp hover:text-black"
           >
-            Inquire Now
+            <span className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-dblue transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
+
+            <span className="relative inline-block border-2 border-current px-8 py-3 text-sm font-body font-semibold uppercase tracking-widest text-black group-active:text-opacity-75">
+              Inquire Now
+            </span>
           </button>
         </div>
         <div className="basis-3/5 p-10">

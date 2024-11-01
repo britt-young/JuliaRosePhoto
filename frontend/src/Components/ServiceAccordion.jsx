@@ -17,13 +17,13 @@ const ServiceAccordion = () => {
       <Accordion>
         {/* first tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-deepp font-title text-lg text-black hover:bg-white">
+          <AccordionTitle className="bg-lilac font-title text-lg text-black hover:bg-dblue">
             01. Send Me a Request
           </AccordionTitle>
           <AccordionContent>
             <p className="text-black font-body uppercase">
               One you've decided which package you want, go to the&nbsp;
-              <a href="/Contact" className="text-lightp hover:text-deepp">
+              <a href="/Contact" className="text-lilac hover:text-dblue">
                 contact&nbsp;
               </a>
               page and fill out the request form
@@ -36,7 +36,7 @@ const ServiceAccordion = () => {
 
         {/* second tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-lightp font-title text-lg text-black hover:bg-white">
+          <AccordionTitle className="bg-lilac font-title text-lg text-black hover:bg-dblue">
             02. Consultation
           </AccordionTitle>
           <AccordionContent>
@@ -52,7 +52,7 @@ const ServiceAccordion = () => {
                 <a
                   href="https://tailwindui.com/"
                   rel="nofollow"
-                  className="text-lightp hover:text-deepp"
+                  className="text-lilac hover:text-dblue"
                 >
                   Link for other shiz
                 </a>
@@ -63,7 +63,7 @@ const ServiceAccordion = () => {
 
         {/* third tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-deepp font-title text-lg text-black hover:bg-white">
+          <AccordionTitle className="bg-lilac font-title text-lg text-black hover:bg-dblue">
             03. Payment
           </AccordionTitle>
           <AccordionContent>
@@ -85,7 +85,7 @@ const ServiceAccordion = () => {
 
         {/* fourth tab */}
         <AccordionPanel> 
-          <AccordionTitle className="bg-lightp font-title text-lg text-black hover:bg-white">
+          <AccordionTitle className="bg-lilac font-title text-lg text-black hover:bg-dblue">
             04. Sneak Peeks & Gallery Access
           </AccordionTitle>
           <AccordionContent>

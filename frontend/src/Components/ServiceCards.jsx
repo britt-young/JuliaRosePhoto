@@ -25,13 +25,13 @@ const ServiceCards = () => {
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-deepp rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              <span className="inline-block bg-lilac/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #RamsetPark
               </span>
-              <span className="inline-block bg-lightp rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              <span className="inline-block bg-lgrey/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #ALTgrads
               </span>
-              <span className="inline-block bg-deepp rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              <span className="inline-block bg-lightp/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #CLASSOF2024
               </span>
             </div>
@@ -53,13 +53,13 @@ const ServiceCards = () => {
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-lightp rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              <span className="inline-block bg-lgrey/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #TallahasseeBotanicalGardens
               </span>
-              <span className="inline-block bg-deepp rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              <span className="inline-block bg-lilac/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #SeniorSessions
               </span>
-              <span className="inline-block bg-lightp rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              <span className="inline-block bg-lightp/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #SpringSessions
               </span>
             </div>
@@ -81,13 +81,13 @@ const ServiceCards = () => {
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-lightp rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              <span className="inline-block bg-lightp/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #TheOhioState
               </span>
-              <span className="inline-block bg-deepp rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              <span className="inline-block bg-lgrey/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #TheShoe
               </span>
-              <span className="inline-block bg-deepp rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              <span className="inline-block bg-lilac/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #graduationday
               </span>
             </div>
@@ -109,13 +109,13 @@ const ServiceCards = () => {
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-deepp rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              <span className="inline-block bg-lilac/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #FallsCreekPark
               </span>
-              <span className="inline-block bg-lightp rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              <span className="inline-block bg-lightp/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #MomentoMoments
               </span>
-              <span className="inline-block bg-lightp rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
+              <span className="inline-block bg-lgrey/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #AtlantaFamilySessions
               </span>
             </div>
