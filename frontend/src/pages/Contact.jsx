@@ -4,7 +4,7 @@ import SocialMedia from "../Components/SocialMedia";
 
 const Contact = () => {
   return (
-    <div className="flex">
+    <div className="flex flex-col lg:flex-row">
       <ContactForm />
       <SocialMedia />
     </div>

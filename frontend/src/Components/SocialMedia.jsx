@@ -2,9 +2,9 @@ import React from "react";
 
 const SocialMedia = () => {
   return (
-    <div className="w-1/2 m-5 p-5 flex flex-col justify-center">
-      <h2 className="font-body uppercase text-xl flex justify-center">
-        Follow Riley Addison Photography
+    <div className="lg:w-1/2 m-5 p-5 flex flex-col justify-center">
+      <h2 className="font-body text-xl flex justify-center">
+        Hope to work with you in the future! Thanks!
       </h2>
       <div className="bg-white w-full h-auto p-5 flex items-center justify-center flex-wrap">
         <div className="flex items-center justify-center gap-4 pb-4">

@@ -5,7 +5,6 @@ import sneak from "../assets/icons/sneak_peek.png";
 import edit from "../assets/icons/edit.png";
 import year from "../assets/icons/experience.png";
 
-
 const AboutMe = () => {
   return (
     <div>
@@ -15,21 +14,19 @@ const AboutMe = () => {
           className="w-full h-full object-cover absolute"
         />
         <div className="bg-white/20 backdrop-blur-md drop-shadow-md p-5 rounded-lg absolute right-10 md:top-1/3 top-1/4">
-          <h1 className="font-title sm:text-4xl text-black">
-            Hi there, I'm Riley
-          </h1>
+          <h1 className="font-title sm:text-4xl text-black">MEET RILEY!</h1>
           <h2 className="font-body mb-10 uppercase text-white">
-            {" "}
             -{" "}
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 "photographer",
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                500,
                 "editor",
-                1000,
-                "stylist",
-                1000,
+                500,
+                "animal lover",
+                500,
+                "Ohio State fan",
+                500,
               ]}
               wrapper="span"
               speed={50}
