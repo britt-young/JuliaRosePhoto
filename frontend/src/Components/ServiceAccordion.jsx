@@ -12,13 +12,13 @@ const ServiceAccordion = () => {
     <div>
       <div>
         <h2 className="sm:text-4xl text-black font-title ml-10">
-          How it works:
+          Everything you need to know (FAQs):
         </h2>
       </div>
       <Accordion>
         {/* first tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-lilac font-title text-lg text-black hover:bg-dblue">
+          <AccordionTitle className="bg-lilac font-body text-lg text-black hover:bg-dblue">
             01. Send Me a Request
           </AccordionTitle>
           <AccordionContent>
@@ -49,7 +49,7 @@ const ServiceAccordion = () => {
 
         {/* second tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-lilac font-title text-lg text-black hover:bg-dblue">
+          <AccordionTitle className="bg-lilac/80 font-body text-lg text-black hover:bg-dblue/80">
             02. Consultation
           </AccordionTitle>
           <AccordionContent>
@@ -76,7 +76,7 @@ const ServiceAccordion = () => {
 
         {/* third tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-lilac font-title text-lg text-black hover:bg-dblue">
+          <AccordionTitle className="bg-lilac/70 font-body text-lg text-black hover:bg-dblue/70">
             03. Payment
           </AccordionTitle>
           <AccordionContent>
@@ -98,7 +98,7 @@ const ServiceAccordion = () => {
 
         {/* fourth tab */}
         <AccordionPanel>
-          <AccordionTitle className="bg-lilac font-title text-lg text-black hover:bg-dblue">
+          <AccordionTitle className="bg-lilac/60 font-body text-lg text-black hover:bg-dblue/60">
             04. Sneak Peeks & Gallery Access
           </AccordionTitle>
           <AccordionContent>
