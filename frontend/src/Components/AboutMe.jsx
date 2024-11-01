@@ -19,7 +19,7 @@ const AboutMe = () => {
         />
         <div className="bg-white/20 backdrop-blur-md drop-shadow-md p-5 rounded-lg absolute right-10 top-1/3">
           <h1 className="font-title sm:text-4xl text-black">Hi there, I'm Riley</h1>
-          <h2 className="font-body mb-10 uppercase text-deepp">
+          <h2 className="font-body mb-10 uppercase text-dblue">
             {" "}
             -{" "}
             <TypeAnimation
