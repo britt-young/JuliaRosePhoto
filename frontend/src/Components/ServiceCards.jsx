@@ -24,7 +24,7 @@ const ServiceCards = () => {
                 This is a single person session for students graduating from either high school, college, or any form of further education
               </p>
             </div>
-            <div className="px-6 pt-4 pb-2">
+            <div className="flex flex-wrap px-6 pt-4 pb-2">
               <span className="inline-block bg-lilac/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #RamsetPark
               </span>
@@ -52,9 +52,9 @@ const ServiceCards = () => {
                 This is a single person session
               </p>
             </div>
-            <div className="px-6 pt-4 pb-2">
+            <div className="flex flex-wrap px-6 pt-4 pb-2">
               <span className="inline-block bg-lgrey/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
-                #TallahasseeBotanicalGardens
+                #BotanicalGardens
               </span>
               <span className="inline-block bg-lilac/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #SeniorSessions
@@ -80,7 +80,7 @@ const ServiceCards = () => {
                 This is a session for 2 or more people with a maximum of 10
               </p>
             </div>
-            <div className="px-6 pt-4 pb-2">
+            <div className="flex flex-wrap px-6 pt-4 pb-2">
               <span className="inline-block bg-lightp/80 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">
                 #TheOhioState
               </span>
@@ -102,7 +102,7 @@ const ServiceCards = () => {
               src={family}
               alt="family portrait"
             ></img>
-            <div className="px-6 py-4">
+            <div className="flex flex-wrap px-6 py-4">
               <div className="font-body font-bold text-xl mb-2">Family Sessions</div>
               <p className="text-gray-700 font-body uppercase">
                 This session is for families with children and/or pets. Minimum of 3 people and a maximum of 10
