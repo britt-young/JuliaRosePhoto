@@ -1,4 +1,5 @@
 import React from "react";
+import star from "../assets/icons/star.png";
 import {
   Accordion,
   AccordionContent,
@@ -21,9 +22,21 @@ const ServiceAccordion = () => {
             01. Send Me a Request
           </AccordionTitle>
           <AccordionContent>
-            <p className="text-black font-body uppercase">
+            <p className="text-black font-body uppercase mb-4">
+              {/* <span
+                className="display: inline-block pr-2"
+              >
+                <img
+                  src={star}
+                  alt="Saved Icon"
+                  className="w-4 h-4"
+                />
+              </span> */}
               One you've decided which package you want, go to the&nbsp;
-              <a href="/Contact" className="text-lilac hover:text-dblue">
+              <a
+                href="/Contact"
+                className="text-lilac hover:text-dblue underline"
+              >
                 contact&nbsp;
               </a>
               page and fill out the request form
@@ -40,7 +53,7 @@ const ServiceAccordion = () => {
             02. Consultation
           </AccordionTitle>
           <AccordionContent>
-            <p className="mb-2 text-black font-body uppercase pt-2">
+            <p className="mb-4 text-black font-body uppercase pt-2">
               Once we've scheduled our session, we'll have a consultation to
               discuss the details such as
             </p>
@@ -54,7 +67,7 @@ const ServiceAccordion = () => {
                   rel="nofollow"
                   className="text-lilac hover:text-dblue"
                 >
-                  Link for other shiz
+                  Link for other shiz??
                 </a>
               </li>
             </ul>
@@ -67,12 +80,12 @@ const ServiceAccordion = () => {
             03. Payment
           </AccordionTitle>
           <AccordionContent>
-            <p className="mb-2 text-black font-body uppercase">
+            <p className="mb-4 text-black font-body uppercase">
               At the end of our scheduling/ consultation communications, I'll
               send you an invoice for 50% of the session fee via text or e-mail.
               The remaining balance is due immediately following our session
             </p>
-            <p className="mb-2 text-black font-body">
+            <p className="text-black font-body">
               I take the following forms of payments:
             </p>
             <ul className="list-disc pl-5 text-black font-body">
@@ -84,18 +97,22 @@ const ServiceAccordion = () => {
         </AccordionPanel>
 
         {/* fourth tab */}
-        <AccordionPanel> 
+        <AccordionPanel>
           <AccordionTitle className="bg-lilac font-title text-lg text-black hover:bg-dblue">
             04. Sneak Peeks & Gallery Access
           </AccordionTitle>
           <AccordionContent>
-            <p className="mb-2 text-black font-body uppercase">
-              Sneak peeks will be delivered within <span className="font-bold">48</span> hours of our session via
+            <p className="mb-4 text-black font-body uppercase">
+              Sneak peeks will be delivered within{" "}
+              <span className="font-bold">48</span> hours of our session via
               text as a Google Drive link. The full gallery will be delivered
-              within <span className="font-bold">7</span> days of our session via email with an updated link.
+              within <span className="font-bold">7</span> days of our session
+              via email with an updated link.
             </p>
             <p className="mb-2 text-black font-body">
-            <span className="font-bold">Note: </span> You do <span className="font-bold">NOT</span> need a Google account to view your gallery
+              <span className="font-bold">Note: </span> You do{" "}
+              <span className="font-bold">NOT</span> need a Google account to
+              view your gallery
             </p>
           </AccordionContent>
         </AccordionPanel>
