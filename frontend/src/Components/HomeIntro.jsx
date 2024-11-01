@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+// import peach from "../assets/icons/peach.png";
 
 const HomeIntro = () => {
   const navigate = useNavigate();
@@ -11,9 +12,17 @@ const HomeIntro = () => {
 
   return (
     <div className="mb-5 max-w mx-auto">
-      <h1 className="flex flex-col items-center font-title sm:text-7xl m-10">
+      <h1 className="flex flex-col items-center font-title sm:text-7xl mb-10">
         Riley Addison Photography
       </h1>
+      {/* <h3 className="flex justify-center font-body text-black text-md uppercase">
+            <div className="mb-2 content-center">
+              <span>
+                <img src={peach} alt="peach" className="h-4 w-4" />
+              </span>
+            </div>
+            Atlanta based
+          </h3> */}
       <div className="flex flex-col items-center m-5">
         <p className="font-body text-md pb-4 uppercase">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

@@ -5,6 +5,7 @@ import sneak from "../assets/icons/sneak_peek.png";
 import edit from "../assets/icons/edit.png";
 import year from "../assets/icons/experience.png";
 
+
 const AboutMe = () => {
   return (
     <div>
@@ -18,7 +19,9 @@ const AboutMe = () => {
           className="w-full h-full object-cover absolute"
         />
         <div className="bg-white/20 backdrop-blur-md drop-shadow-md p-5 rounded-lg absolute right-10 top-1/3">
-          <h1 className="font-title sm:text-4xl text-black">Hi there, I'm Riley</h1>
+          <h1 className="font-title sm:text-4xl text-black">
+            Hi there, I'm Riley
+          </h1>
           <h2 className="font-body mb-10 uppercase text-white">
             {" "}
             -{" "}
@@ -38,17 +41,17 @@ const AboutMe = () => {
               repeat={Infinity}
             />
           </h2>
-          
+
           {/* facts display */}
           <div className="grid grid-cols-2 justify-evenly">
             <div className="relative mb-12 px-5 lg:mb-10">
               <div className="mb-2 flex justify-center">
                 <span>
-                <img src={year} alt="star" className="h-10 w-10" />
+                  <img src={year} alt="star" className="h-10 w-10" />
                 </span>
               </div>
               <h6 className="text-black font-body uppercase mb-0 dark:text-white text-center">
-              3+ years of experience
+                3+ years of experience
               </h6>
               <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
             </div>
@@ -56,12 +59,12 @@ const AboutMe = () => {
             <div className="relative mb-12 px-5 lg:mb-10">
               <div className="mb-2 flex justify-center">
                 <span>
-                <img src={sneak} alt="star" className="h-10 w-10" />
+                  <img src={sneak} alt="star" className="h-10 w-10" />
                 </span>
               </div>
-              
+
               <h6 className="text-black mb-0 font-body uppercase dark:text-white text-center">
-              48 HR sneak peek turn-around
+                48 HR sneak peek turn-around
               </h6>
               <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
             </div>
@@ -80,7 +83,7 @@ const AboutMe = () => {
             <div className="relative mb-12 px-5 lg:mb-0">
               <div className="mb-2 flex justify-center">
                 <span>
-                <img src={edit} alt="star" className="h-10 w-10" />
+                  <img src={edit} alt="star" className="h-10 w-10" />
                 </span>
               </div>
               <h6 className="text-black mb-0 font-body uppercase dark:text-white text-center">

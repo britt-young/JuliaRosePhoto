@@ -1,5 +1,5 @@
 import React from "react";
-import star from "../assets/icons/star.png";
+
 import {
   Accordion,
   AccordionContent,
@@ -23,15 +23,6 @@ const ServiceAccordion = () => {
           </AccordionTitle>
           <AccordionContent>
             <p className="text-black font-body uppercase mb-4">
-              {/* <span
-                className="display: inline-block pr-2"
-              >
-                <img
-                  src={star}
-                  alt="Saved Icon"
-                  className="w-4 h-4"
-                />
-              </span> */}
               One you've decided which package you want, go to the&nbsp;
               <a
                 href="/Contact"
