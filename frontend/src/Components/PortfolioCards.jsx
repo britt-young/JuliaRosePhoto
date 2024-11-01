@@ -34,9 +34,9 @@ const PortfolioCards = () => {
               className="group relative inline-block focus:outline-none focus:ring"
               onClick={handleClick}
             >
-              <span className="absolute inset-0 translate-x-0 translate-y-0 bg-lilac transition-transform group-hover:translate-x-1.5 group-hover:translate-y-1.5"></span>
+              <span className="absolute inset-0 translate-x-0 translate-y-0 bg-lilac/80 transition-transform group-hover:translate-x-1.5 group-hover:translate-y-1.5"></span>
 
-              <span className="relative inline-block border-2 border-current px-2 py-1 text-sm font-semibold font-body tracking-widest">
+              <span className="relative inline-block border-2 border-grey px-2 py-1 text-sm font-semibold font-body">
                 see gallery
               </span>
             </button>
@@ -60,9 +60,9 @@ const PortfolioCards = () => {
               className="group relative inline-block focus:outline-none focus:ring"
               onClick={handleClick}
             >
-              <span className="absolute inset-0 translate-x-0 translate-y-0 bg-lilac transition-transform group-hover:translate-x-1.5 group-hover:translate-y-1.5"></span>
+              <span className="absolute inset-0 translate-x-0 translate-y-0 bg-lilac/80 transition-transform group-hover:translate-x-1.5 group-hover:translate-y-1.5"></span>
 
-              <span className="relative inline-block border-2 border-current px-2 py-1 text-sm font-semibold font-body tracking-widest">
+              <span className="relative inline-block border-2 border-grey px-2 py-1 text-sm font-semibold font-body ">
                 see gallery
               </span>
             </button>
@@ -86,9 +86,9 @@ const PortfolioCards = () => {
               className="group relative inline-block focus:outline-none focus:ring"
               onClick={handleClick}
             >
-              <span className="absolute inset-0 translate-x-0 translate-y-0 bg-lilac transition-transform group-hover:translate-x-1.5 group-hover:translate-y-1.5"></span>
+              <span className="absolute inset-0 translate-x-0 translate-y-0 bg-lilac/80 transition-transform group-hover:translate-x-1.5 group-hover:translate-y-1.5"></span>
 
-              <span className="relative inline-block border-2 border-current px-2 py-1 text-sm font-semibold font-body tracking-widest">
+              <span className="relative inline-block border-2 border-grey px-2 py-1 text-sm font-semibold font-body">
                 see gallery
               </span>
             </button>
@@ -112,9 +112,9 @@ const PortfolioCards = () => {
               className="group relative inline-block focus:outline-none focus:ring"
               onClick={handleClick}
             >
-              <span className="absolute inset-0 translate-x-0 translate-y-0 bg-lilac transition-transform group-hover:translate-x-1.5 group-hover:translate-y-1.5"></span>
+              <span className="absolute inset-0 translate-x-0 translate-y-0 bg-lilac/80 transition-transform group-hover:translate-x-1.5 group-hover:translate-y-1.5"></span>
 
-              <span className="relative inline-block border-2 border-current px-2 py-1 text-sm font-semibold font-body tracking-widest">
+              <span className="relative inline-block border-2 border-grey px-2 py-1 text-sm font-semibold font-body">
                 see gallery
               </span>
             </button>

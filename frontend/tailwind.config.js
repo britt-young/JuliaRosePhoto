@@ -5,11 +5,6 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", flowbite.content(),],
   theme: {
     colors: {
-      purp: "#D9ADD1",
-      burnt:"#E36729",
-      pp: "#F89493",
-      bblue: "#CBCADC",
-      lgreen: "#AEA332",
       white: "#FFFFFF",
       black: "#000000",
 

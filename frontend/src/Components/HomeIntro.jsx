@@ -31,7 +31,7 @@ const HomeIntro = () => {
         >
           <span className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-dblue transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
 
-          <span className="relative inline-block border-2 border-current px-8 py-3 text-sm font-body font-semibold uppercase tracking-widest text-black group-active:text-opacity-75">
+          <span className="relative inline-block border-2 border-grey px-8 py-3 text-sm font-body font-semibold uppercase tracking-widest text-black group-active:text-opacity-75">
             Inquire Now
           </span>
         </button>

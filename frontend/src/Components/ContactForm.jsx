@@ -3,12 +3,12 @@ import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   // state to track which checkbox is selected
-// State to track the checkbox selections
-const [checkboxes, setCheckboxes] = useState({
-  check_seniors: false,
-  check_couples: false,
-  check_family: false,
-});
+  // State to track the checkbox selections
+  const [checkboxes, setCheckboxes] = useState({
+    check_seniors: false,
+    check_couples: false,
+    check_family: false,
+  });
 
   // update the selected session when a checkbox is clicked
   const handleChange = (e) => {
@@ -28,9 +28,9 @@ const [checkboxes, setCheckboxes] = useState({
       !formData.get("user_name") ||
       !formData.get("user_email") ||
       !formData.get("message") ||
-      !checkboxes.check_seniors &&
-      !checkboxes.check_couples &&
-      !checkboxes.check_family
+      (!checkboxes.check_seniors &&
+        !checkboxes.check_couples &&
+        !checkboxes.check_family)
     ) {
       setFormStatus("All fields are required.");
       return;
@@ -48,7 +48,11 @@ const [checkboxes, setCheckboxes] = useState({
       setFormStatus("Message Sent!");
       // reset the form after a successful submission
       form.current.reset();
-      setCheckboxes({ check_seniors: false, check_couples: false, check_family: false });
+      setCheckboxes({
+        check_seniors: false,
+        check_couples: false,
+        check_family: false,
+      });
     } catch (error) {
       console.error("Message sending failed", error.text);
       setFormStatus("Message sending failed. Please try again.");
@@ -57,8 +61,10 @@ const [checkboxes, setCheckboxes] = useState({
 
   return (
     <div className="w-1/2 m-5 p-5">
-      <h1 className="font-title text-5xl flex justify-center">Send me a request!</h1>
-      <div className="mx-5 p-5 shadow-lg">
+      <h1 className="font-title text-5xl flex justify-center">
+        something here?
+      </h1>
+      <div className="p-5 shadow-lg">
         <form
           ref={form}
           onSubmit={sendEmail}
@@ -91,22 +97,39 @@ const [checkboxes, setCheckboxes] = useState({
           <div className="flex flex-col gap-4 px-10">
             {/* Seniors */}
             <div className="inline-flex items-start">
-              <label className="flex items-start cursor-pointer relative" htmlFor="check_seniors">
+              <label
+                className="flex items-start cursor-pointer relative"
+                htmlFor="check_seniors"
+              >
                 <input
                   type="checkbox"
                   name="check_seniors"
                   checked={checkboxes.check_seniors}
                   onChange={handleChange}
-                  className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-deepp checked:border-deepp"
+                  className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-lgrey checked:border-lgrey"
                   id="check_seniors"
                 />
                 <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" strokeWidth="1">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    strokeWidth="1"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
                   </svg>
                 </span>
               </label>
-              <label className="cursor-pointer ml-2 text-slate-600 text-sm" htmlFor="check_seniors">
+              <label
+                className="cursor-pointer ml-2 text-slate-600 text-sm"
+                htmlFor="check_seniors"
+              >
                 <div>
                   <p className="font-bold uppercase">Seniors/ Individual</p>
                   <p className="text-slate-500">1 person session</p>
@@ -116,22 +139,39 @@ const [checkboxes, setCheckboxes] = useState({
 
             {/* Couples */}
             <div className="inline-flex items-start">
-              <label className="flex items-start cursor-pointer relative" htmlFor="check_couples">
+              <label
+                className="flex items-start cursor-pointer relative"
+                htmlFor="check_couples"
+              >
                 <input
                   type="checkbox"
                   name="check_couples"
                   checked={checkboxes.check_couples}
                   onChange={handleChange}
-                  className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-deepp checked:border-deepp"
+                  className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-lgrey checked:border-lgrey"
                   id="check_couples"
                 />
                 <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" strokeWidth="1">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    strokeWidth="1"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
                   </svg>
                 </span>
               </label>
-              <label className="cursor-pointer ml-2 text-slate-600 text-sm" htmlFor="check_couples">
+              <label
+                className="cursor-pointer ml-2 text-slate-600 text-sm"
+                htmlFor="check_couples"
+              >
                 <div>
                   <p className="font-bold uppercase">Couples/ Group</p>
                   <p className="text-slate-500">2-10 person session</p>
@@ -141,22 +181,39 @@ const [checkboxes, setCheckboxes] = useState({
 
             {/* Family */}
             <div className="inline-flex items-start">
-              <label className="flex items-start cursor-pointer relative" htmlFor="check_family">
+              <label
+                className="flex items-start cursor-pointer relative"
+                htmlFor="check_family"
+              >
                 <input
                   type="checkbox"
                   name="check_family"
                   checked={checkboxes.check_family}
                   onChange={handleChange}
-                  className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-deepp checked:border-deepp"
+                  className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-lgrey checked:border-lgrey"
                   id="check_family"
                 />
-                <span className="absolute text-linen opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" stroke="currentColor" strokeWidth="1">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    stroke="currentColor"
+                    strokeWidth="1"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clipRule="evenodd"
+                    ></path>
                   </svg>
                 </span>
               </label>
-              <label className="cursor-pointer ml-2 text-slate-600 text-sm" htmlFor="check_family">
+              <label
+                className="cursor-pointer ml-2 text-slate-600 text-sm"
+                htmlFor="check_family"
+              >
                 <div>
                   <p className="font-bold uppercase">Family/ Pets</p>
                   <p className="text-slate-500">3-10 person session</p>
@@ -167,7 +224,7 @@ const [checkboxes, setCheckboxes] = useState({
 
           <button
             type="submit"
-            className="bg-lightp text-linen p-2 rounded hover:bg-deepp"
+            className="text-black p-2 border-2 border-lilac rounded bg-lilac uppercase tracking-widest hover:border-white"
           >
             Send
           </button>
