@@ -1,10 +1,10 @@
 import React from "react";
 
-import family from "../assets/img/black-fam.jpg";
+import family from "../assets/img/fam.jpeg";
 import girl from "../assets/img/girl-senior.png";
 import boy from "../assets/img/senior-boy.png";
 import group from "../assets/img/osu-grad.png";
-import event from "../assets/img/elopment.png;"
+import event from "../assets/img/elopement.jpeg";
 
 const ServiceCards = () => {
   return (
@@ -117,13 +117,13 @@ const ServiceCards = () => {
       {/* Fifth service card */}
       <div className="relative w-full h-full flex p-1 justify-around">
         <div className="max-w-sm overflow-hidden shadow-lg">
-          <img className="w-full" scr={event} alt="events"></img>
+          <img className="w-full" src={event} alt="event"></img>
           <div className="flex flex-wrap px-6 py-4">
             <div className="font-body font-bold text-xl mb-2">
               Special Events
             </div>
             <p className="text-gray-700 font-body uppercase">
-              Parties and elopements under 50 people
+              This session is for special events, parties, or elopements under 50 people
             </p>
           </div>
           <div className="px-6 pt-4 pb-2">
