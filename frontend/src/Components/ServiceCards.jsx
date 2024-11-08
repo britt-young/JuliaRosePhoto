@@ -4,7 +4,7 @@ import family from "../assets/img/black-fam.jpg";
 import girl from "../assets/img/girl-senior.png";
 import boy from "../assets/img/senior-boy.png";
 import group from "../assets/img/osu-grad.png";
-import event from "../assets/img/elopment.avif;"
+import event from "../assets/img/elopment.png;"
 
 const ServiceCards = () => {
   return (
