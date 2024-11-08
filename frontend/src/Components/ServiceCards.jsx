@@ -11,7 +11,7 @@ const ServiceCards = () => {
   return (
     <div className="grid grid-cols-2 lg:grid-cols-4">
         {/* First service card */}
-        <div className="p-5 flex justify-center">
+        <div className="p-5  flex justify-around">
           <div className="max-w-sm overflow-hidden shadow-lg ">
             <img
               className="w-full"
@@ -39,7 +39,7 @@ const ServiceCards = () => {
         </div>
 
         {/* Second service card */}
-        <div className="p-5 flex justify-center">
+        <div className="p-5  flex justify-around">
           <div className="max-w-sm overflow-hidden shadow-lg">
             <img
               className="w-full"
@@ -67,7 +67,7 @@ const ServiceCards = () => {
         </div>
 
         {/* Third service card */}
-        <div className="p-5 flex justify-center">
+        <div className="p-5  flex justify-around">
           <div className="max-w-sm overflow-hidden shadow-lg">
             <img
               className="w-full"
@@ -95,7 +95,7 @@ const ServiceCards = () => {
         </div>
 
         {/* Fourth service card */}
-        <div className="p-5 flex justify-center">
+        <div className="p-5 flex justify-around">
           <div className="max-w-sm overflow-hidden shadow-lg">
             <img
               className="w-full"
