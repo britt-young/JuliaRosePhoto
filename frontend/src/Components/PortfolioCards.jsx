@@ -15,7 +15,7 @@ const PortfolioCards = () => {
   };
 
   return (
-    <div className="bg-linen grid grid-cols-1 lg:grid-cols-4 gap-5 m-10">
+    <div className="bg-white grid grid-cols-1 lg:grid-cols-4 gap-5 m-10">
       {/* portfolio cards */}
 
       {/* First card */}
