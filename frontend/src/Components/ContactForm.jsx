@@ -1,246 +1,137 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useState } from "react";
+import { Field, Label, Checkbox } from "@headlessui/react";
+import { Link } from "react-router-dom";
+
+//import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-  // state to track which checkbox is selected
-  // State to track the checkbox selections
-  const [checkboxes, setCheckboxes] = useState({
-    check_seniors: false,
-    check_couples: false,
-    check_family: false,
-  });
-
-  // update the selected session when a checkbox is clicked
-  const handleChange = (e) => {
-    const { name, checked } = e.target;
-    setCheckboxes((prev) => ({ ...prev, [name]: checked }));
-  };
-
-  const form = useRef();
-  const [formStatus, setFormStatus] = useState(null);
-
-  const sendEmail = async (e) => {
-    e.preventDefault();
-
-    // basic validation
-    const formData = new FormData(form.current);
-    if (
-      !formData.get("user_name") ||
-      !formData.get("user_email") ||
-      !formData.get("message") ||
-      (!checkboxes.check_seniors &&
-        !checkboxes.check_couples &&
-        !checkboxes.check_family)
-    ) {
-      setFormStatus("All fields are required.");
-      return;
-    }
-
-    // replace with owner emailjs.js infomation
-    try {
-      const response = await emailjs.sendForm(
-        "service_53ecpnp",
-        "template_lkmqk12",
-        form.current,
-        { publicKey: "G_2EUKwm4DuLTm0pd" }
-      );
-      console.log("Message sent successfully", response);
-      setFormStatus("Message Sent!");
-      // reset the form after a successful submission
-      form.current.reset();
-      setCheckboxes({
-        check_seniors: false,
-        check_couples: false,
-        check_family: false,
-      });
-    } catch (error) {
-      console.error("Message sending failed", error.text);
-      setFormStatus("Message sending failed. Please try again.");
-    }
-  };
+  const [enabled, setEnabled] = useState(false);
 
   return (
-    <div className="w-full lg:w-1/2 m-5 p-5">
-      <h1 className="font-title text-4xl flex justify-center">
-      We’re excited to hear from you—
-      </h1>
-      <div className="p-5 shadow-lg">
+    <div className="py-20 px-5 lg:px-0">
+      <div className="bg-transparent">
+        <div className="mx-auto text-center">
+          <h3>Send us a message</h3>
+          <p className="mt-1">
+            Aute magna irure deserunt veniam aliqua magna enim voluptate.
+          </p>
+        </div>
         <form
-          ref={form}
-          onSubmit={sendEmail}
-          className="flex flex-col w-full gap-4 font-body"
+          action="#"
+          method="POST"
+          className="lg:mx-auto mx-5 max-w-xl mt-12"
         >
-          <input
-            type="text"
-            placeholder="Name"
-            name="user_name"
-            id="user_name"
-            className="border p-2"
-          />
-
-          <input
-            type="email"
-            placeholder="E-mail"
-            name="user_email"
-            id="user_email"
-            className="border p-2"
-          />
-
-          <textarea
-            placeholder="Type your message here"
-            name="message"
-            id="message"
-            className="border py-2"
-            rows="10"
-          />
-
-          <div className="flex flex-col gap-4 px-10">
-            {/* Seniors */}
-            <div className="inline-flex items-start">
-              <label
-                className="flex items-start cursor-pointer relative"
-                htmlFor="check_seniors"
-              >
+          <div className="flex flex-col gap-y-6 grid grid-cols-2 gap-x-8 gap-y-0 lg:gap-y-6">
+            {/* Name Input */}
+            <div className="col-span-2 mb-0">
+              <label htmlFor="name" className="block text-gray-900">
+                Name
+              </label>
+              <div className="mt-1">
                 <input
-                  type="checkbox"
-                  name="check_seniors"
-                  checked={checkboxes.check_seniors}
-                  onChange={handleChange}
-                  className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-lgrey checked:border-lgrey"
-                  id="check_seniors"
+                  id="name"
+                  name="name"
+                  type="text"
+                  autoComplete="given-name"
+                  className="block w-full bg-gray-50 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
                 />
-                <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-3.5 w-3.5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    stroke="currentColor"
-                    strokeWidth="1"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </span>
+              </div>
+            </div>
+            {/* Email Input */}
+            <div className="col-span-2 mb-0">
+              <label htmlFor="email" className="block text-gray-900">
+                Email
               </label>
-              <label
-                className="cursor-pointer ml-2 text-slate-600 text-sm"
-                htmlFor="check_seniors"
-              >
-                <div>
-                  <p className="font-bold uppercase">Seniors/ Individual</p>
-                  <p className="text-slate-500">1 person session</p>
-                </div>
+              <div className="mt-1">
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autoComplete="email"
+                  className="block w-full bg-gray-50 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
+                />
+              </div>
+            </div>
+            {/* Phone Number Input */}
+            <div className="col-span-2 mb-0">
+              <label htmlFor="phone-number" className="block text-gray-900">
+                Phone number
               </label>
+              <div className="mt-1">
+                <input
+                  id="phone-number"
+                  name="phone-number"
+                  type="text"
+                  placeholder="123-456-7890"
+                  className="block w-full bg-gray-50 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
+                />
+              </div>
             </div>
 
-            {/* Couples */}
-            <div className="inline-flex items-start">
-              <label
-                className="flex items-start cursor-pointer relative"
-                htmlFor="check_couples"
-              >
-                <input
-                  type="checkbox"
-                  name="check_couples"
-                  checked={checkboxes.check_couples}
-                  onChange={handleChange}
-                  className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-lgrey checked:border-lgrey"
-                  id="check_couples"
-                />
-                <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            {/* Pricing Selection */}
+            <div className="col-span-2 mb-0">
+              <label className="inline-block text-gray-900">
+                What type of session are you interested in?
+              </label>
+              <div>
+                <select
+                  name="selectedPackage"
+                  defaultValue="default" // `defaultValue` is used here for the initial selection
+                  className="bg-none px-3.5 py-1 bg-gray-50 text-base font-normal text-gray-400 outline-1 dark:outline-gray-900 outline-gray-300"
+                >
+                  <option value="default" disabled>
+                    See Sessions
+                  </option>
+                  <option value="senior">Senior Portraits</option>
+                  <option value="solo">Solo Session</option>
+                  <option value="group">Couples & Groups</option>
+                  <option value="family">Family Session</option>
+                  <option value="event">Special Events</option>
+                </select>
+              </div>
+            </div>
+            {/* Privacy Input */}
+            <Field className="flex gap-x-4 col-span-2 mb-0">
+              <div className="flex h-6 items-center">
+                <Checkbox
+                  checked={enabled}
+                  onChange={setEnabled}
+                  className="group block size-4 border bg-white data-[checked]:bg-alt dark:bg-white/15 dark:border-white/15"
+                >
+                  {/* Checkmark icon */}
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-3.5 w-3.5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    stroke="currentColor"
-                    strokeWidth="1"
+                    className="stroke-white opacity-0 group-data-[checked]:opacity-100"
+                    viewBox="0 0 14 14"
+                    fill="none"
                   >
                     <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    ></path>
+                      d="M3 8L6 11L11 3.5"
+                      strokeWidth={2}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
-                </span>
-              </label>
-              <label
-                className="cursor-pointer ml-2 text-slate-600 text-sm"
-                htmlFor="check_couples"
-              >
-                <div>
-                  <p className="font-bold uppercase">Couples/ Group</p>
-                  <p className="text-slate-500">2-10 person session</p>
-                </div>
-              </label>
-            </div>
-
-            {/* Family */}
-            <div className="inline-flex items-start">
-              <label
-                className="flex items-start cursor-pointer relative"
-                htmlFor="check_family"
-              >
-                <input
-                  type="checkbox"
-                  name="check_family"
-                  checked={checkboxes.check_family}
-                  onChange={handleChange}
-                  className="peer h-5 w-5 cursor-pointer transition-all appearance-none rounded shadow hover:shadow-md border border-slate-300 checked:bg-lgrey checked:border-lgrey"
-                  id="check_family"
-                />
-                <span className="absolute text-white opacity-0 peer-checked:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-3.5 w-3.5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    stroke="currentColor"
-                    strokeWidth="1"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </span>
-              </label>
-              <label
-                className="cursor-pointer ml-2 text-slate-600 text-sm"
-                htmlFor="check_family"
-              >
-                <div>
-                  <p className="font-bold uppercase">Family/ Pets</p>
-                  <p className="text-slate-500">3-10 person session</p>
-                </div>
-              </label>
-            </div>
+                </Checkbox>
+              </div>
+              <Label className="text-sm/6 text-gray-600 dark:text-white">
+                By selecting this, you agree to our
+                <Link
+                  to="/privacy"
+                  className="text-blue-600 dark:text-alt underline ms-1"
+                >
+                  privacy policy
+                </Link>
+              </Label>
+            </Field>
           </div>
-
-          <button
-            type="submit"
-            className="text-black p-2 border-2 border-lilac rounded bg-lilac uppercase tracking-widest hover:border-white"
-          >
-            Send
-          </button>
-
-          {formStatus && (
-            <div
-              className={`mt-4 ${
-                formStatus.includes("failed") ||
-                formStatus === "All fields are required."
-                  ? "text-red-500"
-                  : "text-green-500"
-              }`}
+          <div className="mt-10">
+            <button
+              type="submit"
+              className="block min-w-fit bg-alt rounded-md px-3 py-1 text-center text-white"
             >
-              {formStatus}
-            </div>
-          )}
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </div>
