@@ -32,11 +32,6 @@ const Nav = () => {
         </Link>
       </li>
       <li className="hover:text-black transition mb-4 lg:mb-0">
-        <Link to="/gallery" onClick={handleLinkClick}>
-          Gallery
-        </Link>
-      </li>
-      <li className="hover:text-black transition mb-4 lg:mb-0">
         <Link to="/contact" onClick={handleLinkClick}>
           Contact
         </Link>
@@ -66,12 +61,12 @@ const Nav = () => {
           onClick={handleClick}
           aria-label="Toggle Menu"
         >
-          {click ? <FaTimes size={24} /> : <AiOutlineMenuFold size={24} />}
+          <AiOutlineMenuFold size={24} />
         </button>
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 left-0 w-full h-full bg-lightp text-white flex flex-col items-center justify-center transition-transform transform ${
+          className={`fixed top-0 left-0 w-full h-full bg-main text-white flex flex-col items-center justify-center transition-transform transform ${
             click ? "translate-x-0" : "translate-x-full"
           } lg:hidden z-50`}
         >
@@ -81,7 +76,7 @@ const Nav = () => {
             onClick={handleClick}
             aria-label="Close Menu"
           >
-            {click ? <FaTimes size={24} /> : <AiOutlineMenuFold size={24} />}
+             <FaTimes size={24} />
           </button>
 
           {menuItems}
