@@ -10,7 +10,7 @@ const ServiceCards = () => {
   return (
     <div className="flex flex-col max-w-4xl mx-auto m-5">
       {/* Senior Portraits */}
-      <div className="flex flex-col lg:flex-row lg:p-1 p-4">
+      <div className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer">
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4">
           <h4 className="uppercase font-semibold mb-2">Seniors</h4>
           <p className="text-gray-700">
@@ -18,34 +18,65 @@ const ServiceCards = () => {
             high school, college, or any form of further education
           </p>
         </div>
-        <div>
-          <img className="max-w-sm" src={boy} alt="senior portrait"></img>
+
+        <div className="relative">
+          <img
+            className="max-w-sm transition-all duration-300"
+            src={boy}
+            alt="senior portrait"
+          />
+          {/* overlay */}
+          <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
         </div>
       </div>
+
       {/* Individual Portraits */}
-      <div className="flex flex-col lg:flex-row lg:p-1 p-4">
-        <img className="max-w-sm" src={girl} alt="portrait"></img>
+      <div className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer">
+        <div className="relative">
+          <img
+            className="max-w-sm transition-all duration-300"
+            src={girl}
+            alt="portrait"
+          />
+          {/* overlay */}
+          <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
+        </div>
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4 w-4xl">
           <h4 className="uppercase font-semibold mb-2">solo</h4>
           <p className="text-gray-700">This is a single person session</p>
         </div>
-        <div></div>
       </div>
-      {/* Group Portraits */}
-      <div className="flex flex-col lg:flex-row lg:p-1 p-4">
+
+      {/* Couples & Group Portraits */}
+      <div className="group flex flex-col lg:flex-row lg:p-1 p-4  hover:cursor-pointer">
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4">
           <h4 className="uppercase font-semibold mb-2">couples & groups</h4>
           <p className="text-gray-700">
             This is a session for 2 or more people with a maximum of 10
           </p>
         </div>
-        <div>
-          <img className="max-w-sm" src={group} alt="couples portrait"></img>
+        <div className="relative">
+          <img
+            className="max-w-sm transition-all duration-300"
+            src={group}
+            alt="senior portrait"
+          />
+          {/* overlay */}
+          <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
         </div>
       </div>
-      {/* Individual Portraits */}
-      <div className="flex flex-col lg:flex-row lg:p-1 p-4">
-        <img className="max-w-sm" src={family} alt="family portrait"></img>
+
+      {/* Families Portraits */}
+      <div className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer">
+        <div className="relative">
+          <img
+            className="max-w-sm transition-all duration-300"
+            src={family}
+            alt="portrait"
+          />
+          {/* overlay */}
+          <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
+        </div>
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4 w-4xl">
           <h4 className="uppercase font-semibold mb-2">families</h4>
           <p className="text-gray-700">
@@ -55,8 +86,9 @@ const ServiceCards = () => {
         </div>
         <div></div>
       </div>
+
       {/* Events Portraits */}
-      <div className="flex flex-col lg:flex-row lg:p-1 p-4">
+      <div className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer">
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4">
           <h4 className="uppercase font-semibold mb-2">events</h4>
           <p className="text-gray-700">
@@ -64,8 +96,14 @@ const ServiceCards = () => {
             people
           </p>
         </div>
-        <div>
-          <img className="max-w-sm" src={event} alt="special events"></img>
+        <div className="relative">
+          <img
+            className="max-w-sm transition-all duration-300"
+            src={event}
+            alt="senior portrait"
+          />
+          {/* overlay */}
+          <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
         </div>
       </div>
     </div>
