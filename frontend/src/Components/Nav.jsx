@@ -20,7 +20,7 @@ const Nav = () => {
 
   // Define the menu content
   const menuItems = (
-    <ul className="list-none p-0 m-0 flex flex-col lg:flex-row lg:gap-20">
+    <ul className="list-none py-2 m-0 flex flex-col lg:flex-row lg:gap-20">
       <li className="hover:text-black transition mb-4 lg:mb-0">
         <Link to="/" onClick={handleLinkClick}>
           Home
@@ -31,7 +31,7 @@ const Nav = () => {
           Services
         </Link>
       </li>
-      <li className="hover:text-black transition mb-4 lg:mb-0">
+      <li className="hover:text-black transition mb-0 lg:mb-0">
         <Link to="/contact" onClick={handleLinkClick}>
           Contact
         </Link>
@@ -51,33 +51,33 @@ const Nav = () => {
         </div> */}
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex lg:items-center lg:justify-end">
+        <div className="hidden lg:flex lg:items-center lg:justify-center">
           {menuItems}
         </div>
 
         {/* Mobile Hamburger Menu Button */}
         <button
-          className="block lg:hidden p-2 transition z-60"
+          className="block lg:hidden p-2 transition z-60 cursor-pointer"
           onClick={handleClick}
           aria-label="Toggle Menu"
         >
-          <AiOutlineMenuFold size={24} />
+          {click ? <FaTimes size={24} /> : <AiOutlineMenuFold size={24} />}
         </button>
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 left-0 w-full h-full bg-main text-white flex flex-col items-center justify-center transition-transform transform ${
+          className={`fixed top-0 left-0 w-full h-full bg-main text-white flex flex-col items-center text-center justify-center transition-transform transform ${
             click ? "translate-x-0" : "translate-x-full"
           } lg:hidden z-50`}
         >
-          {/* Mobile Menu Close Button */}
+          {/* Mobile Menu Close Button
           <button
-            className="absolute top-4 right-4 p-2 transition"
+            className="absolute top-4 right-4 p-2 transition cursor-pointer"
             onClick={handleClick}
             aria-label="Close Menu"
           >
              <FaTimes size={24} />
-          </button>
+          </button> */}
 
           {menuItems}
         </div>

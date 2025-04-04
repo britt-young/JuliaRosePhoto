@@ -1,6 +1,7 @@
 import React from "react";
 import ContactForm from "../Components/ContactForm";
 import SocialMedia from "../Components/SocialMedia";
+import ServiceAccordion from "../Components/ServiceAccordion";
 
 const Contact = () => {
   return (
@@ -10,6 +11,5 @@ const Contact = () => {
     </div>
   );
 };
-    
 
 export default Contact;
