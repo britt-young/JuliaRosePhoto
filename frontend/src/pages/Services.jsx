@@ -1,7 +1,9 @@
 import React from "react";
+
 import ServiceCards from "../Components/ServiceCards";
 import ServiceAccordion from "../Components/ServiceAccordion";
 import { useNavigate } from "react-router-dom";
+import ServiceIntro from "../Components/ServiceIntro";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -12,13 +14,9 @@ const Services = () => {
   };
 
   return (
-    <div className="w-full">
-      <h2 className="flex items-center justify-center text-black m-30">
-          Signature Packages
-      </h2>
-      <div>
-        <ServiceCards />
-      </div>
+    <div>
+      <ServiceIntro />
+      <ServiceCards />
       <div className="bg-white flex flex-row h-auto">
         <div className="basis-2/5 flex flex-col items-center justify-center">
           <h1 className=""></h1>
@@ -26,11 +24,7 @@ const Services = () => {
             className="group relative inline-block focus:outline-none focus:ring"
             onClick={handleClick}
           >
-            <span className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-dblue transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
-
-            <span className="relative inline-block border-2 border-current px-8 py-3 text-sm font-body font-semibold uppercase tracking-widest text-black group-active:text-opacity-75">
-              Inquire Now
-            </span>
+            Inquire Now
           </button>
         </div>
         <div className="basis-3/5 p-10">
