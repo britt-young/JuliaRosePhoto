@@ -1,42 +1,78 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import {
+  CameraIcon,
+  SparklesIcon,
+  AdjustmentsHorizontalIcon,
+  BoltIcon,
+} from "@heroicons/react/20/solid";
 import riley from "../assets/img/riley.jpeg";
 
 const AboutMe = () => {
+  const features = [
+    {
+      name: "4 years of experience.",
+      description:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      icon: CameraIcon,
+    },
+    {
+      name: "50+ five star reviews.",
+      description:
+        "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+      icon: SparklesIcon,
+    },
+    {
+      name: "Soft-natural editing style",
+      description:
+        "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+      icon: AdjustmentsHorizontalIcon,
+    },
+    {
+      name: "24 hour sneak peeks",
+      description:
+        "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
+      icon: BoltIcon,
+    },
+  ];
   return (
-    <div className="flex my-10 min-h-screen max-w-7xl mx-auto gap-10 flex-col lg:flex-row items-center justify-center p-4">
-      <div className="w-full items-start text-start ml-15">
-        <h3 className="uppercase font-bold">about saying here </h3>
-        <h2 className="uppercase mb-10">Meet Riley</h2>
-        
-        <p className="mb-6 indent-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus magni sapiente consectetur voluptatum, ducimus nobis! Id suscipit necessitatibus tempora exercitationem voluptas, quasi, nobis ipsam, quaerat blanditiis soluta quas totam deserunt dolore ex sunt consectetur? Quae doloremque, minima ipsum optio quo consequuntur et repellendus dolor nam! Doloribus mollitia vero temporibus pariatur.</p>
-        <p className="indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, facilis atque dolorem commodi animi tempore architecto eum fugit tenetur nam amet consectetur eaque sunt nisi dignissimos dolor iure doloremque fuga ut corrupti! Assumenda voluptates placeat quas veniam, ea, qui eum velit omnis possimus deleniti temporibus repellendus repudiandae. Dolorum perspiciatis sunt laudantium hic modi eum distinctio explicabo, similique veritatis. Voluptate numquam saepe iure enim dignissimos unde quo temporibus minima distinctio fugiat fuga, cupiditate dolores reprehenderit laboriosam dolorum dolorem, nisi recusandae illum quam ipsam nemo vitae? Doloremque error sed, laudantium provident molestiae cupiditate optio fugit! Reprehenderit perspiciatis, omnis quas odio recusandae id.</p>
-        <h4 className="mt-20 text-black">
-          {" "}
-          <TypeAnimation
-            sequence={[
-              "3+ years of experience",
-              500,
-              "quick edit turn-around",
-              500,
-              "50+ five star reviews",
-              500,
-              "natural soft editing style",
-              500,
-            ]}
-            wrapper="span"
-            speed={50}
-            style={{ fontSize: "1em", display: "inline-block" }}
-            repeat={Infinity}
-          />
-        </h4>
+    <div className="flex my-10 min-h-screen max-w-7xl mx-auto gap-20 flex-col lg:flex-row items-center justify-center p-4">
+      <div className="items-start text-start ml-5">
+          <div className="lg:max-w-2xl">
+            <h2 className="text-base/7 font-semibold text-pink-500 uppercase tracking-tighter">
+              About me
+            </h2>
+            <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+              Hi, I'm Riley
+            </p>
+            <p className="mt-6 text-lg/8 text-gray-600">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+              impedit perferendis suscipit eaque, iste dolor cupiditate
+              blanditiis ratione.
+            </p>
+            <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
+              {features.map((feature) => (
+                <div key={feature.name} className="relative pl-9">
+                  <dt className="inline font-semibold text-gray-900">
+                    <feature.icon
+                      aria-hidden="true"
+                      className="absolute top-1 left-1 size-5 text-pink-500"
+                    />
+                    {feature.name}
+                  </dt>{" "}
+                  <dd className="inline">{feature.description}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
       </div>
-      <picture className="m-0 flex justify-center items-center">
-      <img
+
+      <picture className="mr-5 flex justify-center items-center">
+        <img
           src={riley}
-          className="w-[600px] object-cover rounded-sm shadow-lg"
+          className="w-100 object-cover rounded-full shadow-xl border-4 border-pink-100"
         />
-        </picture>
+      </picture>
     </div>
   );
 };
