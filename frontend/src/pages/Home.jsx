@@ -5,15 +5,10 @@ import AboutMe from "../Components/AboutMe";
 
 const Home = () => {
   return (
-    <div className="">
-          <HomeIntro />
-        <AboutMe />
-      <div className="">
-        <h2 className="max-w-7xl mx-auto flex flex-col items-center justify-center text-center">
-           Session Galleries
-        </h2>
-        <PortfolioCards />
-      </div>
+    <div className="min-h-screen">
+      <HomeIntro />
+      <AboutMe />
+      <PortfolioCards />
     </div>
   );
 };

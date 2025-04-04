@@ -16,6 +16,27 @@
   body {
     @apply transition-colors duration-500 font-sans m-0 p-0 box-border text-[min(3vw,2vh)];
   }
+  h1 {
+    @apply text-5xl font-bold;
+  }
+  h2 {
+    @apply text-5xl font-semibold;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  h4 {
+    @apply text-lg;
+  }
+  h5 {
+    @apply text-base;
+  }
+  h6 {
+    @apply text-base;
+  }
+  p {
+    @apply text-base;
+  }
 }
 
 /* @font-face {

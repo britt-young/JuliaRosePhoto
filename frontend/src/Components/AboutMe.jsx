@@ -1,91 +1,42 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import rating from "../assets/icons/rating.png";
-import sneak from "../assets/icons/sneak_peek.png";
-import edit from "../assets/icons/edit.png";
-import year from "../assets/icons/experience.png";
+import riley from "../assets/img/riley.jpg";
 
 const AboutMe = () => {
   return (
-    <div>
-      <div className="m-5 h-screen relative">
-        <img
-          src="https://images.unsplash.com/photo-1541654056076-0a252e083078?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          className="w-full h-full object-cover absolute"
-        />
-        <div className="bg-white/20 backdrop-blur-md drop-shadow-md p-5 rounded-lg absolute right-10 md:top-1/3 top-1/4">
-          <h1 className="font-title sm:text-4xl text-black">MEET RILEY!</h1>
-          <h2 className="font-body mb-10 uppercase text-white">
-            -{" "}
-            <TypeAnimation
-              sequence={[
-                "photographer",
-                500,
-                "editor",
-                500,
-                "animal lover",
-                500,
-                "Ohio State fan",
-                500,
-              ]}
-              wrapper="span"
-              speed={50}
-              style={{ fontSize: "1em", display: "inline-block" }}
-              repeat={Infinity}
-            />
-          </h2>
+    <div className="flex my-10 min-h-screen max-w-7xl mx-auto gap-10 flex-col lg:flex-row items-center justify-center p-4">
+      <div className="w-full items-start text-start">
+        <h3 className="uppercase font-bold">about saying here </h3>
+        <h2 className="uppercase mb-2">Meet Riley</h2>
+        <h4 className="mb-10 text-black">
+          {" "}
+          <TypeAnimation
+            sequence={[
+              "3+ years of experience",
+              500,
+              "quick edit turn-around",
+              500,
+              "50+ five star reviews",
+              500,
+              "natural soft editing style",
+              500,
+            ]}
+            wrapper="span"
+            speed={50}
+            style={{ fontSize: "1em", display: "inline-block" }}
+            repeat={Infinity}
+          />
+        </h4>
+        <p className="mb-6 indent-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus magni sapiente consectetur voluptatum, ducimus nobis! Id suscipit necessitatibus tempora exercitationem voluptas, quasi, nobis ipsam, quaerat blanditiis soluta quas totam deserunt dolore ex sunt consectetur? Quae doloremque, minima ipsum optio quo consequuntur et repellendus dolor nam! Doloribus mollitia vero temporibus pariatur.</p>
+        <p className="indent-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, facilis atque dolorem commodi animi tempore architecto eum fugit tenetur nam amet consectetur eaque sunt nisi dignissimos dolor iure doloremque fuga ut corrupti! Assumenda voluptates placeat quas veniam, ea, qui eum velit omnis possimus deleniti temporibus repellendus repudiandae. Dolorum perspiciatis sunt laudantium hic modi eum distinctio explicabo, similique veritatis. Voluptate numquam saepe iure enim dignissimos unde quo temporibus minima distinctio fugiat fuga, cupiditate dolores reprehenderit laboriosam dolorum dolorem, nisi recusandae illum quam ipsam nemo vitae? Doloremque error sed, laudantium provident molestiae cupiditate optio fugit! Reprehenderit perspiciatis, omnis quas odio recusandae id.</p>
 
-          {/* facts display */}
-          <div className="grid md:grid-cols-2 justify-evenly">
-            <div className="relative mb-12 px-5 lg:mb-10">
-              <div className="mb-2 flex justify-center">
-                <span>
-                  <img src={year} alt="star" className="h-10 w-10" />
-                </span>
-              </div>
-              <h6 className="text-black font-body uppercase mb-0 dark:text-white text-center">
-                3+ years of experience
-              </h6>
-              <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
-            </div>
-
-            <div className="relative mb-12 px-5 lg:mb-10">
-              <div className="mb-2 flex justify-center">
-                <span>
-                  <img src={sneak} alt="star" className="h-10 w-10" />
-                </span>
-              </div>
-
-              <h6 className="text-black mb-0 font-body uppercase dark:text-white text-center">
-                48 HR sneak peek turn-around
-              </h6>
-              <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
-            </div>
-            <div className="relative mb-12 px-5 lg:mb-0">
-              <div className="mb-2 flex justify-center">
-                <span>
-                  <img src={rating} alt="star" className="h-11 w-11" />
-                </span>
-              </div>
-              {/* <h5 className="mb-2 font-bold font-body text-center"></h5> */}
-              <h6 className="text-black mb-0 font-body uppercase dark:text-white text-center">
-                50+ five star reviews
-              </h6>
-              <div className="absolute right-0 top-0 hidden h-full min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400 lg:block"></div>
-            </div>
-            <div className="relative mb-12 px-5 lg:mb-0">
-              <div className="mb-2 flex justify-center">
-                <span>
-                  <img src={edit} alt="star" className="h-10 w-10" />
-                </span>
-              </div>
-              <h6 className="text-black mb-0 font-body uppercase dark:text-white text-center">
-                natural-soft edit style
-              </h6>
-            </div>
-          </div>
-        </div>
       </div>
+      <picture className="m-0 flex justify-center items-center">
+      <img
+          src={riley}
+          className="w-full object-cover rounded-full"
+        />
+        </picture>
     </div>
   );
 };
