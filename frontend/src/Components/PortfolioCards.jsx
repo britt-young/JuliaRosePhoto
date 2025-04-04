@@ -17,8 +17,8 @@ const PortfolioCards = () => {
   return (
     <div className="bg-pink-50 py-10">
       <div className="text-center">
-        <h3 className="uppercase font-bold">session options</h3>
-        <h2 className="uppercase mb-10">what i offer</h2>
+        <h3 className="uppercase font-bold">what i offer</h3>
+        <h2 className="uppercase mb-5">session options for any occation</h2>
         <p className="mb-5 text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, molestiae.</p>
       </div>
       <div className="max-w-7xl mx-auto bg-none grid grid-cols-1 lg:grid-cols-4 gap-5 m-10">
