@@ -1,27 +1,35 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import Nav from "./Components/Nav";
-import Router from "./pages/Router";
-import Footer from "./Components/Footer";
+import './index.css'
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
+import RootLayout from './layout/RootLayout'
 
-const App = () => {
+import Home from './pages/Home'
+import Services from './pages/Services'
+import Gallery from './pages/Gallery'
+import Contact from './pages/Contact'
+import Privacy from './pages/Privacy'
+import Error from './Components/Error'
+
+function App() {
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    // parent path
+    <Route path='/' element={<RootLayout />}> 
+    {/* child routes */}
+      <Route index element={<Home />} />
+      <Route path ='Services' element={<Services />} />
+      <Route path ='Gallery' element={<Gallery />} />
+      <Route path ='Contact' element={<Contact />} />
+      <Route path ='Privacy' element={<Privacy />} />
+      {/* Can add nested (additional children) routes too */}
+      <Route path ='*' element={<Error />} />
+    </Route>
+    
+  )
+)
+
   return (
-    <div className="bg-white flex flex-col min-h-screen">
-      <BrowserRouter>
-        {/* div below contains container tailwindcss */}
-        <div className="bg-lightp p-4">
-          <Nav />
-        </div>
-        {/* main content should take up remaining space */}
-        <div className="flex-grow">
-          <Router />
-        </div>
-        <div>
-          <Footer />
-        </div>
-      </BrowserRouter>
-    </div>
-  );
-};
+    <RouterProvider router={router}/>
+  )
+}
 
-export default App;
+export default App
