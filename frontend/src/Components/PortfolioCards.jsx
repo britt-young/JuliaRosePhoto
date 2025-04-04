@@ -19,7 +19,10 @@ const PortfolioCards = () => {
       <div className="text-center">
         <h3 className="uppercase font-bold">what i offer</h3>
         <h2 className="uppercase mb-5">session options for any occation</h2>
-        <p className="mb-5 text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, molestiae.</p>
+        <p className="mb-5 text-black">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora,
+          molestiae.
+        </p>
       </div>
       <div className="max-w-7xl mx-auto bg-none grid grid-cols-1 lg:grid-cols-4 gap-5 m-10">
         {/* portfolio cards */}
@@ -36,7 +39,7 @@ const PortfolioCards = () => {
                 Senior Portraits
               </p>
               <button
-                className="rounded-sm bg-main/50 text-black px-2 hover:bg-main cursor-pointer"
+                className="rounded-sm text-white px-2 hover:bg-alt/80 bg-alt cursor-pointer"
                 onClick={handleClick}
               >
                 see gallery
@@ -58,7 +61,7 @@ const PortfolioCards = () => {
                 Family Portraits
               </p>
               <button
-                className="rounded-sm bg-main/50 text-black px-2 hover:bg-main cursor-pointer"
+                className="rounded-sm text-white px-2 hover:bg-alt/80 bg-alt cursor-pointer"
                 onClick={handleClick}
               >
                 see gallery
@@ -80,7 +83,7 @@ const PortfolioCards = () => {
                 Couples Sessions
               </p>
               <button
-                className="rounded-sm bg-main/50 text-black px-2 hover:bg-main cursor-pointer"
+                className="rounded-sm text-white px-2 hover:bg-alt/80 bg-alt cursor-pointer"
                 onClick={handleClick}
               >
                 see gallery
@@ -102,7 +105,7 @@ const PortfolioCards = () => {
                 Group Sessions
               </p>
               <button
-                className="rounded-sm bg-main/50 text-black px-2 hover:bg-main cursor-pointer"
+                className="rounded-sm text-white px-2 hover:bg-alt/80 bg-alt cursor-pointer"
                 onClick={handleClick}
               >
                 see gallery

@@ -13,10 +13,8 @@ const Services = () => {
 
   return (
     <div className="w-full">
-      <h2>
-        <span className="flex items-center flex-col text-black font-title sm:text-5xl mt-10">
+      <h2 className="flex items-center justify-center text-black m-30">
           Signature Packages
-        </span>
       </h2>
       <div>
         <ServiceCards />
