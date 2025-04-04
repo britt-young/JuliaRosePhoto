@@ -10,12 +10,6 @@ const ContactForm = () => {
   return (
     <div className="py-20 px-5 lg:px-0">
       <div className="bg-transparent">
-        <div className="mx-auto text-center">
-          <h3>Send us a message</h3>
-          <p className="mt-1">
-            Aute magna irure deserunt veniam aliqua magna enim voluptate.
-          </p>
-        </div>
         <form
           action="#"
           method="POST"
@@ -25,7 +19,7 @@ const ContactForm = () => {
             {/* Name Input */}
             <div className="col-span-2 mb-0">
               <label htmlFor="name" className="block text-gray-900">
-                Name
+                Your Name:
               </label>
               <div className="mt-1">
                 <input
@@ -40,7 +34,7 @@ const ContactForm = () => {
             {/* Email Input */}
             <div className="col-span-2 mb-0">
               <label htmlFor="email" className="block text-gray-900">
-                Email
+                Email Address:
               </label>
               <div className="mt-1">
                 <input
@@ -55,7 +49,7 @@ const ContactForm = () => {
             {/* Phone Number Input */}
             <div className="col-span-2 mb-0">
               <label htmlFor="phone-number" className="block text-gray-900">
-                Phone number
+                Phone Number:
               </label>
               <div className="mt-1">
                 <input
@@ -80,7 +74,7 @@ const ContactForm = () => {
                   className="bg-none px-3.5 py-1 bg-gray-50 text-base font-normal text-gray-400 outline-1 dark:outline-gray-900 outline-gray-300"
                 >
                   <option value="default" disabled>
-                    See Sessions
+                    Select a Session Type
                   </option>
                   <option value="senior">Senior Portraits</option>
                   <option value="solo">Solo Session</option>

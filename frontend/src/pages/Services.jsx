@@ -14,7 +14,7 @@ const Services = () => {
   };
 
   return (
-    <div>
+    <div className="min-h-screen">
       <ServiceIntro />
       <ServiceCards />
     </div>

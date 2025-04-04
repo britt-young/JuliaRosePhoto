@@ -17,12 +17,17 @@ const PortfolioCards = () => {
   return (
     <div className="bg-pink-50 py-10">
       <div className="text-center">
-        <h3 className="uppercase font-bold">what i offer</h3>
-        <h2 className="uppercase mb-5">session options for any occation</h2>
-        <p className="mb-5 text-black">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora,
-          molestiae.
-        </p>
+      <h2 className="text-base/7 font-semibold text-pink-500 uppercase tracking-tighter">
+             my portfolio
+            </h2>
+            <p className="mt-0 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+              Put title here
+            </p>
+            <p className="mt-6 text-lg/8 text-gray-600">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+              impedit perferendis suscipit eaque, iste dolor cupiditate
+              blanditiis ratione.
+            </p>
       </div>
       <div className="max-w-7xl mx-auto bg-none grid grid-cols-1 lg:grid-cols-4 gap-5 m-10">
         {/* portfolio cards */}

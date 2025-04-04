@@ -42,7 +42,7 @@ const AboutMe = () => {
             <h2 className="text-base/7 font-semibold text-pink-500 uppercase tracking-tighter">
               About me
             </h2>
-            <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+            <p className="mt-0 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
               Hi, I'm Riley
             </p>
             <p className="mt-6 text-lg/8 text-gray-600">
@@ -52,11 +52,11 @@ const AboutMe = () => {
             </p>
             <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
               {features.map((feature) => (
-                <div key={feature.name} className="relative pl-9">
+                <div key={feature.name} className="relative pl-11">
                   <dt className="inline font-semibold text-gray-900">
                     <feature.icon
                       aria-hidden="true"
-                      className="absolute top-1 left-1 size-5 text-pink-500"
+                      className="absolute top-1 left-1 size-6 text-pink-500"
                     />
                     {feature.name}
                   </dt>{" "}
