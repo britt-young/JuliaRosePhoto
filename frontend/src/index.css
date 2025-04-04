@@ -1,34 +1,25 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
-/* google font import */
-@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
 
-@font-face {
-  font-family: 'Laisha';
-  src: url('./assets/fonts/Laisha.ttf') format('truetype');
+  --color-main: #a36576;
+  --color-alt: #675a7f;
 }
 
-/*Base styles for mobile devices
-@media (max-width: 425px) {
-body {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+@layer base {
+  /* fluid text needs adjusting */
+  body {
+    @apply transition-colors duration-500 font-sans m-0 p-0 box-border text-[min(3vw,2vh)];
   }
-}*/
-  
-  /* Styles for tablets and larger devices
-  @media (min-width: 768px) {
-    body {
-      font-size: 18px;
-    }
-  } */
-  
-  /* Styles for desktops and larger devices 
-  @media (min-width: 1024px) {
-    body {
-      font-size: 20px;
-    }
-  }   */
+}
+
+/* @font-face {
+  font-family: 'Laisha';
+  src: url('./assets/fonts/Laisha.ttf') format('truetype');
+} */
+
