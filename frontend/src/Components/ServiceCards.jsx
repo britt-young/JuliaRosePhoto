@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import family from "../assets/img/fam.jpeg";
 import girl from "../assets/img/girl-senior.png";
 import boy from "../assets/img/senior-boy.png";
@@ -10,7 +10,10 @@ const ServiceCards = () => {
   return (
     <div className="flex flex-col max-w-4xl mx-auto m-5">
       {/* Senior Portraits */}
-      <div className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer">
+      <Link
+        to={"/services/seniors"}
+        className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer"
+      >
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4">
           <h4 className="uppercase font-semibold mb-2">Seniors</h4>
           <p className="text-gray-700">
@@ -28,10 +31,13 @@ const ServiceCards = () => {
           {/* overlay */}
           <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
         </div>
-      </div>
+      </Link>
 
       {/* Individual Portraits */}
-      <div className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer">
+      <Link
+        to={"/services/solo"}
+        className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer"
+      >
         <div className="relative">
           <img
             className="max-w-sm transition-all duration-300"
@@ -45,10 +51,13 @@ const ServiceCards = () => {
           <h4 className="uppercase font-semibold mb-2">solo</h4>
           <p className="text-gray-700">This is a single person session</p>
         </div>
-      </div>
+      </Link>
 
       {/* Couples & Group Portraits */}
-      <div className="group flex flex-col lg:flex-row lg:p-1 p-4  hover:cursor-pointer">
+      <Link
+        to={"/services/couples&groups"}
+        className="group flex flex-col lg:flex-row lg:p-1 p-4  hover:cursor-pointer"
+      >
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4">
           <h4 className="uppercase font-semibold mb-2">couples & groups</h4>
           <p className="text-gray-700">
@@ -64,10 +73,13 @@ const ServiceCards = () => {
           {/* overlay */}
           <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
         </div>
-      </div>
+      </Link>
 
       {/* Families Portraits */}
-      <div className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer">
+      <Link
+        to={"/services/families"}
+        className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer"
+      >
         <div className="relative">
           <img
             className="max-w-sm transition-all duration-300"
@@ -84,11 +96,13 @@ const ServiceCards = () => {
             people and a maximum of 10
           </p>
         </div>
-        <div></div>
-      </div>
+      </Link>
 
       {/* Events Portraits */}
-      <div className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer">
+      <Link
+        to={"/services/events"}
+        className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer"
+      >
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4">
           <h4 className="uppercase font-semibold mb-2">events</h4>
           <p className="text-gray-700">
@@ -105,7 +119,7 @@ const ServiceCards = () => {
           {/* overlay */}
           <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
