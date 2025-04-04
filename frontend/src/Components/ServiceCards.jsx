@@ -16,7 +16,7 @@ const ServiceCards = () => {
       >
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4">
           <h4 className="uppercase font-semibold mb-2">Seniors</h4>
-          <p className="text-gray-700">
+          <p className="text-gray-700 px-15">
             This is a single person session for students graduating from either
             high school, college, or any form of further education
           </p>
@@ -49,7 +49,7 @@ const ServiceCards = () => {
         </div>
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4 w-4xl">
           <h4 className="uppercase font-semibold mb-2">solo</h4>
-          <p className="text-gray-700">This is a single person session</p>
+          <p className="text-gray-700 px-15">This is a single person session</p>
         </div>
       </Link>
 
@@ -60,7 +60,7 @@ const ServiceCards = () => {
       >
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4">
           <h4 className="uppercase font-semibold mb-2">couples & groups</h4>
-          <p className="text-gray-700">
+          <p className="text-gray-700 px-15">
             This is a session for 2 or more people with a maximum of 10
           </p>
         </div>
@@ -91,7 +91,7 @@ const ServiceCards = () => {
         </div>
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4 w-4xl">
           <h4 className="uppercase font-semibold mb-2">families</h4>
-          <p className="text-gray-700">
+          <p className="text-gray-700 px-15">
             This session is for families with children and/or pets. Minimum of 3
             people and a maximum of 10
           </p>
@@ -105,7 +105,7 @@ const ServiceCards = () => {
       >
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4">
           <h4 className="uppercase font-semibold mb-2">events</h4>
-          <p className="text-gray-700">
+          <p className="text-gray-700 px-15">
             This session is for special events, parties, or elopements under 50
             people
           </p>
