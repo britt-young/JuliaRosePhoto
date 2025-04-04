@@ -5,18 +5,12 @@ import AboutMe from "../Components/AboutMe";
 
 const Home = () => {
   return (
-    <div>
-      <div className="flex items-center flex-col flex-wrap lg:flex-nowrap mx-5 my-10">
-        <div className="w-full">
+    <div className="">
           <HomeIntro />
-        </div>
-      </div>
-      <div className="">
         <AboutMe />
-      </div>
       <div className="">
-        <h2>
-          <span className="flex items-center flex-col font-title sm:text-5xl mt-10">Session Galleries</span>
+        <h2 className="max-w-7xl mx-auto flex flex-col items-center justify-center text-center">
+           Session Galleries
         </h2>
         <PortfolioCards />
       </div>
