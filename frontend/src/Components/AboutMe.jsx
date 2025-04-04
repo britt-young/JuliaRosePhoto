@@ -1,11 +1,11 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import riley from "../assets/img/riley.jpg";
+import riley from "../assets/img/riley.jpeg";
 
 const AboutMe = () => {
   return (
     <div className="flex my-10 min-h-screen max-w-7xl mx-auto gap-10 flex-col lg:flex-row items-center justify-center p-4">
-      <div className="w-full items-start text-start">
+      <div className="w-full items-start text-start ml-15">
         <h3 className="uppercase font-bold">about saying here </h3>
         <h2 className="uppercase mb-10">Meet Riley</h2>
         
@@ -34,7 +34,7 @@ const AboutMe = () => {
       <picture className="m-0 flex justify-center items-center">
       <img
           src={riley}
-          className="w-full object-cover rounded-full"
+          className="w-[600px] object-cover rounded-sm shadow-lg"
         />
         </picture>
     </div>
