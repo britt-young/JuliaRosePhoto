@@ -8,7 +8,7 @@ const ContactForm = () => {
   const [enabled, setEnabled] = useState(false);
 
   return (
-      <div className=" bg-green-100">
+      <div className="w-full">
         <form
           action="#"
           method="POST"
@@ -26,7 +26,7 @@ const ContactForm = () => {
                   name="name"
                   type="text"
                   autoComplete="given-name"
-                  className="block w-full bg-gray-50 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
+                  className="block w-full bg-gray-50 px-3.5 py-3.5 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
                 />
               </div>
             </div>
@@ -41,7 +41,7 @@ const ContactForm = () => {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full bg-gray-50 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
+                  className="block w-full bg-gray-50 px-3.5 py-3.5 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
                 />
               </div>
             </div>
@@ -56,7 +56,7 @@ const ContactForm = () => {
                   name="phone-number"
                   type="text"
                   placeholder="123-456-7890"
-                  className="block w-full bg-gray-50 px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
+                  className="block w-full bg-gray-50 px-3.5 py-3.5 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
                 />
               </div>
             </div>
@@ -70,7 +70,7 @@ const ContactForm = () => {
                 <select
                   name="selectedPackage"
                   defaultValue="default" // `defaultValue` is used here for the initial selection
-                  className="bg-none px-3.5 py-1 bg-gray-50 text-base font-normal text-gray-400 outline-1 dark:outline-gray-900 outline-gray-300"
+                  className="bg-none mt-1 px-3.5 py-1 bg-gray-50 text-base font-normal text-gray-400 outline-1 dark:outline-gray-900 outline-gray-300"
                 >
                   <option value="default" disabled>
                     Select a Session Type
