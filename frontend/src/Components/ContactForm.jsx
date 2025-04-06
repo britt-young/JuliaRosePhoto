@@ -8,11 +8,11 @@ const ContactForm = () => {
   const [enabled, setEnabled] = useState(false);
 
   return (
-      <div className="bg-transparent">
+      <div className=" bg-green-100">
         <form
           action="#"
           method="POST"
-          className="w-full lg:mx-auto p-5"
+          className="h-full p-5"
         >
           <div className="flex flex-col gap-y-6 grid grid-cols-2 gap-x-8 gap-y-0 lg:gap-y-6">
             {/* Name Input */}
