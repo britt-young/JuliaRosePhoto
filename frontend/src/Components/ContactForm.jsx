@@ -8,12 +8,11 @@ const ContactForm = () => {
   const [enabled, setEnabled] = useState(false);
 
   return (
-    <div className="py-20 px-5 lg:px-0">
       <div className="bg-transparent">
         <form
           action="#"
           method="POST"
-          className="lg:mx-auto mx-5 max-w-xl mt-12"
+          className="w-full lg:mx-auto p-5"
         >
           <div className="flex flex-col gap-y-6 grid grid-cols-2 gap-x-8 gap-y-0 lg:gap-y-6">
             {/* Name Input */}
@@ -128,7 +127,6 @@ const ContactForm = () => {
           </div>
         </form>
       </div>
-    </div>
   );
 };
 

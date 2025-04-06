@@ -2,19 +2,16 @@ import React from "react";
 
 const SocialMedia = () => {
   return (
-    <div className="lg:w-1/2 m-5 p-5 flex flex-col justify-center">
-      <h2 className="font-body text-xl flex justify-center">
-        Thanks for choosing us!
-      </h2>
-      <div className="bg-white w-full h-auto p-5 flex items-center justify-center flex-wrap">
-        <div className="flex items-center justify-center gap-4 pb-4">
+    <div className="lg:w-100 flex flex-col justify-center">
+      <div className="bg-none w-full h-auto py-5 flex items-center justify-center flex-wrap">
+        <div className="flex items-center justify-center gap-5 lg:my-0">
           {/* facebook icon */}
           <button className="bg-blue-50 cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-indigo-200">
             <a href="https://www.facebook.com" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="48"
-                height="48"
+                width="24"
+                height="24"
                 viewBox="0 0 92 92"
                 fill="none"
               >
@@ -34,15 +31,15 @@ const SocialMedia = () => {
           </button>
 
           {/* instagram icon */}
-          <button className="w-12 h-12 flex items-center justify-center bg-gradient-to-tr from-red-50 to-pink-50 cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-red-200">
+          <button className="flex items-center justify-center bg-gradient-to-tr from-red-50 to-pink-50 cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-red-200">
             <a
               href="https://www.instagram.com/rileyaddisonphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
+                width="14"
+                height="14"
                 viewBox="0 0 51 51"
                 fill="none"
               >
@@ -87,8 +84,8 @@ const SocialMedia = () => {
             <a href="https://www.twitter.com" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="48"
-                height="48"
+                width="24"
+                height="24"
                 viewBox="0 0 93 92"
                 fill="none"
               >
@@ -108,12 +105,12 @@ const SocialMedia = () => {
           </button>
 
           {/* tiktok icon */}
-          <button className="w-12 h-12 flex items-center justify-center bg-gray-100 cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-indigo-200">
+          <button className="flex items-center justify-center bg-gray-100 cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-indigo-200">
             <a href="https://www.tiktok.com" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="28"
+                width="12"
+                height="14"
                 viewBox="0 0 42 47"
                 fill="none"
               >
@@ -144,8 +141,8 @@ const SocialMedia = () => {
             <a href="https://www.linkedIn.com" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="48"
-                height="48"
+                width="24"
+                height="24"
                 viewBox="0 0 92 93"
                 fill="none"
               >
@@ -166,12 +163,6 @@ const SocialMedia = () => {
               </svg>
             </a>
           </button>
-        </div>
-        <div className="flex justify-center"> 
-          <img
-            src="https://images.unsplash.com/photo-1444852538915-ac95232916dd?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            className="m-2 w-3/4 object-cover border-2 border-white rounded-lg shadow-lg"
-          />
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import SocialMedia from './SocialMedia'
 
 const ContactIntro = () => {
   return (
@@ -9,6 +10,7 @@ const ContactIntro = () => {
             <p className="mt-0 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
               Let's Connect!
             </p>
+            <SocialMedia />
       </div>
   )
 }
