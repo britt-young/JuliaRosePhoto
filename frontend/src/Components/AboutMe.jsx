@@ -1,12 +1,13 @@
 import React from "react";
-import { TypeAnimation } from "react-type-animation";
+import owner from "../assets/img/owner.png";
+
 import {
   CameraIcon,
   SparklesIcon,
   AdjustmentsHorizontalIcon,
   BoltIcon,
 } from "@heroicons/react/20/solid";
-import riley from "../assets/img/riley.jpeg";
+
 
 const AboutMe = () => {
   const features = [
@@ -36,8 +37,8 @@ const AboutMe = () => {
     },
   ];
   return (
-    <div className="flex my-10 min-h-screen max-w-7xl mx-auto gap-20 flex-col lg:flex-row items-center justify-center p-4">
-      <div className="items-start text-start ml-5">
+    <div className="flex my-10 min-h-screen max-w-7xl mx-auto gap-10 flex-col lg:flex-row items-center justify-center p-4">
+      <div className="items-start text-start lg:ml-2">
           <div className="lg:max-w-2xl">
             <h2 className="text-base/7 font-semibold text-pink-500 uppercase tracking-tighter">
               About me
@@ -67,10 +68,10 @@ const AboutMe = () => {
           </div>
       </div>
 
-      <picture className="mr-5 flex justify-center items-center">
+      <picture className="lg:mr-2 flex justify-center items-center">
         <img
-          src={riley}
-          className="w-100 object-cover rounded-full shadow-xl border-4 border-pink-100"
+          src={owner}
+          className="w-150 object-cover  shadow-xl border-4 border-pink-100"
         />
       </picture>
     </div>
