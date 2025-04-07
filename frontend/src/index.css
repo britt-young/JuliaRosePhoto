@@ -17,25 +17,28 @@
     @apply transition-colors duration-500 font-sans m-0 p-0 box-border text-[min(3vw,2vh)];
   }
   h1 {
-    @apply text-5xl font-bold;
+    @apply lg:text-5xl text-3xl font-bold;
   }
   h2 {
-    @apply text-5xl font-semibold;
+    @apply lg:text-5xl text-3xl font-semibold;
   }
   h3 {
-    @apply text-xl;
+    @apply lg:text-4xl text-2xl;
   }
   h4 {
-    @apply text-lg;
+    @apply lg:text-2xl text-xl;
   }
   h5 {
-    @apply text-base;
+    @apply text-lg font-semibold;
   }
   h6 {
-    @apply text-base;
+    @apply text-base font-semibold;
   }
   p {
     @apply text-base;
+  }
+  a {
+    @apply hover:text-pink-600 text-blue-600;
   }
 }
 

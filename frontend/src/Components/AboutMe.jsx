@@ -44,7 +44,7 @@ const AboutMe = () => {
               About me
             </h2>
             <p className="mt-0 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-              Hi, I'm Riley
+              Hi, I'm Julia
             </p>
             <p className="mt-6 text-lg/8 text-gray-600">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores

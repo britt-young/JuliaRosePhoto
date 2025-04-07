@@ -13,7 +13,7 @@ const HomeIntro = () => {
   return (
     <div className="h-screen bg-pink-50 mx-auto flex flex-col items-center justify-center text-center">
       <h1 className="flex flex-col items-center font-title sm:text-5xl lg:text-7xl mb-5">
-        Riley Addison Photography
+        Julia Mabon Photography
       </h1>
       {/* <h3 className="flex justify-center font-body text-black text-md uppercase">
             <div className="mb-2 content-center">

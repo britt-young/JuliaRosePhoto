@@ -49,7 +49,7 @@ const ServiceCards = () => {
         </div>
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 lg:px-6 py-4 max-w-sm">
           <h4 className="uppercase font-semibold mb-2">solo</h4>
-          <p className="text-gray-700 px-10">This is a single person session</p>
+          <p className="text-gray-700 px-15">This is a single person session</p>
         </div>
       </Link>
 
