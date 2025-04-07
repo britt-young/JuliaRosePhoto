@@ -44,7 +44,7 @@ const PortfolioCards = () => {
                 Senior Portraits
               </p>
               <button
-                className="rounded-sm text-white px-2 hover:bg-alt/80 bg-alt cursor-pointer"
+                className="rounded-sm text-white px-2 hover:bg-pink-700/30 bg-pink-700 cursor-pointer"
                 onClick={handleClick}
               >
                 see gallery
