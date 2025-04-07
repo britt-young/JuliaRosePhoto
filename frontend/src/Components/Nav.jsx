@@ -2,6 +2,7 @@ import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { AiOutlineMenuFold } from "react-icons/ai";
+
 // import Logo from "../assets/logo/icon-logo.svg";
 
 const Nav = () => {
@@ -40,8 +41,8 @@ const Nav = () => {
   );
 
   return (
-    <nav className="font-body bg-main">
-      <div className="h-10h flex justify-around items-center z-50 text-white lg:py-1 px-20">
+    <nav className="font-body bg-alt">
+      <div className="h-10h flex justify-around items-center z-50 text-black lg:py-1 px-20">
         {/* Logo Section */}
         {/* <div className="flex items-center flex-1">
           <span className="flex items-center">

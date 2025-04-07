@@ -15,7 +15,7 @@ const faqs = [
           <li>Photo Inspiration/ Mood Board</li>
           <li>Styling Recommendations (if requested)</li>
           <li>
-            <a href="https://tailwindui.com/" rel="nofollow">
+            <a className="hover:text-pink-600 text-blue-600" href="https://tailwindui.com/" rel="nofollow">
               Add link here
             </a>
           </li>

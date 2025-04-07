@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-// import peach from "../assets/icons/peach.png";
+import bgImage from "../assets/img/1.png";
+// import vid from "../assets/vid/alt-video.mp4";
 
 const HomeIntro = () => {
   const navigate = useNavigate();
@@ -11,23 +12,31 @@ const HomeIntro = () => {
   };
 
   return (
-    <div className="h-screen bg-pink-50 mx-auto flex flex-col items-center justify-center text-center">
-      <h1 className="flex flex-col items-center font-title sm:text-5xl lg:text-7xl mb-5">
+    <div className="relative h-screen mx-auto flex flex-col items-center justify-center text-center bg-cover bg-no-repeat bg-center"
+    style={{ backgroundImage: `url(${bgImage})` }}>
+      {/* Video background */}
+      {/* <video
+        src={vid}
+        type="video/mp4"
+        autoPlay
+        loop
+        muted
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      /> */}
+      
+      <h1 className="flex flex-col items-center font-title sm:text-5xl lg:text-7xl mb-5 z-10">
         Julia Mabon Photography
       </h1>
-      {/* <h3 className="flex justify-center font-body text-black text-md uppercase">
-            <div className="mb-2 content-center">
-              <span>
-                <img src={peach} alt="peach" className="h-4 w-4" />
-              </span>
-            </div>
-            Atlanta based
-          </h3> */}
-      <div className="max-w-7xl mx-auto flex flex-col items-center justify-center text-center">
+      <div className="max-w-7xl mx-auto flex flex-col items-center justify-center text-center z-10">
         <p className="font-body lg:text-md pb-4 uppercase">
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ratione.
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ratione."
         </p>
-        <button className="bg-alt rounded-sm py-1 px-4 items-center text-white cursor-pointer hover:bg-alt/80" onClick={handleClick}>Inquire Now</button>
+        <button
+          className="bg-pink-200 rounded-sm py-1 px-4 items-center text-black cursor-pointer hover:bg-pink-300"
+          onClick={handleClick}
+        >
+          Book with me
+        </button>
       </div>
     </div>
   );

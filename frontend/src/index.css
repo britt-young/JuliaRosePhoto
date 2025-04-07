@@ -7,8 +7,10 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
 
-  --color-main: #a36576;
-  --color-alt: #675a7f;
+  --color-main: #EFACA4;
+  --color-alt: #BADD7F;
+  --color-neutral: #F7EFDA;
+  --color-dark: #3E8340;
 }
 
 @layer base {
@@ -37,9 +39,9 @@
   p {
     @apply text-base;
   }
-  a {
+  /* a {
     @apply hover:text-pink-600 text-blue-600;
-  }
+  } */
 }
 
 /* @font-face {

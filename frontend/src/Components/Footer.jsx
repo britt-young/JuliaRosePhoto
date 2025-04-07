@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-main inset-x-0 bottom-0 text-center dark:bg-white lg:text-left">
-      <div className="p-4 text-center text-white font-body">
+    <footer className="bg-alt inset-x-0 bottom-0 text-center lg:text-left">
+      <div className="p-4 text-center text-gray-800 font-body">
       Copyright © 2024 |
-        <a className="hover:text-black" href=""> Gulf Coast Web Designs + Development </a>
+        <a className="hover:text-black" href="https://www.gulfcoastwdd.com"> Gulf Coast Web Designs + Development </a>
         | All Rights Reserved
       </div>
     </footer>
