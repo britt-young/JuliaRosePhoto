@@ -8,13 +8,13 @@ import event from "../assets/img/elopement.jpeg";
 
 const ServiceCards = () => {
   return (
-    <div className="flex flex-col max-w-4xl mx-auto m-5">
+    <div className="flex flex-col max-w-3xl mx-auto justify-center items-center m-5">
       {/* Senior Portraits */}
       <Link
         to={"/services/seniors"}
         className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer"
       >
-        <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4">
+        <div className="flex flex-col items-center justify-center text-center bg-gray-100 lg:px-6 py-4 max-w-sm">
           <h4 className="uppercase font-semibold mb-2">Seniors</h4>
           <p className="text-gray-700 px-15">
             This is a single person session for students graduating from either
@@ -36,7 +36,7 @@ const ServiceCards = () => {
       {/* Individual Portraits */}
       <Link
         to={"/services/solo"}
-        className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer"
+        className="group flex flex-col-reverse lg:flex-row lg:p-1 p-4 hover:cursor-pointer"
       >
         <div className="relative">
           <img
@@ -47,7 +47,7 @@ const ServiceCards = () => {
           {/* overlay */}
           <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
         </div>
-        <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4 w-4xl">
+        <div className="flex flex-col items-center justify-center text-center bg-gray-100 lg:px-6 py-4 max-w-sm">
           <h4 className="uppercase font-semibold mb-2">solo</h4>
           <p className="text-gray-700 px-15">This is a single person session</p>
         </div>
@@ -58,7 +58,7 @@ const ServiceCards = () => {
         to={"/services/couples&groups"}
         className="group flex flex-col lg:flex-row lg:p-1 p-4  hover:cursor-pointer"
       >
-        <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4">
+        <div className="flex flex-col items-center justify-center text-center bg-gray-100 lg:px-6 py-4 max-w-sm">
           <h4 className="uppercase font-semibold mb-2">couples & groups</h4>
           <p className="text-gray-700 px-15">
             This is a session for 2 or more people with a maximum of 10
@@ -78,7 +78,7 @@ const ServiceCards = () => {
       {/* Families Portraits */}
       <Link
         to={"/services/families"}
-        className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer"
+        className="group flex flex-col-reverse lg:flex-row lg:p-1 p-4 hover:cursor-pointer"
       >
         <div className="relative">
           <img
@@ -89,7 +89,7 @@ const ServiceCards = () => {
           {/* overlay */}
           <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
         </div>
-        <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4 w-4xl">
+        <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4 lg:px-6 py-4 max-w-sm">
           <h4 className="uppercase font-semibold mb-2">families</h4>
           <p className="text-gray-700 px-15">
             This session is for families with children and/or pets. Minimum of 3
@@ -103,7 +103,7 @@ const ServiceCards = () => {
         to={"/services/events"}
         className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer"
       >
-        <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4">
+        <div className="flex flex-col items-center justify-center text-center bg-gray-100 lg:px-6 py-4 max-w-sm">
           <h4 className="uppercase font-semibold mb-2">events</h4>
           <p className="text-gray-700 px-15">
             This session is for special events, parties, or elopements under 50

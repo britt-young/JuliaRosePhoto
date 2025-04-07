@@ -71,7 +71,7 @@ const AboutMe = () => {
       <picture className="lg:mr-2 flex justify-center items-center">
         <img
           src={owner}
-          className="w-150 object-cover  shadow-xl border-4 border-pink-100"
+          className="w-150 object-cover shadow-xl border-4 border-pink-100"
         />
       </picture>
     </div>
