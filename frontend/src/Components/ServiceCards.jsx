@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import family from "../assets/img/fam.jpeg";
-import girl from "../assets/img/girl-senior.png";
-import boy from "../assets/img/senior-boy.png";
-import group from "../assets/img/osu-grad.png";
-import event from "../assets/img/elopement.jpeg";
+import family from "../assets/img/fam.jpg";
+import solo from "../assets/img/solo.jpg";
+import senior from "../assets/img/senior.jpg";
+import couple from "../assets/img/couple.jpg";
+import wedding from "../assets/img/wedding.jpg";
 
 const ServiceCards = () => {
   return (
@@ -16,7 +16,7 @@ const ServiceCards = () => {
       >
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 lg:px-6 py-4 max-w-sm">
           <h4 className="uppercase font-semibold mb-2">Seniors</h4>
-          <p className="text-gray-700 px-15">
+          <p className="text-gray-700 px-10">
             This is a single person session for students graduating from either
             high school, college, or any form of further education
           </p>
@@ -25,7 +25,7 @@ const ServiceCards = () => {
         <div className="relative">
           <img
             className="max-w-sm transition-all duration-300"
-            src={boy}
+            src={senior}
             alt="senior portrait"
           />
           {/* overlay */}
@@ -41,7 +41,7 @@ const ServiceCards = () => {
         <div className="relative">
           <img
             className="max-w-sm transition-all duration-300"
-            src={girl}
+            src={solo}
             alt="portrait"
           />
           {/* overlay */}
@@ -49,7 +49,7 @@ const ServiceCards = () => {
         </div>
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 lg:px-6 py-4 max-w-sm">
           <h4 className="uppercase font-semibold mb-2">solo</h4>
-          <p className="text-gray-700 px-15">This is a single person session</p>
+          <p className="text-gray-700 px-10">This is a single person session</p>
         </div>
       </Link>
 
@@ -60,15 +60,15 @@ const ServiceCards = () => {
       >
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 lg:px-6 py-4 max-w-sm">
           <h4 className="uppercase font-semibold mb-2">couples & groups</h4>
-          <p className="text-gray-700 px-15">
+          <p className="text-gray-700 px-10">
             This is a session for 2 or more people with a maximum of 10
           </p>
         </div>
         <div className="relative">
           <img
             className="max-w-sm transition-all duration-300"
-            src={group}
-            alt="senior portrait"
+            src={couple}
+            alt="couples portrait"
           />
           {/* overlay */}
           <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
@@ -91,7 +91,7 @@ const ServiceCards = () => {
         </div>
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4 lg:px-6 py-4 max-w-sm">
           <h4 className="uppercase font-semibold mb-2">families</h4>
-          <p className="text-gray-700 px-15">
+          <p className="text-gray-700 px-10">
             This session is for families with children and/or pets. Minimum of 3
             people and a maximum of 10
           </p>
@@ -105,7 +105,7 @@ const ServiceCards = () => {
       >
         <div className="flex flex-col items-center justify-center text-center bg-gray-100 lg:px-6 py-4 max-w-sm">
           <h4 className="uppercase font-semibold mb-2">events</h4>
-          <p className="text-gray-700 px-15">
+          <p className="text-gray-700 px-10">
             This session is for special events, parties, or elopements under 50
             people
           </p>
@@ -113,8 +113,8 @@ const ServiceCards = () => {
         <div className="relative">
           <img
             className="max-w-sm transition-all duration-300"
-            src={event}
-            alt="senior portrait"
+            src={wedding}
+            alt="elopement"
           />
           {/* overlay */}
           <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>

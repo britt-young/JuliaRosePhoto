@@ -1,11 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-// saved images
-import group from "../assets/img/mason-grad.jpeg";
-import fam from "../assets/img/black-fam.jpg";
-import grad from "../assets/img/senior-boy.png";
-
 const PortfolioCards = () => {
   const navigate = useNavigate();
 
