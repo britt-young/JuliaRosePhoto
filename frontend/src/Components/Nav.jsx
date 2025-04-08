@@ -22,17 +22,17 @@ const Nav = () => {
   // Define the menu content
   const menuItems = (
     <ul className="list-none py-2 m-0 flex flex-col lg:flex-row lg:gap-20">
-      <li className="hover:text-black transition mb-4 lg:mb-0">
+      <li className="hover:font-semibold transition mb-4 lg:mb-0">
         <Link to="/" onClick={handleLinkClick}>
           Home
         </Link>
       </li>
-      <li className="hover:text-black transition mb-4 lg:mb-0">
+      <li className="hover:font-semibold transition mb-4 lg:mb-0">
         <Link to="/services" onClick={handleLinkClick}>
           Services
         </Link>
       </li>
-      <li className="hover:text-black transition mb-0 lg:mb-0">
+      <li className="hover:font-semibold transition mb-0 lg:mb-0">
         <Link to="/contact" onClick={handleLinkClick}>
           Contact
         </Link>
@@ -41,8 +41,8 @@ const Nav = () => {
   );
 
   return (
-    <nav className="font-body bg-alt">
-      <div className="h-10h flex justify-around items-center z-50 text-black lg:py-1 px-20">
+    <nav className="font-body bg-dark">
+      <div className="h-10h flex justify-around items-center z-50 text-white lg:py-1 px-20">
         {/* Logo Section */}
         {/* <div className="flex items-center flex-1">
           <span className="flex items-center">

@@ -6,7 +6,7 @@ const SocialMedia = () => {
       <div className="bg-none w-full h-auto py-5 flex items-center justify-center flex-wrap">
         <div className="flex items-center justify-center gap-5 lg:my-0">
           {/* facebook icon */}
-          <button className="bg-blue-50 cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-indigo-200">
+          <button className="bg-transparent cursor-pointer rounded-md ">
             <a href="https://www.facebook.com" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@ const SocialMedia = () => {
                   width="91.5618"
                   height="91.5618"
                   rx="15"
-                  fill="#EDF4FF"
+                  fill="none"
                 />
                 <path
                   d="M56.4927 48.6403L57.7973 40.3588H49.7611V34.9759C49.7611 32.7114 50.883 30.4987 54.4706 30.4987H58.1756V23.4465C56.018 23.1028 53.8378 22.9168 51.6527 22.8901C45.0385 22.8901 40.7204 26.8626 40.7204 34.0442V40.3588H33.3887V48.6403H40.7204V68.671H49.7611V48.6403H56.4927Z"
@@ -31,7 +31,7 @@ const SocialMedia = () => {
           </button>
 
           {/* instagram icon */}
-          <button className="flex items-center justify-center bg-gradient-to-tr from-red-50 to-pink-50 cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-red-200">
+          <button className="bg-transparent cursor-pointer   ">
             <a
               href="https://www.instagram.com/rileyaddisonphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
@@ -80,7 +80,7 @@ const SocialMedia = () => {
           </button>
 
           {/* twitter icon */}
-          <button className="cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-indigo-200">
+          <button className="bg-transparent cursor-pointer rounded-md  ">
             <a href="https://www.twitter.com" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ const SocialMedia = () => {
                   width="91.5618"
                   height="91.5618"
                   rx="15"
-                  fill="#F7F7F7"
+                  fill="#none"
                 />
                 <path
                   d="M50.7568 42.1716L69.3704 21H64.9596L48.7974 39.383L35.8887 21H21L40.5205 48.7983L21 71H25.4111L42.4788 51.5869L56.1113 71H71L50.7557 42.1716H50.7568ZM44.7152 49.0433L42.7374 46.2752L27.0005 24.2492H33.7756L46.4755 42.0249L48.4533 44.7929L64.9617 67.8986H58.1865L44.7152 49.0443V49.0433Z"
@@ -105,7 +105,7 @@ const SocialMedia = () => {
           </button>
 
           {/* tiktok icon */}
-          <button className="flex items-center justify-center bg-gray-100 cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-indigo-200">
+          <button className="bg-transparent cursor-pointer rounded-md  ">
             <a href="https://www.tiktok.com" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +137,7 @@ const SocialMedia = () => {
           </button>
 
           {/* linkedIn icon */}
-          <button className="cursor-pointer rounded-md shadow-md shadow-transparent transition-all duration-300 hover:shadow-blue-200">
+          <button className="bg-transparent cursor-pointer rounded-md  ">
             <a href="https://www.linkedIn.com" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +152,7 @@ const SocialMedia = () => {
                   width="91.5618"
                   height="91.5618"
                   rx="15"
-                  fill="#EEFAFF"
+                  fill="none"
                 />
                 <path
                   fillRule="evenodd"

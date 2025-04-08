@@ -40,7 +40,7 @@ const AboutMe = () => {
     <div className="flex my-10 min-h-screen max-w-7xl mx-auto gap-10 flex-col lg:flex-row items-center justify-center p-4">
       <div className="items-start text-start lg:ml-2">
           <div className="lg:max-w-2xl">
-            <h2 className="text-base/7 font-semibold text-pink-500 uppercase tracking-tighter">
+            <h2 className="text-base/7 font-semibold text-main uppercase tracking-tighter">
               About me
             </h2>
             <p className="mt-0 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
@@ -57,7 +57,7 @@ const AboutMe = () => {
                   <dt className="inline font-semibold text-gray-900">
                     <feature.icon
                       aria-hidden="true"
-                      className="absolute top-1 left-1 size-6 text-pink-500"
+                      className="absolute top-1 left-1 size-6 text-main"
                     />
                     {feature.name}
                   </dt>{" "}

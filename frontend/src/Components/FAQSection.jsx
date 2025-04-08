@@ -15,7 +15,7 @@ const faqs = [
           <li>Photo Inspiration/ Mood Board</li>
           <li>Styling Recommendations (if requested)</li>
           <li>
-            <a className="hover:text-pink-600 text-blue-600" href="https://tailwindui.com/" rel="nofollow">
+            <a className="hover:text-main text-blue-600" href="https://tailwindui.com/" rel="nofollow">
               Add link here
             </a>
           </li>
@@ -53,21 +53,21 @@ const FAQSection = () => {
   const [selectedQuestion, setSelectedQuestion] = useState(0); // Default to first question
 
   return (
-    <div className="container mx-auto lg:bg-gray-100 p-6">
-      <h2 className="mb-10 text-center">The Booking Process</h2>
-      <div className="h-[400px] w-fit grid grid-cols-1 lg:grid-cols-2 gap-2">
+    <div className="container mx-auto rounded-lg border-4 border-dotted border-gray-200 p-6">
+      <h3 className="mb-10 text-center">The Booking Process</h3>
+      <div className="h-[400px] w-fit grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Left Side: Questions */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <button
+            <a
               key={index}
-              className={`flex flex-col text-left text-lg font-semibold 
-                ${selectedQuestion === index ? 'text-pink-600' : 'text-gray-800'} 
-                hover:text-pink-600`}
+              className={`flex flex-col text-left text-lg font-semibold cursor-pointer
+                ${selectedQuestion === index ? 'text-lighter' : 'text-gray-800'} 
+                hover:text-lighter`}
               onClick={() => setSelectedQuestion(index)}
             >
               {faq.question}
-            </button>
+            </a>
           ))}
         </div>
 
@@ -77,9 +77,9 @@ const FAQSection = () => {
             {faqs[selectedQuestion] ? (
               <div>
                 {/* <h2 className="text-xl font-bold text-gray-800">{faqs[selectedQuestion].question}</h2> */}
-                <h6 className="text-gray-600">
+                <p className="text-gray-600">
                   {faqs[selectedQuestion].answer}
-                </h6>
+                </p>
               </div>
             ) : (
               <p className="text-gray-600">Select a question to see the answer.</p>

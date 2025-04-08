@@ -25,6 +25,7 @@ const ContactForm = () => {
                   id="name"
                   name="name"
                   type="text"
+                  placeholder="Julia Rose"
                   autoComplete="given-name"
                   className="block w-full bg-gray-50 px-3.5 py-3.5 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
                 />
@@ -40,6 +41,7 @@ const ContactForm = () => {
                   id="email"
                   name="email"
                   type="email"
+                  placeholder="JuliaRose@email.com"
                   autoComplete="email"
                   className="block w-full bg-gray-50 px-3.5 py-3.5 text-base text-gray-900 outline-1 -outline-offset-1 dark:outline-gray-900 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-alt"
                 />
@@ -69,7 +71,7 @@ const ContactForm = () => {
               <div>
                 <select
                   name="selectedPackage"
-                  defaultValue="default" // `defaultValue` is used here for the initial selection
+                  defaultValue="default"
                   className="bg-none mt-1 px-3.5 py-1 bg-gray-50 text-base font-normal text-gray-400 outline-1 dark:outline-gray-900 outline-gray-300"
                 >
                   <option value="default" disabled>
@@ -120,7 +122,7 @@ const ContactForm = () => {
           <div className="mt-10">
             <button
               type="submit"
-              className="block min-w-fit bg-alt rounded-md px-3 py-1 text-center text-white"
+              className="block min-w-fit bg-dark rounded-md px-3 py-1 text-center text-white cursor-pointer transition duration-200 ease-in-out hover:bg-dark/60"
             >
               Submit
             </button>

@@ -25,14 +25,13 @@ const HomeIntro = () => {
       /> */}
       
       <h1 className="flex flex-col items-center font-title sm:text-5xl lg:text-7xl mb-5 z-10">
-        Julia Mabon Photography
+        Julia Rose Photography
       </h1>
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-center text-center z-10">
         <p className="font-body lg:text-md pb-4 uppercase">
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ratione."
         </p>
         <button
-          className="bg-pink-200 rounded-sm py-1 px-4 items-center text-black cursor-pointer hover:bg-pink-300"
           onClick={handleClick}
         >
           Book with me
