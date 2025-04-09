@@ -28,7 +28,7 @@ const HomeIntro = () => {
         Julia Rose Photography
       </h1>
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-center text-center z-10">
-        <p className="font-body lg:text-md pb-4 uppercase">
+        <p className="font-body lg:text-md pb-4 uppercase mx-5 lg:mx-0">
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ratione."
         </p>
         <button

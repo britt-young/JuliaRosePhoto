@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
 import { AiOutlineMenuFold } from "react-icons/ai";
 
-// import Logo from "../assets/logo/icon-logo.svg";
+import logo from "../assets/logo/alt-logo.svg"; 
 
 const Nav = () => {
   const [click, setClick] = useState(false);
@@ -41,15 +41,14 @@ const Nav = () => {
   );
 
   return (
-    <nav className="font-body bg-dark">
-      <div className="h-10h flex justify-around items-center z-50 text-white lg:py-1 px-20">
+    <nav className="font-body bg-bright">
+      <div className="h-20 flex justify-end items-center z-50 text-black lg:py-1 px-20 uppercase">
         {/* Logo Section */}
-        {/* <div className="flex items-center flex-1">
+        <div className="flex items-center flex-1">
           <span className="flex items-center">
-            <img src={Logo} alt="Logo" className="h-auto" />
-            <p className="font-title ml-2 text-black">Riley Addison Photo</p>
+            <img src={logo} alt="Logo" className="h-15" />
           </span>
-        </div> */}
+        </div>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex lg:items-center lg:justify-center">
@@ -58,7 +57,7 @@ const Nav = () => {
 
         {/* Mobile Hamburger Menu Button */}
         <button
-          className="block lg:hidden p-2 transition z-60 cursor-pointer"
+          className="block lg:hidden p-2 transition z-60 cursor-pointer bg-transparent"
           onClick={handleClick}
           aria-label="Toggle Menu"
         >
@@ -67,7 +66,7 @@ const Nav = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 left-0 w-full h-full bg-main text-white flex flex-col items-center text-center justify-center transition-transform transform ${
+          className={`fixed top-0 left-0 w-full h-full bg-lighter text-black flex flex-col items-center text-center justify-center transition-transform transform ${
             click ? "translate-x-0" : "translate-x-full"
           } lg:hidden z-50`}
         >

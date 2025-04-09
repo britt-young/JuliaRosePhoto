@@ -12,7 +12,7 @@ const PortfolioCards = () => {
   return (
     <div className="bg-pink-50 py-10">
       <div className="text-center">
-      <h2 className="text-base/7 font-semibold text-pink-500 uppercase tracking-tighter">
+      <h2 className="text-base/7 font-semibold text-alt uppercase tracking-tighter">
              my portfolio
             </h2>
             <p className="mt-0 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
