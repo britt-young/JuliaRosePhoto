@@ -10,7 +10,7 @@ const PortfolioCards = () => {
   };
 
   return (
-    <div className="bg-pink-50 py-10">
+    <div className="bg-white py-10">
       <div className="text-center">
         <h2 className="text-base/7 font-semibold text-alt uppercase tracking-tighter">
           portfolio
