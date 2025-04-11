@@ -12,12 +12,12 @@ const PortfolioCards = () => {
   return (
     <div className="bg-white py-10">
       <div className="text-center">
-        <h2 className="text-base/7 font-semibold text-alt uppercase tracking-tighter">
+        <h6 className="text-alt uppercase tracking-tighter">
           portfolio
-        </h2>
-        <p className="mt-0 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+        </h6>
+        <h2 className="mt-0 tracking-tight text-pretty text-gray-900">
           Check out my recent work
-        </p>
+        </h2>
         <p className="mt-6 text-lg/8 text-gray-600">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
           impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis

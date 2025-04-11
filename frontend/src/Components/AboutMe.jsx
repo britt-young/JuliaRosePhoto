@@ -39,12 +39,12 @@ const AboutMe = () => {
     <div className="flex lg:py-50 py-25 max-w-7xl mx-auto gap-10 flex-col lg:flex-row items-center justify-center p-4">
       <div className="items-start text-start lg:ml-2">
         <div className="lg:max-w-2xl">
-          <h2 className="text-base/7 font-semibold text-main2 uppercase tracking-tighter">
+          <h6 className="font-semibold text-main2 uppercase tracking-tighter">
             About me
-          </h2>
-          <p className="mt-0 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+          </h6>
+          <h2 className="mt-0 font-semibold tracking-tight text-pretty text-gray-900">
             Hi, I'm Julia
-          </p>
+          </h2>
           <p className="mt-6 text-lg/8 text-gray-600">
             I'm a individual and group photographer based in the Bay Area. I
             love to capture the beauty of life and the world around us. I

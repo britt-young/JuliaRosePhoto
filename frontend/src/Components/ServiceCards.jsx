@@ -8,6 +8,7 @@ import wedding from "../assets/img/wedding.jpg";
 
 const ServiceCards = () => {
   return (
+    <div className="bg-white">
     <div className="flex flex-col max-w-3xl mx-auto justify-center items-center m-5">
       {/* Senior Portraits */}
       <Link
@@ -120,6 +121,7 @@ const ServiceCards = () => {
           <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
         </div>
       </Link>
+    </div>
     </div>
   );
 };
