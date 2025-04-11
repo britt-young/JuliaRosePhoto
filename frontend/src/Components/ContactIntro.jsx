@@ -3,7 +3,7 @@ import SocialMedia from './SocialMedia'
 
 const ContactIntro = () => {
   return (
-    <div className="pattern-background flex flex-col items-center justify-center text-center lg:p-20 p-15">
+    <div className="pattern-background flex flex-col items-center justify-center text-center lg:p-15 p-10">
       <h2 className="text-base/7 font-semibold text-dark uppercase tracking-tighter">
              contact
             </h2>

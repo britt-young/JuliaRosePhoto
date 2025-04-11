@@ -3,7 +3,7 @@ import React from "react";
 const SocialMedia = () => {
   return (
     <div className="lg:w-fit flex flex-col justify-center">
-      <div className="bg-none w-full h-auto py-5 flex items-center justify-center flex-wrap">
+      <div className="bg-none w-full h-auto pt-5 flex items-center justify-center flex-wrap">
         <div className="flex items-center justify-center gap-5 lg:my-0">
           {/* facebook icon */}
           <button className="bg-transparent cursor-pointer rounded-md ">
