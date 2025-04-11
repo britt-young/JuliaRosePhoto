@@ -41,7 +41,7 @@ const Nav = () => {
   );
 
   return (
-    <nav className="font-body">
+    <nav className="font-body bg-none">
       <div className="h-20 flex justify-end items-center z-50 text-black lg:py-1 px-20 uppercase">
         {/* Logo Section */}
         <div className="flex items-center flex-1">
@@ -70,15 +70,6 @@ const Nav = () => {
             click ? "translate-x-0" : "translate-x-full"
           } lg:hidden z-50`}
         >
-          {/* Mobile Menu Close Button
-          <button
-            className="absolute top-4 right-4 p-2 transition cursor-pointer"
-            onClick={handleClick}
-            aria-label="Close Menu"
-          >
-             <FaTimes size={24} />
-          </button> */}
-
           {menuItems}
         </div>
       </div>

@@ -36,6 +36,7 @@ const AboutMe = () => {
     },
   ];
   return (
+    <div className="pattern-background">
     <div className="flex lg:py-50 py-25 max-w-7xl mx-auto gap-10 flex-col lg:flex-row items-center justify-center p-4">
       <div className="items-start text-start lg:ml-2">
         <div className="lg:max-w-2xl">
@@ -75,6 +76,7 @@ const AboutMe = () => {
           className="w-150 object-cover shadow-xl border-4 border-white"
         />
       </picture>
+    </div>
     </div>
   );
 };
