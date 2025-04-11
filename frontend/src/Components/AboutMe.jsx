@@ -39,7 +39,7 @@ const AboutMe = () => {
     <div className="flex lg:py-50 py-25 max-w-7xl mx-auto gap-10 flex-col lg:flex-row items-center justify-center p-4">
       <div className="items-start text-start lg:ml-2">
         <div className="lg:max-w-2xl">
-          <h2 className="text-base/7 font-semibold text-red-700 uppercase tracking-tighter">
+          <h2 className="text-base/7 font-semibold text-main2 uppercase tracking-tighter">
             About me
           </h2>
           <p className="mt-0 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
@@ -58,7 +58,7 @@ const AboutMe = () => {
                 <dt className="inline font-semibold text-gray-900">
                   <feature.icon
                     aria-hidden="true"
-                    className="absolute top-1 left-1 size-6 text-red-700"
+                    className="absolute top-1 left-1 size-6 text-main2"
                   />
                   {feature.name}
                 </dt>{" "}
@@ -72,7 +72,7 @@ const AboutMe = () => {
       <picture className="lg:mr-2 flex justify-center items-center">
         <img
           src={owner}
-          className="w-150 object-cover shadow-xl border-4 border-alt2/40"
+          className="w-150 object-cover shadow-xl border-4 border-main2"
         />
       </picture>
     </div>

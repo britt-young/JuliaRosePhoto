@@ -6,7 +6,7 @@ import Footer from "../Components/Footer";
 
 const RootLayout = () => {
   return (
-    <div className="flex flex-col min-h-screen rose-background">
+    <div className="flex flex-col min-h-screen pattern-background">
       {/* THIS IS THE MAIN BG! Use min-h-screen to fill the viewport */}
       <Nav />
       <main className="flex-1">

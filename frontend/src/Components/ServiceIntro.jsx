@@ -2,7 +2,7 @@ import React from "react";
 
 const ServiceIntro = () => {
   return (
-    <div className="bg-pink-50 flex flex-col items-center justify-center text-center lg:p-20 p-15">
+    <div className="pattern-background flex flex-col items-center justify-center text-center lg:p-20 p-15">
       <h2 className="text-base/7 font-semibold text-pink-500 uppercase tracking-tighter">
              services
             </h2>

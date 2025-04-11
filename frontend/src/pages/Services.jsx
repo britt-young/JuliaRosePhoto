@@ -13,7 +13,7 @@ const Services = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white flex flex-col">
       <ServiceIntro />
       <ServiceCards />
     </div>
