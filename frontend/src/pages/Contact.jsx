@@ -9,8 +9,8 @@ const Contact = () => {
       <ContactIntro />
       <div className="bg-white">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:gap-20 gap-15 py-20">
-          <ContactForm />
           <FAQSection />
+          <ContactForm />
         </div>
       </div>
     </div>

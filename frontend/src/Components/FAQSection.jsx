@@ -76,9 +76,9 @@ const FAQSection = () => {
               key={index}
               className={`flex flex-col text-left text-lg font-semibold cursor-pointer
                 ${
-                  selectedQuestion === index ? "text-lighter" : "text-gray-800"
+                  selectedQuestion === index ? "text-main" : "text-gray-800"
                 } 
-                hover:text-lighter`}
+                hover:text-main`}
               onClick={() => setSelectedQuestion(index)}
             >
               {faq.question}
