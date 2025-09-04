@@ -118,7 +118,6 @@ const ContactForm = () => {
         <div className="mt-10">
           <button
             type="submit"
-            className="block min-w-fit bg-dark rounded-md px-3 py-1 text-center text-white cursor-pointer transition duration-200 ease-in-out hover:bg-dark/60"
           >
             Submit
           </button>

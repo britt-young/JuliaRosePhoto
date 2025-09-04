@@ -14,32 +14,39 @@
 
 @layer base {
   /* fluid text needs adjusting */
-  body {
+body {
     @apply transition-colors duration-500 font-sans m-0 p-0 box-border text-[min(3vw,2vh)];
   }
+
   h1 {
-    @apply lg:text-6xl text-4xl font-bold;
+    @apply font-serif leading-tight text-black lg:text-[4rem] text-[3rem];
   }
+
   h2 {
-    @apply lg:text-5xl text-3xl font-semibold tracking-tight text-pretty text-gray-900;
+    @apply font-bold font-sans leading-tight text-black lg:text-[4rem] text-[3rem];
   }
+
   h3 {
-    @apply lg:text-4xl text-2xl tracking-tight text-pretty;
+    @apply font-semibold font-sans leading-tight text-black lg:text-[3rem] text-[2rem];
   }
+
   h4 {
-    @apply lg:text-2xl text-xl tracking-tight text-pretty;
+    @apply font-semibold font-sans leading-tight text-black lg:text-[2rem] text-[1.5rem];
   }
-  h5 {
-    @apply text-lg font-semibold tracking-tight text-pretty;
-  }
+
   h6 {
-    @apply text-base font-semibold tracking-tight text-pretty;
+    @apply text-alt uppercase tracking-tighter font-sans font-semibold lg:text-[1.125rem] text-[1rem];
   }
+
   p {
-    @apply text-base tracking-tight text-pretty;
+    @apply text-base font-sans leading-tight text-black;
   }
+
   button {
-    @apply hover:bg-third rounded-sm py-1 px-4 items-center cursor-pointer bg-third/80 text-black transition duration-300 ease-in-out tracking-tight text-pretty;
+    @apply bg-main text-white rounded-md px-3 py-1 cursor-pointer transition duration-200 ease-in-out shadow-md shadow-black/50;
+  }
+  button:hover {
+    @apply bg-alt text-white shadow-lg;
   }
   /* a {
     @apply hover:text-main text-blue-600;

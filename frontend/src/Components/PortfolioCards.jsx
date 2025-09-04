@@ -11,14 +11,14 @@ const PortfolioCards = () => {
 
   return (
     <div className="bg-white py-10">
-      <div className="text-center">
-        <h6 className="text-alt uppercase tracking-tighter">
+      <div className="text-center mx-auto max-w-7xl">
+        <h6>
           portfolio
         </h6>
-        <h2 className="mt-0 tracking-tight text-pretty text-gray-900">
-          Check out my recent work
+        <h2 className="mt-0 text-gray-900">
+          Browse my favorite sessions
         </h2>
-        <p className="mt-6 text-lg/8 text-gray-600">
+        <p className="mt-3 text-gray-600">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
           impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
           ratione.
@@ -36,9 +36,9 @@ const PortfolioCards = () => {
             />
           </picture>
           <div className="absolute inset-0 flex items-center justify-center cursor-pointer" onClick={handleClick}>
-            <div className="bg-none text-white text-center uppercase">
-              <h3>wellness brand</h3>
-              <p>solo package</p>
+            <div className="bg-none text-center uppercase">
+              <h4 className="text-white">wellness brand</h4>
+              <p className="text-white">solo package</p>
             </div>
             <div className="absolute inset-0 bg-black opacity-10 hover:bg-white hover:opacity-5 transition-bg duration-300 ease-in-out flex items-center justify-center"></div>
           </div>
@@ -54,8 +54,8 @@ const PortfolioCards = () => {
           </picture>
           <div className="absolute inset-0 flex items-center justify-center cursor-pointer" onClick={handleClick}>
             <div className="bg-none text-white text-center uppercase">
-              <h3>the rockwells</h3>
-              <p>family package</p>
+              <h4 className="text-white">the rockwells</h4>
+              <p className="text-white">family package</p>
             </div>
             <div className="absolute inset-0 bg-black opacity-10 hover:bg-white hover:opacity-5 transition-bg duration-300 ease-in-out flex items-center justify-center"></div>
           </div>
@@ -71,8 +71,8 @@ const PortfolioCards = () => {
           </picture>
           <div className="absolute inset-0 flex items-center justify-center cursor-pointer" onClick={handleClick}>
             <div className="bg-none text-white text-center uppercase">
-              <h3>smith wedding</h3>
-              <p>event package</p>
+              <h4 className="text-white">smith wedding</h4>
+              <p className="text-white">event package</p>
             </div>
             <div className="absolute inset-0 bg-black opacity-10 hover:bg-white hover:opacity-5 transition-bg duration-300 ease-in-out flex items-center justify-center"></div>
           </div>
