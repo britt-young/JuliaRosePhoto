@@ -56,14 +56,14 @@ const AboutMe = () => {
           <dl className="mt-10 max-w-xl space-y-8 text-[1rem] text-gray-600 lg:max-w-none">
             {features.map((feature) => (
               <div key={feature.name} className="relative pl-11">
-                <dt className="inline font-semibold text-gray-900">
+                <dt className="inline font-semibold text-gray-900 tracking-wide">
                   <feature.icon
                     aria-hidden="true"
-                    className="absolute top-1 left-1 size-6 text-main2"
+                    className="absolute top-1 left-1 size-6 text-black"
                   />
                   {feature.name}
                 </dt>{" "}
-                <dd className="inline">{feature.description}</dd>
+                <dd className="inline font-sans">{feature.description}</dd>
               </div>
             ))}
           </dl>

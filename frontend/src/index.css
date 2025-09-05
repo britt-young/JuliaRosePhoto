@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+
 @theme {
   --breakpoint-*: initial;
   --breakpoint-sm: 640px;
@@ -10,28 +11,30 @@
   --color-main: #9D1D1D;
   --color-alt: #5B1413;
   --color-third: #616F33;
+
+  --font-laisha: "Laisha", serif;
 }
 
 @layer base {
   /* fluid text needs adjusting */
 body {
-    @apply transition-colors duration-500 font-sans m-0 p-0 box-border text-[min(3vw,2vh)];
+    @apply  transition-colors duration-500 font-laisha m-0 p-0 box-border text-[min(3vw,2vh)];
   }
 
   h1 {
-    @apply font-serif leading-tight text-black lg:text-[4rem] text-[3rem];
+    @apply font-laisha leading-tight text-black lg:text-[4rem] text-[3rem];
   }
 
   h2 {
-    @apply font-bold font-sans leading-tight text-black lg:text-[4rem] text-[3rem];
+    @apply font-bold font-laisha leading-tight text-black lg:text-[4rem] text-[3rem];
   }
 
   h3 {
-    @apply font-semibold font-sans leading-tight text-black lg:text-[3rem] text-[2rem];
+    @apply font-semibold font-laisha leading-tight text-black lg:text-[3rem] text-[2rem];
   }
 
   h4 {
-    @apply font-semibold font-sans leading-tight text-black lg:text-[2rem] text-[1.5rem];
+    @apply font-semibold font-laisha leading-tight text-black lg:text-[2rem] text-[1.5rem];
   }
 
   h6 {
