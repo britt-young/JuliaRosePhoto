@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import family from "../assets/img/fam.jpg";
 import solo from "../assets/img/solo.jpg";

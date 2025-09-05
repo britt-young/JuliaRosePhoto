@@ -114,8 +114,6 @@ const Footer = () => {
                   <li className="hover:text-main">
                     <Link to="/">Home</Link>
                   </li>
-                
-                  
                   <li className="hover:text-main">
                     <Link to="/services">Services</Link>
                   </li>
@@ -136,7 +134,12 @@ const Footer = () => {
       <div className="flex items-center justify-end bg-gray-200 text-black p-1 pe-5 w-full text-sm">
         <span className="gap-1 flex">
           © 2024
-          <a href="https://gulfcoastwdd.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+          <a
+            href="https://gulfcoastwdd.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
             Gulf Coast Web Design & Development
           </a>
         </span>
