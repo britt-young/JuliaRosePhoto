@@ -6,7 +6,7 @@ const SocialMedia = () => {
       <div className="bg-none w-full h-auto pt-5 flex items-center justify-center flex-wrap">
         <div className="flex items-center justify-center gap-5 lg:my-0">
           {/* facebook icon */}
-          <button className="bg-transparent cursor-pointer rounded-md ">
+          <button className="bg-transparent cursor-pointer rounded-md shadow-none">
             <a href="https://www.facebook.com" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ const SocialMedia = () => {
           </button>
 
           {/* instagram icon */}
-          <button className="bg-transparent cursor-pointer   ">
+          <button className="bg-transparent cursor-pointer shadow-none">
             <a
               href="https://www.instagram.com/rileyaddisonphotography?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
@@ -80,7 +80,7 @@ const SocialMedia = () => {
           </button>
 
           {/* twitter icon */}
-          <button className="bg-transparent cursor-pointer rounded-md  ">
+          <button className="bg-transparent cursor-pointer rounded-md shadow-none">
             <a href="https://www.twitter.com" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ const SocialMedia = () => {
           </button>
 
           {/* tiktok icon */}
-          <button className="bg-transparent cursor-pointer rounded-md  ">
+          <button className="bg-transparent cursor-pointer rounded-md shadow-none">
             <a href="https://www.tiktok.com" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +137,7 @@ const SocialMedia = () => {
           </button>
 
           {/* linkedIn icon */}
-          <button className="bg-transparent cursor-pointer rounded-md  ">
+          <button className="bg-transparent cursor-pointer rounded-md shadow-none">
             <a href="https://www.linkedIn.com" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

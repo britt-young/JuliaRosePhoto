@@ -1,128 +1,83 @@
 import { Link } from "react-router-dom";
-import family from "../assets/img/fam.jpg";
-import solo from "../assets/img/solo.jpg";
-import senior from "../assets/img/senior.jpg";
-import couple from "../assets/img/couple.jpg";
-import wedding from "../assets/img/wedding.jpg";
 
-const ServiceCards = () => {
+// ✅ ServiceCard Component
+function ServiceCard({ to, title, description, img, reverse }) {
+  return (
+    <Link
+      to={to}
+      className={`group flex flex-col ${
+        reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+      } lg:p-1 p-2 hover:cursor-pointer w-full max-w-3xl`}
+    >
+      {/* Text Side */}
+      <div className="flex-1 flex items-center justify-center bg-gray-100 p-6 text-center">
+        <div>
+          <h4 className="uppercase font-semibold mb-2">{title}</h4>
+          <p className="text-gray-700">{description}</p>
+        </div>
+      </div>
+
+      {/* Image Side */}
+      <div className="relative flex-1 min-h-[250px]">
+        <img
+          src={img}
+          alt={title}
+          loading="lazy"
+          className="w-full h-full object-center transition-all duration-300 aspect-auto"
+        />
+        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
+      </div>
+    </Link>
+  );
+}
+
+const services = [
+  {
+    to: "/services/seniors",
+    title: "Seniors",
+    description:
+      "This is a single person session for students graduating from high school, college, or further education.",
+    img: "/images/services/senior.webp",
+    reverse: false,
+  },
+  {
+    to: "/services/solo",
+    title: "Solo",
+    description: "This is a single person session.",
+    img: "/images/services/solo.jpg",
+    reverse: true,
+  },
+  {
+    to: "/services/couples&groups",
+    title: "Couples & Groups",
+    description: "This session is for 2–10 people.",
+    img: "/images/services/couple.webp",
+    reverse: false,
+  },
+  {
+    to: "/services/families",
+    title: "Families",
+    description: "For families with children/pets (3–10 people).",
+    img: "/images/services/fam.jpg",
+    reverse: true,
+  },
+  {
+    to: "/services/events",
+    title: "Events",
+    description: "For events, parties, or elopements under 50 people.",
+    img: "/images/services/wedding.webp",
+    reverse: false,
+  },
+];
+
+export default function ServiceCards() {
   return (
     <div className="bg-white">
-    <div className="flex flex-col max-w-3xl mx-auto justify-center items-center m-5">
-      {/* Senior Portraits */}
-      <Link
-        to={"/services/seniors"}
-        className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer"
-      >
-        <div className="flex flex-col items-center justify-center text-center bg-gray-100 lg:px-6 py-4 max-w-sm">
-          <h4 className="uppercase font-semibold mb-2">Seniors</h4>
-          <p className="text-gray-700 px-10">
-            This is a single person session for students graduating from either
-            high school, college, or any form of further education
-          </p>
-        </div>
-
-        <div className="relative">
-          <img
-            className="max-w-sm transition-all duration-300"
-            src={senior}
-            alt="senior portrait"
-          />
-          {/* overlay */}
-          <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
-        </div>
-      </Link>
-
-      {/* Individual Portraits */}
-      <Link
-        to={"/services/solo"}
-        className="group flex flex-col-reverse lg:flex-row lg:p-1 p-4 hover:cursor-pointer"
-      >
-        <div className="relative">
-          <img
-            className="max-w-sm transition-all duration-300"
-            src={solo}
-            alt="portrait"
-          />
-          {/* overlay */}
-          <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
-        </div>
-        <div className="flex flex-col items-center justify-center text-center bg-gray-100 lg:px-6 py-4 max-w-sm">
-          <h4 className="uppercase font-semibold mb-2">solo</h4>
-          <p className="text-gray-700 px-15">This is a single person session</p>
-        </div>
-      </Link>
-
-      {/* Couples & Group Portraits */}
-      <Link
-        to={"/services/couples&groups"}
-        className="group flex flex-col lg:flex-row lg:p-1 p-4  hover:cursor-pointer"
-      >
-        <div className="flex flex-col items-center justify-center text-center bg-gray-100 lg:px-6 py-4 max-w-sm">
-          <h4 className="uppercase font-semibold mb-2">couples & groups</h4>
-          <p className="text-gray-700 px-10">
-            This is a session for 2 or more people with a maximum of 10
-          </p>
-        </div>
-        <div className="relative">
-          <img
-            className="max-w-sm transition-all duration-300"
-            src={couple}
-            alt="couples portrait"
-          />
-          {/* overlay */}
-          <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
-        </div>
-      </Link>
-
-      {/* Families Portraits */}
-      <Link
-        to={"/services/families"}
-        className="group flex flex-col-reverse lg:flex-row lg:p-1 p-4 hover:cursor-pointer"
-      >
-        <div className="relative">
-          <img
-            className="max-w-sm transition-all duration-300"
-            src={family}
-            alt="portrait"
-          />
-          {/* overlay */}
-          <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
-        </div>
-        <div className="flex flex-col items-center justify-center text-center bg-gray-100 px-6 py-4 lg:px-6 py-4 max-w-sm">
-          <h4 className="uppercase font-semibold mb-2">families</h4>
-          <p className="text-gray-700 px-10">
-            This session is for families with children and/or pets. Minimum of 3
-            people and a maximum of 10
-          </p>
-        </div>
-      </Link>
-
-      {/* Events Portraits */}
-      <Link
-        to={"/services/events"}
-        className="group flex flex-col lg:flex-row lg:p-1 p-4 hover:cursor-pointer"
-      >
-        <div className="flex flex-col items-center justify-center text-center bg-gray-100 lg:px-6 py-4 max-w-sm">
-          <h4 className="uppercase font-semibold mb-2">events</h4>
-          <p className="text-gray-700 px-10">
-            This session is for special events, parties, or elopements under 50
-            people
-          </p>
-        </div>
-        <div className="relative">
-          <img
-            className="max-w-sm transition-all duration-300"
-            src={wedding}
-            alt="elopement"
-          />
-          {/* overlay */}
-          <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
-        </div>
-      </Link>
-    </div>
+      <div className="flex flex-col gap-6 items-center m-5">
+        {services.map((service, idx) => (
+          <ServiceCard key={idx} {...service} />
+        ))}
+      </div>
     </div>
   );
-};
-
-export default ServiceCards;
+}
