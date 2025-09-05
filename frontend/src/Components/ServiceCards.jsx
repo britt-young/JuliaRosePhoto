@@ -5,9 +5,9 @@ function ServiceCard({ to, title, description, img, reverse }) {
   return (
     <Link
       to={to}
-      className={`group flex flex-col ${
+      className={`group flex flex-col  ${
         reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-      } lg:p-1 p-2 hover:cursor-pointer w-full max-w-3xl`}
+      } lg:p-1 p-2 hover:cursor-pointer `}
     >
       {/* Text Side */}
       <div className="flex-1 flex items-center justify-center bg-gray-100 p-6 text-center">
@@ -68,12 +68,19 @@ const services = [
     img: "/images/services/wedding.webp",
     reverse: false,
   },
+  {
+    to: "/services/pets",
+    title: "Pets",
+    description: "Single animal portraits (owner must be present).",
+    img: "/images/services/pet.jpg",
+    reverse: true,
+  },
 ];
 
 export default function ServiceCards() {
   return (
-    <div className="bg-white">
-      <div className="flex flex-col gap-6 items-center m-5">
+    <div className="bg-white py-10 md:max-w-7xl md:mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-6 gap-2 items-center p-2">
         {services.map((service, idx) => (
           <ServiceCard key={idx} {...service} />
         ))}

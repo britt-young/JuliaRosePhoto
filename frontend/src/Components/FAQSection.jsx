@@ -67,7 +67,7 @@ const FAQSection = () => {
 
   return (
     <div className="container mx-auto px-5 lg:px-0">
-      <h3 className="mb-10 text-center">The Booking Process</h3>
+      <h4 className="mb-10 text-center">The Booking Process</h4>
       <div className="h-[400px] w-fit grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Left Side: Questions */}
         <div className="space-y-4">
