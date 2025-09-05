@@ -8,7 +8,7 @@ const FAQSection = () => {
     hoveredStep !== null ? ((hoveredStep + 1) / steps.length) * 100 : 0;
 
   return (
-    <div className="w-full max-w-7xl mx-auto p-6">
+    <div className="w-full p-6">
       <h4 className="font-bold mb-4">Booking Process</h4>
 
       {/* Horizontal layout for large screens */}
