@@ -79,7 +79,7 @@ const services = [
 
 export default function ServiceCards() {
   return (
-    <div className="bg-white py-10 md:max-w-7xl md:mx-auto">
+    <div className="bg-white m-10 md:max-w-7xl md:mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-6 gap-2 items-center p-2">
         {services.map((service, idx) => (
           <ServiceCard key={idx} {...service} />
