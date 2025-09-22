@@ -46,7 +46,7 @@ body {
   }
 
   button {
-    @apply bg-alt/90 text-white rounded-md px-2 py-1 cursor-pointer transition duration-200 ease-in-out shadow-md shadow-black/50 tracking-tight uppercase;
+    @apply bg-alt/90 text-white px-2 py-0 cursor-pointer transition duration-200 ease-in-out shadow-md shadow-black/50 tracking-tight;
   }
   button:hover {
     @apply bg-alt shadow-lg;
