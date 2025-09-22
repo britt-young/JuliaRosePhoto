@@ -2,12 +2,20 @@ import { Link } from "react-router-dom";
 
 // ✅ ServiceCard Component
 function ServiceCard({ to, title, description, img, reverse }) {
+  const isExternal = to.startsWith("http");
+
+  // Choose tag: <a> for external, <Link> for internal
+  const Wrapper = isExternal ? "a" : Link;
+  const wrapperProps = isExternal
+    ? { href: to, target: "_blank", rel: "noopener noreferrer" }
+    : { to };
+
   return (
-    <Link
-      to={to}
-      className={`group flex flex-col  ${
+    <Wrapper
+      {...wrapperProps}
+      className={`group flex flex-col ${
         reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-      } lg:p-1 p-2 hover:cursor-pointer `}
+      } lg:p-1 p-2 hover:cursor-pointer`}
     >
       {/* Text Side */}
       <div className="flex-1 flex items-center justify-center bg-gray-100 p-6 text-center">
@@ -27,13 +35,14 @@ function ServiceCard({ to, title, description, img, reverse }) {
         />
         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-all duration-300"></div>
       </div>
-    </Link>
+    </Wrapper>
   );
 }
 
+// ✅ Services Data
 const services = [
   {
-    to: "/services/seniors",
+    to: "https://juliarosephoto43.pixieset.com/seniors/",
     title: "Seniors",
     description:
       "This is a single person session for students graduating from high school, college, or further education.",
@@ -41,35 +50,35 @@ const services = [
     reverse: false,
   },
   {
-    to: "/services/solo",
+    to: "https://juliarosephoto43.pixieset.com/soloportraits/",
     title: "Solo",
     description: "This is a single person session.",
     img: "/images/services/solo.jpg",
     reverse: true,
   },
   {
-    to: "/services/couples&groups",
+    to: "https://juliarosephoto43.pixieset.com/couplesandgroups/",
     title: "Couples & Groups",
     description: "This session is for 2–10 people.",
     img: "/images/services/couple.webp",
     reverse: false,
   },
   {
-    to: "/services/families",
+    to: "https://juliarosephoto43.pixieset.com/familyportraits/",
     title: "Families",
     description: "For families with children/pets (3–10 people).",
     img: "/images/services/fam.jpg",
     reverse: true,
   },
   {
-    to: "/services/events",
+    to: "https://juliarosephoto43.pixieset.com/specialevents/",
     title: "Events",
     description: "For events, parties, or elopements under 50 people.",
     img: "/images/services/wedding.webp",
     reverse: false,
   },
   {
-    to: "/services/pets",
+    to: "https://juliarosephoto43.pixieset.com/petportraits/",
     title: "Pets",
     description: "Single animal portraits (owner must be present).",
     img: "/images/services/pet.jpg",
@@ -77,6 +86,7 @@ const services = [
   },
 ];
 
+// ✅ Parent Component
 export default function ServiceCards() {
   return (
     <div className="bg-white m-10 md:max-w-7xl md:mx-auto">
