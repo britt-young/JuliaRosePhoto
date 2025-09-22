@@ -1,3 +1,7 @@
+// style={{
+//     backgroundImage: "linear-gradient(to right, #ce120b 1%, #8b1015 51%, #e52d27 100%)",
+//   }}
+
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
@@ -57,7 +61,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-gray-100 py-12 px-4">
+    <section className="bg-black py-12 px-4" >
       <div className="w-full h-fit mx-auto">
         <Splide
           options={{
@@ -66,11 +70,11 @@ const Testimonials = () => {
             perMove: 1,
             gap: "1rem",
             autoplay: true,
-            interval: 2000,
+            interval: 2500,
             pauseOnHover: true,
             arrows: false,
             pagination: false,
-            speed: 5000,
+            speed: 4000,
             breakpoints: {
               1024: {
                 perPage: 2,
@@ -83,7 +87,7 @@ const Testimonials = () => {
         >
           {testimonials.map((t, idx) => (
             <SplideSlide key={idx}>
-              <div className="bg-white shadow-lg p-6 text-center h-full flex flex-col justify-between transition-transform duration-300 lg:hover:bg-gray-50">
+              <div className="bg-white/90 shadow-lg p-6 text-center h-full flex flex-col justify-between transition-transform duration-300 lg:hover:bg-gray-50">
                 <p className="text-gray-700 italic mb-4 flex-grow">“{t.text}”</p>
                 <h5 className="font-semibold text-gray-900">{t.name}</h5>
                 <span className="text-sm text-gray-500">{t.role}</span>

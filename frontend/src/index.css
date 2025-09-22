@@ -1,15 +1,14 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-
 @theme {
   --breakpoint-*: initial;
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
 
-  --color-main: #4C603E;
-  --color-alt: #8E1A20;
+  --color-main: #4c603e;
+  --color-alt: #8b1015;
   /* --color-third: #CDB4DB; */
 
   --font-laisha: "Laisha", serif;
@@ -17,8 +16,8 @@
 
 @layer base {
   /* fluid text needs adjusting */
-body {
-    @apply  transition-colors duration-500 m-0 p-0 box-border text-[min(3vw,2vh)];
+  body {
+    @apply transition-colors duration-500 m-0 p-0 box-border text-[min(3vw,2vh)];
   }
 
   h1 {
@@ -45,12 +44,6 @@ body {
     @apply text-base font-sans leading-tight text-black;
   }
 
-  button {
-    @apply bg-alt/90 text-white px-2 py-0 cursor-pointer transition duration-200 ease-in-out shadow-md shadow-black/50 tracking-tight;
-  }
-  button:hover {
-    @apply bg-alt shadow-lg;
-  }
   /* a {
     @apply hover:text-main text-blue-600;
   } */
@@ -63,5 +56,23 @@ body {
     background-size: cover;
     background-position: center;
   }
+  .btn-grad {
+    @apply inline-block text-white uppercase tracking-tight shadow-md cursor-pointer transition-all duration-500 ease-in-out;
+    padding: 5px 10px; /* px-[45px] py-[15px] */
+    margin: 10px;
+    background-image: linear-gradient(
+      to right,
+      #ce120b 0%,
+      #8b1015 51%,
+      #e52d27 100%
+    );
+    background-size: 200% auto;
+  }
 
+  .btn-grad:hover {
+    @apply shadow-lg;
+    background-position: right center; /* slide gradient */
+    color: #fff;
+    text-decoration: none;
+  }
 }

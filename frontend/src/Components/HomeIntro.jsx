@@ -33,7 +33,7 @@ const HomeIntro = () => {
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
           ratione."
         </p> */}
-        <button onClick={handleClick}>book your next session</button>
+        <button onClick={handleClick} className="btn-grad">book your next session</button>
       </div>
     </div>
   );

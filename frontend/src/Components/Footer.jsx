@@ -21,7 +21,7 @@ const Footer = () => {
               Molestiae, quas?
             </p>
             <Link to="/contact">
-              <button>book your next session</button>
+              <button className="btn-grad">book your next session</button>
             </Link>
           </div>
 

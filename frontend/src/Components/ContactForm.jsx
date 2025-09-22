@@ -125,7 +125,7 @@ const ContactForm = () => {
               </Field>
             </div>
             <div className="mt-10">
-              <button type="submit">Submit</button>
+              <button type="submit" className="btn-grad">Submit</button>
             </div>
           </form>
         </div>
