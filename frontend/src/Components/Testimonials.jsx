@@ -70,7 +70,7 @@ const Testimonials = () => {
             pauseOnHover: true,
             arrows: false,
             pagination: false,
-            speed: 1000,
+            speed: 5000,
             breakpoints: {
               1024: {
                 perPage: 2,
