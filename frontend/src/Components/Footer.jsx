@@ -20,7 +20,7 @@ const Footer = () => {
               consequuntur modi voluptatibus laborum ut, rem veniam architecto.
               Molestiae, quas?
             </p>
-            <Link to="/events">
+            <Link to="/contact">
               <button>book your next session</button>
             </Link>
           </div>

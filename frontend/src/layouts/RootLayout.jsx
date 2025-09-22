@@ -1,4 +1,4 @@
-import React from "react";
+import ScrollToTop from "../Components/ScrollToTop";
 import Nav from "../Components/Nav";
 import { Outlet } from "react-router-dom";
 import Footer from "../Components/Footer";
@@ -7,6 +7,7 @@ import Footer from "../Components/Footer";
 const RootLayout = () => {
   return (
     <div className="flex flex-col min-h-screen">
+      <ScrollToTop />
       {/* THIS IS THE MAIN BG! Use min-h-screen to fill the viewport */}
       <Nav />
       <main className="flex-1">

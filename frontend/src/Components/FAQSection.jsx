@@ -12,7 +12,7 @@ const FAQSection = () => {
       <h4 className="font-bold mb-4">Booking Process</h4>
 
       {/* Horizontal layout for large screens */}
-      <div className="hidden lg:flex items-start justify-between relative gap-x-2">
+      <div className="hidden lg:flex items-start justify-between relative gap-x-4">
         {/* Progress line */}
         <div className="absolute top-4 left-0 right-0 h-1 bg-gray-200">
           <div

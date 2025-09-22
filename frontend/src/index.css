@@ -18,23 +18,23 @@
 @layer base {
   /* fluid text needs adjusting */
 body {
-    @apply  transition-colors duration-500 font-laisha m-0 p-0 box-border text-[min(3vw,2vh)];
+    @apply  transition-colors duration-500 m-0 p-0 box-border text-[min(3vw,2vh)];
   }
 
   h1 {
-    @apply font-laisha leading-tight text-black lg:text-[4rem] text-[3rem];
+    @apply leading-tight text-black lg:text-[4rem] text-[3rem];
   }
 
   h2 {
-    @apply font-bold font-laisha leading-tight text-black lg:text-[4rem] text-[3rem];
+    @apply font-normal leading-tight font-laisha text-black lg:text-[4rem] text-[3rem];
   }
 
   h3 {
-    @apply font-semibold font-laisha leading-tight text-black lg:text-[3rem] text-[2rem];
+    @apply font-semibold leading-tight text-black lg:text-[3rem] text-[2rem];
   }
 
   h4 {
-    @apply font-semibold font-laisha leading-tight text-black lg:text-[2rem] text-[1.5rem];
+    @apply font-semibold leading-tight text-black lg:text-[2rem] text-[1.5rem];
   }
 
   h6 {
@@ -46,20 +46,15 @@ body {
   }
 
   button {
-    @apply bg-main text-white rounded-md px-3 py-1 cursor-pointer transition duration-200 ease-in-out shadow-md shadow-black/50;
+    @apply bg-alt/90 text-white rounded-md px-3 py-1 cursor-pointer transition duration-200 ease-in-out shadow-md shadow-black/50;
   }
   button:hover {
-    @apply bg-alt text-white shadow-lg;
+    @apply bg-alt shadow-lg;
   }
   /* a {
     @apply hover:text-main text-blue-600;
   } */
 }
-
-/* @font-face {
-  font-family: 'Laisha';
-  src: url('./assets/fonts/Laisha.ttf') format('truetype');
-} */
 
 @layer components {
   .pattern-background {
