@@ -20,8 +20,8 @@ const steps = [
   {
     // title: "Step Four",
     title: "4. Sneak Peeks & Gallery Delivery",
-    text: "Sneak peeks will be delivered within 48 hours of our session via text as a Google Drive link. The full gallery will be delivered within 7 days of our session via email with an updated link.",
-    note: "You do NOT need a Google account to view your gallery.",
+    text: "Sneak peeks will be delivered within 48 hours of our session via text as a PixieSet link. The full gallery will be delivered within 7 days of our session via email with an updated link.",
+    note: "You do NOT need a PixieSet account to view your gallery.",
   },
 ];
 

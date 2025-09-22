@@ -111,17 +111,17 @@ const Footer = () => {
               <h4 className=" mb-2 ">Site Map</h4>
               <div className="text-left text-sm indent-4">
                 <ul>
-                  <li className="hover:text-main">
+                  <li className="hover:font-semibold hover:text-alt">
                     <Link to="/">Home</Link>
                   </li>
-                  <li className="hover:text-main">
+                  <li className="hover:font-semibold hover:text-alt">
                     <Link to="/services">Services</Link>
                   </li>
-                  <li className="hover:text-main">
+                  <li className="hover:font-semibold hover:text-alt">
                     <Link to="/contact">Contact</Link>
                   </li>
-                  <li className="hover:text-main">
-                    <Link to="/terms">Terms & Conditions</Link>
+                  <li className="hover:font-semibold hover:text-alt">
+                    <Link to="/privacy">Terms & Conditions</Link>
                   </li>
                 </ul>
               </div>
@@ -131,7 +131,7 @@ const Footer = () => {
       </div>
 
       {/* <!--Copyright section--> */}
-      <div className="flex items-center justify-end bg-gray-200 text-black p-1 pe-5 w-full text-sm">
+      <div className="flex items-center justify-end bg-gray-100 text-black p-1 pe-5 w-full text-sm">
         <span className="gap-1 flex">
           © 2024
           <a

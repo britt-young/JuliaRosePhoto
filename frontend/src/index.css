@@ -8,9 +8,9 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
 
-  --color-main: #9D1D1D;
-  --color-alt: #5B1413;
-  --color-third: #616F33;
+  --color-main: #4C603E;
+  --color-alt: #8E1A20;
+  /* --color-third: #CDB4DB; */
 
   --font-laisha: "Laisha", serif;
 }
@@ -46,7 +46,7 @@ body {
   }
 
   button {
-    @apply bg-alt/90 text-white rounded-md px-3 py-1 cursor-pointer transition duration-200 ease-in-out shadow-md shadow-black/50;
+    @apply bg-alt/90 text-white rounded-md px-2 py-1 cursor-pointer transition duration-200 ease-in-out shadow-md shadow-black/50 tracking-tight uppercase;
   }
   button:hover {
     @apply bg-alt shadow-lg;

@@ -1,6 +1,6 @@
 const PortfolioCards = () => {
   return (
-    <div className="bg-white py-10">
+    <div className="bg-white py-10 lg:px-0 px-5">
       <div className="text-center mx-auto max-w-7xl">
         <h6>portfolio</h6>
         <h2 className="mt-0 text-gray-900">Browse my favorite sessions</h2>

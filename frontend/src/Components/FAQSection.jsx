@@ -59,8 +59,8 @@ const FAQSection = () => {
               )}
 
               {step.note && (
-                <p className="mt-4">
-                  <span className="font-bold">Note: </span>
+                <p className="mt-4 text-sm">
+                  <span className="text-md font-bold">* </span>
                   {step.note}
                 </p>
               )}
@@ -117,8 +117,8 @@ const FAQSection = () => {
               )}
 
               {step.note && (
-                <p className="mt-4">
-                  <span className="font-bold">Note: </span>
+                <p className="text-sm mt-4">
+                  <span className="text-md font-bold">* </span>
                   {step.note}
                 </p>
               )}
