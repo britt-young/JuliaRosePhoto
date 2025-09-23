@@ -47,7 +47,7 @@ const FAQSection = () => {
                   {step.links.map((link, i) => (
                     <li key={i}>
                       <a
-                        className="hover:text-main text-blue-600"
+                        className="hover:font-semibold hover:text-alt"
                         href={link.href}
                         rel="nofollow"
                       >

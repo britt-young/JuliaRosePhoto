@@ -27,7 +27,7 @@ const HomeIntro = () => {
       /> */}
 
       <div className="mx-5 mt-40">
-        <img src={home} alt="name" className="w-100 md: w-150 lg:w-200 mx-auto mb-1" />
+        <img src={home} alt="name" className="w-100 md:w-150 lg:w-200 mx-auto mb-0" />
         {/* <h1 className="lg:mb-5 mb-6">Julia Rose Photography</h1> */}
         {/* <p className="lg:text-md pb-4 uppercase">
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,

@@ -61,7 +61,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-black py-12 px-4" >
+    <section className="bg-white py-4 px-4">
       <div className="w-full h-fit mx-auto">
         <Splide
           options={{
@@ -70,11 +70,11 @@ const Testimonials = () => {
             perMove: 1,
             gap: "1rem",
             autoplay: true,
-            interval: 2500,
+            interval: 4000,
             pauseOnHover: true,
             arrows: false,
             pagination: false,
-            speed: 4000,
+            speed: 8000,
             breakpoints: {
               1024: {
                 perPage: 2,
@@ -87,10 +87,10 @@ const Testimonials = () => {
         >
           {testimonials.map((t, idx) => (
             <SplideSlide key={idx}>
-              <div className="bg-white/90 shadow-lg p-6 text-center h-full flex flex-col justify-between transition-transform duration-300 lg:hover:bg-gray-50">
-                <p className="text-gray-700 italic mb-4 flex-grow">“{t.text}”</p>
+              <div className="bg-gray-50 shadow-xl p-6 text-center h-full flex flex-col justify-between transition-transform duration-300 lg:hover:bg-gray-100">
+                <p className="text-gray-800 italic mb-4 flex-grow">“{t.text}”</p>
                 <h5 className="font-semibold text-gray-900">{t.name}</h5>
-                <span className="text-sm text-gray-500">{t.role}</span>
+                <span className="text-sm text-gray-800">{t.role}</span>
               </div>
             </SplideSlide>
           ))}

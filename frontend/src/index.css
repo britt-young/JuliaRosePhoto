@@ -8,7 +8,7 @@
   --breakpoint-lg: 1024px;
 
   --color-main: #4c603e;
-  --color-alt: #8b1015;
+  --color-alt: #4c603e;
   /* --color-third: #CDB4DB; */
 
   --font-laisha: "Laisha", serif;
@@ -43,36 +43,39 @@
   p {
     @apply text-base font-sans leading-tight text-black;
   }
-
   /* a {
-    @apply hover:text-main text-blue-600;
+    @apply text-main;
+  }
+
+  a:hover {
+    @apply underline;
   } */
 }
 
 @layer components {
   .pattern-background {
     background-color: #ffffff;
-    background-image: url("assets/img/rose-pattern.svg");
+    background-image: url("/images/rose-pattern.svg");
     background-size: cover;
     background-position: center;
   }
   .btn-grad {
-    @apply inline-block text-white uppercase tracking-tight shadow-md cursor-pointer transition-all duration-500 ease-in-out;
-    padding: 5px 10px; /* px-[45px] py-[15px] */
+    @apply uppercase inline-block text-gray-700 tracking-wider shadow-lg cursor-pointer transition-all duration-500 ease-in-out font-serif;
+    padding: 2px 10px; /* px py */
     margin: 10px;
     background-image: linear-gradient(
       to right,
-      #ce120b 0%,
-      #8b1015 51%,
-      #e52d27 100%
+      #FFC2D1 0%,
+      #FFB3C6 45%,
+      #f0587e 100%
     );
     background-size: 200% auto;
   }
 
   .btn-grad:hover {
-    @apply shadow-lg;
+    @apply shadow-xl;
     background-position: right center; /* slide gradient */
-    color: #fff;
+    color: #000;
     text-decoration: none;
   }
 }
