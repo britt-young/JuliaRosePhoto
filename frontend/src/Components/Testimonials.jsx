@@ -87,7 +87,7 @@ const Testimonials = () => {
         >
           {testimonials.map((t, idx) => (
             <SplideSlide key={idx}>
-              <div className="bg-gray-50 shadow-xl p-6 text-center h-full flex flex-col justify-between transition-transform duration-300 lg:hover:bg-gray-100">
+              <div className="bg-gray-50 inset-shadow-sm/20 p-6 text-center h-full flex flex-col justify-between transition-transform duration-300 lg:hover:bg-gray-100">
                 <p className="text-gray-800 italic mb-4 flex-grow">“{t.text}”</p>
                 <h5 className="font-semibold text-gray-900">{t.name}</h5>
                 <span className="text-sm text-gray-800">{t.role}</span>
