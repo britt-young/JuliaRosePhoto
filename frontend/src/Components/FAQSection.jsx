@@ -16,7 +16,7 @@ const FAQSection = () => {
         {/* Progress line */}
         <div className="absolute top-4 left-0 right-0 h-1 bg-gray-200">
           <div
-            className="h-1 bg-main transition-all duration-300"
+            className="h-1 bg-red-700 transition-all duration-300"
             style={{ width: `${progressPercent}%` }}
           />
         </div>

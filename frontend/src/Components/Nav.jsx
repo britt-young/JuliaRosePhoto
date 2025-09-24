@@ -41,7 +41,7 @@ const Nav = () => {
   );
 
   return (
-    <nav className="bg-none">
+    <nav className="bg-white">
       <div className="h-20 flex items-center z-50 text-black lg:py-1 px-20 uppercase">
         {/* Logo Section */}
         <div className="flex flex-1">
@@ -61,12 +61,12 @@ const Nav = () => {
           onClick={handleClick}
           aria-label="Toggle Menu"
         >
-          {click ? <FaTimes size={24} className="text-white" /> : <AiOutlineMenuFold size={24} className="text-alt" />}
+          {click ? <FaTimes size={24} className="text-white" /> : <AiOutlineMenuFold size={24} className="text-main" />}
         </button>
 
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 left-0 w-full h-1/4 bg-alt text-white flex flex-col items-center text-center justify-center transition-transform transform ${
+          className={`fixed top-0 left-0 w-full h-1/4 bg-main text-white flex flex-col items-center text-center justify-center transition-transform transform ${
             click ? "translate-x-0" : "translate-x-full"
           } lg:hidden z-50`}
         >

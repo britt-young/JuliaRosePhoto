@@ -111,16 +111,16 @@ const Footer = () => {
               <h4 className=" mb-2 ">Site Map</h4>
               <div className="text-left text-sm indent-4">
                 <ul>
-                  <li className="hover:font-semibold hover:text-alt">
+                  <li className="hover:font-semibold hover:text-main">
                     <Link to="/">Home</Link>
                   </li>
-                  <li className="hover:font-semibold hover:text-alt">
+                  <li className="hover:font-semibold hover:text-main">
                     <Link to="/services">Services</Link>
                   </li>
-                  <li className="hover:font-semibold hover:text-alt">
+                  <li className="hover:font-semibold hover:text-main">
                     <Link to="/contact">Contact</Link>
                   </li>
-                  <li className="hover:font-semibold hover:text-alt">
+                  <li className="hover:font-semibold hover:text-main">
                     <Link to="/privacy">Terms & Conditions</Link>
                   </li>
                 </ul>

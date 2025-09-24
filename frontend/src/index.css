@@ -7,8 +7,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
 
-  --color-main: #4c603e;
-  --color-alt: #4c603e;
+  --color-main: #8c0d24;
+
   /* --color-third: #CDB4DB; */
 
   --font-laisha: "Laisha", serif;
@@ -37,7 +37,7 @@
   }
 
   h6 {
-    @apply text-alt uppercase tracking-tighter font-sans font-semibold lg:text-[1.125rem] text-[1rem];
+    @apply text-main uppercase tracking-tighter font-sans font-semibold lg:text-[1.125rem] text-[1rem];
   }
 
   p {
@@ -60,14 +60,14 @@
     background-position: center;
   }
   .btn-grad {
-    @apply uppercase inline-block text-gray-700 tracking-wider shadow-lg cursor-pointer transition-all duration-500 ease-in-out font-serif;
+    @apply uppercase inline-block text-black tracking-wider shadow-lg/60 shadow-gray-600 cursor-pointer transition-all duration-800 ease-in-out font-serif;
     padding: 2px 10px; /* px py */
     margin: 10px;
     background-image: linear-gradient(
       to right,
-      #FFC2D1 0%,
-      #FFB3C6 45%,
-      #f0587e 100%
+      #db1647 0%,
+      #8c0d24 45%,
+      #be123c 100%
     );
     background-size: 200% auto;
   }
@@ -75,7 +75,7 @@
   .btn-grad:hover {
     @apply shadow-xl;
     background-position: right center; /* slide gradient */
-    color: #000;
+    color: #fff;
     text-decoration: none;
   }
 }

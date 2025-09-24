@@ -9,12 +9,15 @@ const Contact = () => {
 
       <div className="max-w-7xl mx-auto flex flex-col items-center py-15 lg:px-0 px-5">
         <FAQSection />
-        <div className="w-full ">
-        <h4 className="pt-10 mt-10 font-bold text-center">Have questions or want to schedule a session?</h4>
-        <p className="text-center mb-10 my-1">
-          Fill out the form below and I'll get back to you as soon as possible!
-        </p>
-        <ContactForm />
+        <div className="w-full">
+          <h4 className="pt-10 mt-10 font-bold text-center">
+            Have questions or want to schedule a session?
+          </h4>
+          <p className="text-center mb-10 my-1">
+            Fill out the form below and I'll get back to you as soon as
+            possible!
+          </p>
+          <ContactForm />
         </div>
       </div>
     </div>

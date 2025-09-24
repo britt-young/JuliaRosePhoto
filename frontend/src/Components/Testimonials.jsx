@@ -61,7 +61,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-white py-4 px-4">
+    <section className="bg-white/70 py-4 px-4">
       <div className="w-full h-fit mx-auto">
         <Splide
           options={{
