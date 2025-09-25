@@ -3,11 +3,9 @@ const PortfolioCards = () => {
     <div className="bg-white py-10 lg:px-0 px-5">
       <div className="text-center mx-auto max-w-7xl">
         <h6>portfolio</h6>
-        <h2 className="mt-0 text-gray-900">Browse my favorite sessions</h2>
-        <p className="mt-3 text-gray-600">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-          impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
-          ratione.
+        <h2 className="mt-0 text-gray-900">Browse my recent galleries</h2>
+        <p className="mt-0 text-gray-600">
+          View full galleries from some of my favorite sessions
         </p>
       </div>
 
